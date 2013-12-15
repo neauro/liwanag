@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Operating Systems Notes [Chapter 2]"
+date: 2011-01-06
+comments: false
+---
+
+<div class='post'>
+Operating systems allow:<ul><li><em>At low level</em> -- for a process to make requests from the OS directly</li><li><em>At high level</em> -- for a user to make a request without writing a program</li></ul><br />Low-level requests get their answers from the system-call level, which provides basic functions for controlling processes, and manipulating file and devices.  Higher-level requests are satisfied by the command interpreter, and translated really into a sequence of system calls.<br /><br />System services are classified into categories: program control, status requests, I/O requests.  Program errors are also, implicitly, cries for <strike>help</strike> service.<br /><br />The state of the computer system and the status of the system's jobs are recorded into various tables.<br /><br />Operating systems are huge, so modularity is important.  Modularity describes the degree to which a system's components can be separated and recombined -- basically, you don't want to be working in one huge chunk all at once, but smaller pieces that you fit together later.  You can design an OS in layers, using the virtual-machine concept.<br /><br /><br /><br />Sources:<br />Operating System Concepts (8th Edition), Silberschatz, Galvin and Gagne, ISBN 978-0-470-12872-5.<br /><a href="http://en.wikipedia.org/wiki/Modularity">Wikipedia: Modularity</a></div>

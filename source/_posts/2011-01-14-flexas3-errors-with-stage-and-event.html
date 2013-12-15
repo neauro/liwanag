@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Flex/AS3: Errors with Stage and event listeners"
+date: 2011-01-14
+comments: false
+categories:
+ - flex
+ - troubleshooting
+ - actionscript
+ - flash
+---
+
+<div class='post'>
+This is a continuation of myself attempting to find out how to <a href="http://nuubu.blogspot.com/2010/12/problem-how-do-i-use-flex-components-to.html">use Flex UI components with a previously created AS3 project</a>.<br /><br />And it works fine, except for this error which I get when running in debug mode:<br /><br /><code>TypeError: Error #1009: Cannot access a property or method of a null object reference.</code><br /><br />It turns out that this error refers to a part of the AS3 code which does something with this variable called the stage.  This stage variable was an instance of the <strong>Stage</strong> class, and it's made when the Flash Player starts.  SWF files are loaded into the stage container, and all of their objects that display are DisplayObjects, and are children of the stage.  All DisplayObject instances also have a <code>stage</code> property which references the stage that is displaying them.  <span class="shh">Also: Stage is a singleton class, meaning there's only one of them, and it can't be modified by lowly programmers, and is always at the top level of the display hierarchy within a Flash Player.</span><br /><br />Anyway, the error occurs (I think) because my parent (UI) application loads onto the stage before the embedded (AS3) application.  The AS3 app then tries to use the <code>stage</code> property before it's even on the stage.  The solution is to make sure that the embedded SWF is on the stage before you try instantiating or doing anything.<br /><br />To fix it, I essentially wrapped up offending code in an event listener which would wait until the stage was loaded to execute.  So, this code which lets the stage listen for keyboard input:<br /><br /><pre class="brush: cpp"><br />stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler);<br /><br /></pre><br />became<br /><br /><pre class="brush: cpp"><br />addEventListener(Event.ADDED_TO_STAGE, function (e:Event):void {<br />  stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler);<br />});<br /><br /></pre><br />Not sure if this is good style or not.<br /><br /><br />Sources:<br /><a href="http://www.kirupa.com/forum/showthread.php?p=2129548#post2129548">Kirupa: ActionScript 3 Tip of the Day</a><br /><a href="http://jaycsantos.com/flash/do-you-know-actionscript-as3-stage/">jaycsantos.com: Do you know ActionScript?  AS3 Stage</a><br /><a href="http://board.flashkit.com/board/showthread.php?t=792605">Flash Kit: TypeError: Error #1009</a></div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Lewis R Strasburg</div>
+<div class='content'>
+Nice solution, it worked great for me.  I only needed to reference the stage at the very beginning for a &quot;Press Any Key to Start&quot; scenario, and it wasn&#39;t working until now.  Thanks!</div>
+</div>
+</div>

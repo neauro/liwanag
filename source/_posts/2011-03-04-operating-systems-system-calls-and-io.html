@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Operating Systems: System Calls and I/O"
+date: 2011-03-04
+comments: false
+categories:
+ - operating systems
+ - notes
+ - compsci
+---
+
+<div class='post'>
+Okay so, applications go through the operating system to obtain data from the disk, using system calls.  There are a couple types of system calls.<br /><br />When an application makes a <strong>blocking system call</strong>, the application stops executing, and moves into the operating system's wait queue.  When the system call completes, the application gets placed back to the run queue, and when it's ready to execute, it gets the response back from the completed system call.  Most operating systems use blocking system calls because blocking application code is easier to understand.<br /><br />But some user-side processes need non-blocking I/O and so make <strong>non-blocking system calls</strong>, a good example of which are human-interface devices: i.e. the mouse, the keyboard.  Input has to be taken and used, and can't be delayed until later.  When an operating system supports non-blocking system calls, a call doesn't stop execution of the application, but rather returns quickly, indicating how much data that it was able to read immediately.<br /><br />One way that a programmer can deal with overlapping execution of code and I/O is to write a multi-threaded application, so that some threads can do blocking system calls while others execute code.<br /><br />An alternative to non-blocking system calls are <strong>asynchronous system calls</strong>, which also return immediately, and allow the application to continue executing code.  Later, when the I/O finishes, the application is notified via some shared variable or a call-back routine or an interrupt.  The main difference is that with a non-blocking system call, the immediate return contains whatever data it was able to read immediately, whereas an asynchronous system call will eventually finish reading everything it was supposed to and return that data later.</div>

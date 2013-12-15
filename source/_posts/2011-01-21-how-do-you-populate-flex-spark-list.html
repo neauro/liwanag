@@ -1,0 +1,13 @@
+---
+layout: post
+title: "How do you populate a Flex Spark List with information from an array?"
+date: 2011-01-21
+comments: false
+categories:
+ - flex
+ - programming
+ - actionscript
+---
+
+<div class='post'>
+First, you have to wrap the array up in a Collection class, and then you connect that Collection class to the Flex component.  Here's my understanding of how the three of these things relate to each other in general:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_SdPKamJbrgg/TToSbSYmLXI/AAAAAAAAAE4/qklhGy7hiRs/s1600/nuubu%2Bflex%2Bcomps.png" imageanchor="1" style="margin-left:1em; margin-right:1em"><img border="0" height="230" width="320" src="http://4.bp.blogspot.com/_SdPKamJbrgg/TToSbSYmLXI/AAAAAAAAAE4/qklhGy7hiRs/s320/nuubu%2Bflex%2Bcomps.png" /></a></div><br />In general, Collections also give you more functions to sort or filter arrays.  Also, if you alter the ArrayCollection -- by adding or removing an item -- you'll affect the underlying array.<br /><br />In code, this is something that would (in general) work to link a List component to an array:<br /><br /><pre class="brush:cpp">&lt;?xml version="1.0" encoding="utf-8"?&gt;<br /><s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" <br />      xmlns:s="library://ns.adobe.com/flex/spark" <br />      xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600"><br /><br /> <fx:Script><br />  <![CDATA[<br />   import mx.collections.*;<br />   protected var array:Array;<br />   protected var arrayCollection:ArrayCollection = new ArrayCollection();<br /><br />   arrayCollection.source = array;<br />   list.dataProvider = arrayCollection;<br />  ]]><br /> </fx:Script><br /> <s:List x="642" y="183" id="list" height="200" width="100"></s:List><br /></s:Application><br /></pre><br /><br />Sources:<br /><a href="http://livedocs.adobe.com/flex/3/html/help.html?content=about_dataproviders_1.html">Adobe: Using Data Providers and Collections</a><br /><a href="http://livedocs.adobe.com/flex/3/html/help.html?content=dpcontrols_1.html#478370">Adobe: List control</a><br /><a href="http://blog.flexdevelopers.com/2009/03/flex-basics-arraycollection.html">Flex Developers & Development: ArrayCollection Basics</a><br /><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/collections/ArrayCollection.html">Adobe: ArrayCollection documentation</a></div>
