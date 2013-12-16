@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Story | liwanag]]></title>
+  <title><![CDATA[Category: story | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/story/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:19:56-08:00</updated>
+  <updated>2013-12-15T16:52:10-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -58,7 +58,7 @@ Right now I am totally in love with <a href="http://en.wikipedia.org/wiki/Juliet
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Rise of the Guardians: Wow, That Was Legit]]></title>
+    <title type="html"><![CDATA[Rise of the Guardians: Wow, That was Legit]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/12/30/rise-of-guardians-wow-that-was-legit/"/>
     <updated>2012-12-30T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/12/30/rise-of-guardians-wow-that-was-legit</id>

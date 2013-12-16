@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Baking | liwanag]]></title>
+  <title><![CDATA[Category: baking | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/baking/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:19:56-08:00</updated>
+  <updated>2013-12-15T16:52:10-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -25,7 +25,7 @@ Now that I finally have my mixer parts back from Molly (who had taken great care
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Peanut Butter Cupcakes With Honey]]></title>
+    <title type="html"><![CDATA[Peanut Butter Cupcakes with Honey]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/10/25/peanut-butter-cupcakes-with-honey/"/>
     <updated>2012-10-25T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/10/25/peanut-butter-cupcakes-with-honey</id>
@@ -36,7 +36,7 @@ I finally had the chance to make cupcakes the other day for the Halloween Sakura
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Bread and Pancakes]]></title>
+    <title type="html"><![CDATA[Bread and pancakes]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/10/07/bread-and-pancakes/"/>
     <updated>2012-10-07T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/10/07/bread-and-pancakes</id>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Travel | liwanag]]></title>
+  <title><![CDATA[Category: travel | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/travel/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:19:56-08:00</updated>
+  <updated>2013-12-15T16:52:10-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -25,7 +25,7 @@ When Andou and I <a href="http://nuubu.blogspot.com/2012/07/a-guide-to-some-tour
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[A Guide to Some Touristy Things of O'ahu]]></title>
+    <title type="html"><![CDATA[A guide to some touristy things of O'ahu]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/07/27/a-guide-to-some-touristy-things-of-oahu/"/>
     <updated>2012-07-27T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/07/27/a-guide-to-some-touristy-things-of-oahu</id>
@@ -58,7 +58,7 @@ After failing some months ago to see what was so special about it, I gave Tiny T
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Off the Leash]]></title>
+    <title type="html"><![CDATA[Off The Leash]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/03/21/off-leash/"/>
     <updated>2012-03-21T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/03/21/off-leash</id>

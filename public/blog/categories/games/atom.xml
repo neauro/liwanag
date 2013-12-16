@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Games | liwanag]]></title>
+  <title><![CDATA[Category: games | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/games/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:19:56-08:00</updated>
+  <updated>2013-12-15T16:52:10-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -53,7 +53,7 @@ Ha! :D Now they&#39;ve got you...<br /><br />What are you working on these days,
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Some HTML5/JavaScript Links]]></title>
+    <title type="html"><![CDATA[Some HTML5/JavaScript links]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/08/16/some-html5javascript-links/"/>
     <updated>2012-08-16T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/08/16/some-html5javascript-links</id>
@@ -64,7 +64,7 @@ Having done few HTML5 things, I've dug up some tutorials and interesting links.<
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[A Deluge of Recent-er News, and Some Free-to-play Chat]]></title>
+    <title type="html"><![CDATA[A deluge of recent-er news, and some free-to-play chat]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/06/22/deluge-of-recent-er-news-and-some-free/"/>
     <updated>2012-06-22T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/06/22/deluge-of-recent-er-news-and-some-free</id>
@@ -75,7 +75,7 @@ What have I been up to recently? Namely:<br /><br /><table align="center" cellpa
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Off the Leash]]></title>
+    <title type="html"><![CDATA[Off The Leash]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/03/21/off-leash/"/>
     <updated>2012-03-21T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/03/21/off-leash</id>

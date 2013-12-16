@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Flex | liwanag]]></title>
+  <title><![CDATA[Category: flex | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/flex/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:19:56-08:00</updated>
+  <updated>2013-12-15T16:52:10-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Incorporating ActionScript 3.0 Code With a Flex Project]]></title>
+    <title type="html"><![CDATA[Incorporating ActionScript 3.0 code with a Flex Project]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/01/30/incorporating-actionscript-30-code-with/"/>
     <updated>2011-01-30T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/01/30/incorporating-actionscript-30-code-with</id>
@@ -25,7 +25,7 @@ So my project of <a href="http://nuubu.blogspot.com/2010/12/problem-how-do-i-use
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[How Do You Make a Flex Application Send Data to a PHP Server?]]></title>
+    <title type="html"><![CDATA[How do you make a Flex application send data to a PHP server?]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/01/30/how-do-you-make-flex-application/"/>
     <updated>2011-01-30T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/01/30/how-do-you-make-flex-application</id>
@@ -36,7 +36,7 @@ How do you make a Flex project able to read/write files?<br />There are a couple
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[How Do You Populate a Flex Spark List With Information From an Array?]]></title>
+    <title type="html"><![CDATA[How do you populate a Flex Spark List with information from an array?]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/01/21/how-do-you-populate-flex-spark-list/"/>
     <updated>2011-01-21T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/01/21/how-do-you-populate-flex-spark-list</id>
@@ -47,7 +47,7 @@ First, you have to wrap the array up in a Collection class, and then you connect
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Flex/AS3: Errors With Stage and Event Listeners]]></title>
+    <title type="html"><![CDATA[Flex/AS3: Errors with Stage and event listeners]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/01/14/flexas3-errors-with-stage-and-event/"/>
     <updated>2011-01-14T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/01/14/flexas3-errors-with-stage-and-event</id>
@@ -70,7 +70,7 @@ Nice solution, it worked great for me.  I only needed to reference the stage at 
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Problem: How Do I Use Flex Components to Make UI for an ActionScript Project?]]></title>
+    <title type="html"><![CDATA[Problem: How do I use Flex components to make UI for an ActionScript project?]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2010/12/30/problem-how-do-i-use-flex-components-to/"/>
     <updated>2010-12-30T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2010/12/30/problem-how-do-i-use-flex-components-to</id>
