@@ -1,2 +1,22 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+$title-color:#7A7A7A;
+
+body>header {
+  background:#fff;
+  h1 {
+    a {
+      font-family:"Georgia";
+      color:$title-color;
+      &:hover,
+      &:visited {
+        color: $title-color;
+      }
+    }
+  }
+  h2 {
+    font-family: "PT Sans";
+    font-size: 11pt;
+    margin: 0px;
+  }
+}
