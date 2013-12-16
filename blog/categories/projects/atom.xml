@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Projects | My Octopress Blog]]></title>
+  <title><![CDATA[Category: Projects | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/projects/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:11:32-08:00</updated>
+  <updated>2013-12-15T16:29:15-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[nadine a.]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
