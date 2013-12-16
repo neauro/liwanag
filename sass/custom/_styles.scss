@@ -1,9 +1,10 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 $title-color:#7A7A7A;
+$body-gray:#f2f2f2;
 
 body>header {
-  background:#fff;
+  background:$body-gray;
   h1 {
     a {
       font-family:"Georgia";
@@ -20,3 +21,41 @@ body>header {
     margin: 0px;
   }
 }
+
+body>nav {
+  border: 0;
+  background: $body-gray;
+  border-top: 0;
+  border-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  a, 
+  a:hover,
+  a:visited {
+    text-shadow:none;
+    color:lighten($title-color,20%);
+    text-transform:lowercase; 
+  }
+}
+
+body {
+  max-width:940px;
+  margin:0;
+}
+html {
+  background:$body-gray;
+}
+
+body>div>div {
+
+  background:$body-gray;
+}
+/* needed? */
+/* get rid of collapsed sidebar style https://github.com/imathis/octopress/issues/342 */
+body > div > div { border-right-width: 0px;}
+.toggle-sidebar {
+  display:none;
+}
+
+

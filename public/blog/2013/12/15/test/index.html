@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Test - liwanag</title>
+  <title>Moving to Octopress From Blogger - liwanag</title>
   <meta name="author" content="nadine a.">
 
   
-  <meta name="description" content="test test
-">
+  <meta name="description" content="After eight years using Blogger, I&rsquo;ve finally decided to move away. One of the first reasons I first started using it in high school was &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -48,7 +47,7 @@
 
 </head>
 
-<body   >
+<body    class="collapse-sidebar sidebar-footer" >
   <header role="banner"><hgroup>
   <h1><a href="/">liwanag</a></h1>
   
@@ -70,7 +69,6 @@
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
 </ul>
 
@@ -82,7 +80,7 @@
   
   <header>
     
-      <h1 class="entry-title">Test</h1>
+      <h1 class="entry-title">Moving to Octopress From Blogger</h1>
     
     
       <p class="meta">
@@ -105,7 +103,45 @@
   </header>
 
 
-<div class="entry-content"><p>test test</p>
+<div class="entry-content"><p>After eight years using Blogger, I&rsquo;ve finally decided to move away. One of the first reasons I first started using it in high school was because Blogger was one of the only free hosting services I knew where I could also control the styling; but after several Blogger updates, and several years of telling myself I&rsquo;d eventually learn Blogger syntax well enough to style as I like, I&rsquo;ve given up. I have other things I&rsquo;d rather do than invest time parsing Blogger, and Octopres offers more built-in tools <em>and</em> flexibility: I can have <a href="http://octopress.org/docs/blogging/code/">nice code snippets</a> and have whatever extra scripts I&rsquo;d like without worrying they&rsquo;d interfere with Blogger esoterica. Additionally, after reading <a href="https://medium.com/p/c7cc156bc5d9">this article</a> I&rsquo;ve been a little more wary of data ownership, and with Octopress, I can host on Github where I know everything is mine.</p>
+
+<p>I&rsquo;ve also been eyeing <a href="https://ghost.org/">ghost</a> recently and though it looks awesome, I decided against it for now for several reasons. Currently, there&rsquo;s no easy way to import posts from Blogger, and I didn&rsquo;t want to deal with the extra overhead of figuring out where to host. A couple days ago I received access to Ghost&rsquo;s subscription hosting, but I don&rsquo;t want to commit to paying money when this blog is mostly for lolzy purposes.</p>
+
+<p>So, this is how I got my blog set up again:</p>
+
+<h2>Get Octopress Up and Running</h2>
+
+
+<p>To actually figure out how to get Octopress running, I referenced several tutorials:</p>
+
+<ol>
+<li><a href="http://octopress.org/docs/blogging/">Octopress: Blogging Basics</a></li>
+<li><a href="http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/">Webdesign Tuts+: Getting started with Octopress</a></li>
+<li><a href="http://blog.ialja.com/2013/03/22/goodbye-blogger-hello-octopress/">iAlja&#8217;s Blog: Goodbye Blogger, Hello Octopress!</a></li>
+</ol>
+
+
+
+
+<h2>Convert Old Blogger Posts to Be Octopress-Readable</h2>
+
+
+<p>
+From one of the previous links, I learned how to convert all my old posts to a form Octopress could work with. To do it, open up your old blog in blogger, then go to <code>Settings &gt; Other &gt; Export</code> to download your blog as an XML file. Then, I used <a href="https://gist.github.com/juniorz/1564581">this script</a> to run the conversion.</p>
+
+<p>I ran into some issues here, mostly with titles that contained quotation marks or tags that contained colons; whenever this happened I went through the XML and just removed the symbols that were causing things to explode.</p>
+
+<h2>Deploy to Github Pages</h2>
+
+
+<p>Finally, I followed <a href="http://octopress.org/docs/deploying/github/">these instructions</a> to deploy my blog for free to Github Pages. I still ran into some problems here — when I deployed, the online version of the blog on Github lacked all styles and scripts — this requried a change to the <code>root</code> in config.yml to be <code>/liwanag</code>, since on Github the blog is acccessed through the URL <a href="http://neauro.github.io/liwanag.">http://neauro.github.io/liwanag.</a> Making this change to root upsets the styles and scripts linking locally, though&hellip;so I&rsquo;ve still got to iron this out and find the magical tweaks that will allow one root value to work both locally and online. There&rsquo;s also the matter that my blog is big enough that running &ldquo;rake generate&rdquo; takes a minute or so to run&hellip;but I&rsquo;m willing to accept that for now.</p>
+
+<h2>That&#8217;s it!</h2>
+
+
+<p>As one final change, I&rsquo;ve changed the name of this blog. Previously, it was &ldquo;nuubu&rdquo; — a romanization of &ldquo;noob&rdquo; spelled in Japanese, chosen offhandedly because I originally intended this blog to be my corner for new things I&rsquo;ve learned. Because this might be a little appropriative, and because I don&rsquo;t feel particularly strongly about clinging to the identity of &ldquo;noob,&rdquo; I&rsquo;ve now named it &ldquo;liwanag,&rdquo; which means &ldquo;light&rdquo; in Tagalog. To be honest, I couldn&rsquo;t really think of another name at the time, and &ldquo;liwanag&rdquo; just sounds nice and makes me think of how blog-writing (that is, writing for an unknwon audience, or &ldquo;bringing things to light&rdquo;) helps me think more clearly.</p>
+
+<p><a href="http://nuubu.blogspot.com">nuubu</a> remains active, because many of the images linked to here point to where they&rsquo;ve been uploaded on Blogger, and because I don&rsquo;t want to lose what little bit of popularity those posts have accumulated (specifically, the Rosetta Stone error, and Alpacasso). But overall I&rsquo;m excited and happy for this bright new world. ✧ʕ̢̣̣̣̣̩̩̩̩·͡˔·ོɁ̡̣̣̣̣̩̩̩̩✧</p>
 </div>
 
 
@@ -130,6 +166,12 @@
 
 <time datetime="2013-12-15T15:17:07-08:00" pubdate data-updated="true">Dec 15<span>th</span>, 2013</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/blog/'>blog</a>, <a class='category' href='/blog/categories/development/'>development</a>
+  
+</span>
 
 
     </p>
@@ -161,7 +203,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/12/15/test/">Test</a>
+        <a href="/blog/2013/12/15/test/">Moving to Octopress From Blogger</a>
       </li>
     
       <li class="post">
@@ -203,7 +245,7 @@
 
         github.showRepos({
             user: 'neauro',
-            count: 0,
+            count: 3,
             skip_forks: true,
             target: '#gh_repos'
         });
@@ -211,9 +253,6 @@
   </script>
   <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
-
-
-
 
 
   
