@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: c | liwanag]]></title>
+  <title><![CDATA[Category: C | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/c/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:52:10-08:00</updated>
+  <updated>2013-12-15T16:19:56-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[[q&a] Standard Annotation Language (SAL)]]></title>
+    <title type="html"><![CDATA[[Q&a] Standard Annotation Language (SAL)]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/01/16/q-standard-annotation-language-sal/"/>
     <updated>2011-01-16T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/01/16/q-standard-annotation-language-sal</id>
@@ -25,7 +25,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[C: typedef, struct, extern]]></title>
+    <title type="html"><![CDATA[C: Typedef, Struct, Extern]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/01/09/c-typedef-struct/"/>
     <updated>2011-01-09T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/01/09/c-typedef-struct</id>
@@ -36,7 +36,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[[q&a] operating systems, C, etc.]]></title>
+    <title type="html"><![CDATA[[Q&a] Operating Systems, C, Etc.]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/01/06/q-operating-systems-etc/"/>
     <updated>2011-01-06T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/01/06/q-operating-systems-etc</id>

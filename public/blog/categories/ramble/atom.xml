@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: ramble | liwanag]]></title>
+  <title><![CDATA[Category: Ramble | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/ramble/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:52:10-08:00</updated>
+  <updated>2013-12-15T16:19:56-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[In which I am confused about Flash, Flex, ActionScript, etc.]]></title>
+    <title type="html"><![CDATA[In Which I Am Confused About Flash, Flex, ActionScript, Etc.]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2010/12/30/in-which-i-am-confused-about-flash-flex/"/>
     <updated>2010-12-30T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2010/12/30/in-which-i-am-confused-about-flash-flex</id>

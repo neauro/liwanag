@@ -9,7 +9,7 @@
   <meta name="author" content="nadine a.">
 
   
-  <meta name="description" content="OS StructuresCommand shells, I guess, make it so that users can actually speak directly to the OS and do something, rather than writing a program to &hellip;">
+  <meta name="description" content="This is a continuation of myself attempting to find out how to use Flex UI components with a previously created AS3 project.And it works fine, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,16 +19,17 @@
 
   
   <link rel="canonical" href="http://neauro.github.io/liwanag/blog/page/25">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/liwanag/favicon.png" rel="icon">
+  <link href="/liwanag/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="liwanag" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/liwanag/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/liwanag/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
   
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -45,20 +46,33 @@
 
 </head>
 
-<body   class="collapse-sidebar sidebar-footer" >
+<body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">liwanag</a></h1>
+  <h1><a href="/liwanag/">liwanag</a></h1>
+  
+    <h2>things i learn, things i like</h2>
+  
 </hgroup>
 
 </header>
-<div class="navi">
-<ul>
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/aboutme/">Author</a></li>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
 </ul>
-</div>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:neauro.github.io/liwanag" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/liwanag/">Blog</a></li>
+  <li><a href="/liwanag/blog/archives">Archives</a></li>
+</ul>
 
+</nav>
   <div id="main">
     <div id="content">
       <div class="blog-index">
@@ -69,44 +83,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/01/14/operating-systems-notes-chapter-2-3/">Operating Systems Notes [Chapter 2, 3]</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-14T00:00:00-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-<span class="sig">OS Structures</span><br /><strong>Command shells</strong>, I guess, make it so that users can actually speak directly to the OS and do something, rather than writing a program to speak with the OS.  I didn&#8217;t realize this.<br /><br />To make requests of the OS otherwise, you&#8217;d need to do a <strong>system call</strong>.  Types of requests that you might make the the OS would involve process control, and file and device manipulation (i.e. writing, reading from a mouse or file).<br /><br />Since operating systems are huge and all its parts tend to be interconnected, some better ways to program them involve using <strong>layers</strong> or <strong>microkernels</strong>.<br /><br />In the layered system, the OS structure is broken into layers, with the lowest being hardware and the highest being the user interface.  Layers can speak to adjacent layers, but not further.  The advantage is that you could be working on one layer at a time, and assume that if it works that you can move on to the next layer.  The issue with this is that you make the assumption that layers would not need to have communication across layers, when really sometimes layers <em>do</em> need to speak across other layers in real life, i.e. a user program needing to alter a file.<br /><br />In a microkernel system, all non-essential kernel programs are implemented as system and user-level programs, which means that the kernel is as small as it can possibly be to code it.  In general, this minimal kernel would provide only process and memory management along with a way to communicate.  The main function of the microkernel now is only to facilitate communication between the client program and other services, with messages.  Advantage is that it&#8217;s also easy to extend a microkernel&#8217;s functionality.  Disadvantage: poor performance if you need to make tons of system calls.<br /><br />In general, modularity is important.<br /><br /><br /><span class="sig">Processes</span><br />A process is a program in execution.  It consists of an address space, at least one thread, and a set of OS resources.  The address space is memory which contains code and data for the running program, as well as data relevant to the threads: registers, instruction pointer, stack and stack pointer.  A process also has a set of OS resources, such as open files, network connections, etc.  A process contains everything you need to run the program, or to restart it, if it gets interrupted.<br /><br />Processes may be independent or cooperating, depending on how they interact with each other.  <strong>Cooperating processes</strong> require some way to communicate with each other: either through shared memory (through shared variables), or message passing (through a pipe).  With shared memory, application programmers manage the communication, whereas with message-passing, the operating system has to take care of communication.  Shared memory and message passing aren&#8217;t mutually exclusive.<br /><br />You can also communicate across computers in a client-server system using sockets, remote procedure calls, or pipes.  A socket is an endpoint for communication, so a connection between two applications consists of two sockets, one for each.  <a href="http://nuubu.blogspot.com/2011/01/remote-procedure-calls-rpc.html">Remote procedure calls</a> are when an application calls another application&#8217;s function across a system.  Pipes come in two flavors: ordinary, which allows parent and child processes to communicate; and named, which allows two unrelated processes to speak with each other.</div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/01/14/flexas3-errors-with-stage-and-event/">Flex/AS3: Errors With Stage and Event Listeners</a></h1>
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/14/flexas3-errors-with-stage-and-event/">Flex/AS3: Errors With Stage and Event Listeners</a></h1>
     
     
       <p class="meta">
@@ -151,7 +128,7 @@ Nice solution, it worked great for me.  I only needed to reference the stage at 
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/01/09/c-typedef-struct/">C: Typedef, Struct, Extern</a></h1>
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/09/c-typedef-struct/">C: Typedef, Struct, Extern</a></h1>
     
     
       <p class="meta">
@@ -188,7 +165,7 @@ Nice solution, it worked great for me.  I only needed to reference the stage at 
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/01/06/q-operating-systems-etc/">[Q&a] Operating Systems, C, Etc.</a></h1>
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/06/q-operating-systems-etc/">[Q&a] Operating Systems, C, Etc.</a></h1>
     
     
       <p class="meta">
@@ -225,7 +202,7 @@ Nice solution, it worked great for me.  I only needed to reference the stage at 
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/01/06/operating-systems-notes-lecture-2/">Operating Systems Notes [Lecture 2]</a></h1>
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/06/operating-systems-notes-lecture-2/">Operating Systems Notes [Lecture 2]</a></h1>
     
     
       <p class="meta">
@@ -262,7 +239,7 @@ An operating system provides <a href="http://nuubu.blogspot.com/2011/01/operatin
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/01/06/operating-system-notes-chapter-1/">Operating Systems Notes [Chapter 1]</a></h1>
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/06/operating-system-notes-chapter-1/">Operating Systems Notes [Chapter 1]</a></h1>
     
     
       <p class="meta">
@@ -299,7 +276,7 @@ An operating system provides <a href="http://nuubu.blogspot.com/2011/01/operatin
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/01/06/avocado-tempura/">Avocado Tempura</a></h1>
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/06/avocado-tempura/">Avocado Tempura</a></h1>
     
     
       <p class="meta">
@@ -336,7 +313,7 @@ An operating system provides <a href="http://nuubu.blogspot.com/2011/01/operatin
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/01/04/remote-procedure-calls-rpc/">Remote Procedure Calls (RPC)</a></h1>
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/04/remote-procedure-calls-rpc/">Remote Procedure Calls (RPC)</a></h1>
     
     
       <p class="meta">
@@ -373,7 +350,7 @@ An operating system provides <a href="http://nuubu.blogspot.com/2011/01/operatin
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/01/04/intro-to-distributed-systems/">Intro to Distributed Systems</a></h1>
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/04/intro-to-distributed-systems/">Intro to Distributed Systems</a></h1>
     
     
       <p class="meta">
@@ -410,7 +387,7 @@ So, for now at least, I&#8217;m taking a class on distributed systems.  <a href=
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2011/01/04/green-tea-cupcakes/">Green Tea Cupcakes</a></h1>
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/04/green-tea-cupcakes/">Green Tea Cupcakes</a></h1>
     
     
       <p class="meta">
@@ -442,13 +419,50 @@ So, for now at least, I&#8217;m taking a class on distributed systems.  <a href=
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/04/developing-protocol-buffers/">Developing Protocol Buffers</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-04T00:00:00-08:00" pubdate data-updated="true">Jan 4<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+Again taken from <a href="http://code.google.com/apis/protocolbuffers/docs/overview.html">t3h googs</a>, who developed protocol buffers in the first place.<br /><br /><br /><span class="sig">What are protocol buffers?</span><br />Protocol buffers are a &#8220;flexible, efficient, automated mechanism for serializing structured data&#8221; &#8211; like XML but smaller, faster, simpler.  In this case, I assume that &#8220;serializing data&#8221; refers to converting some data structure into an object that can be stored and then unpacked again into another computer environment, i.e. storing a list into a file or something so it can be sent over a network and then opened up again and read by someone else.  So, a protocol buffer provides a way for data to be moved across multiple computers, which explains why it&#8217;s relevant to <a href="http://nuubu.blogspot.com/2011/01/intro-to-distributed-systems.html">distributed systems</a>.<br /><br /><br /><span class="sig">How do protocol buffers work?</span><br />You have data, and you want to serialize it so that you can trasmit it to another network or computer in a message.  To specify how you want to serialize it, you have to <strong>define protocol buffer message types in <code>.proto</code> files</strong>.  Each protocol buffer message is a small, logical record of information with a series of name-value pairs.  A <code>.proto</code> file which defines a message containing information about a Pokemon would be like this:<br /><br /><pre class="brush: js">message Pokemon {<br />    required string species = 1;<br />    required int32 id = 2;<br />    optional string trainer = 3;<br />    optional string nickname = 4;<br /><br />    enum Type1 {<br />        FIRE = 0;<br />        WATER = 1;<br />        GRASS = 2;<br />    }<br />}       <br /></pre><br />So in this case, I&#8217;ve got a message that serializes data about a Pokemon.  The message contains information about a Pokemon, its trainer, its id, its nickname, and its type.  For a message to be a well-formed Pokemon message, it must contain exactly one of <code>species</code> and <code>id</code>, but can have zero or exactly one of <code>trainer</code> or <code>nickname</code>.  The <code>enum</code> means that the Pokemon will have only one of a predefined list of values &#8211; that is, only one type out of the three given types.<br /><br />Once the messages have been defined, they&#8217;re run against whatever protocol buffer compiler you have for your application&#8217;s language, which will generate <strong>data access classes</strong>.  These will provide a way to access each field defined in the message.  So, if you were using C++, the data access class created would be called <code>Pokemon</code>, and you could then use this <code>Pokemon</code> class to populate, serialize, and retrieve <code>Pokemon</code> protocol buffer messages.  Then you send out the message like,<br /><br /><pre class="brush:cpp">Pokemon pokemon;<br />pokemon.set_species("Charmander");<br />pokemon.set_id(4);<br />pokemon.set_trainer("Red");<br />fstream output("file", ios::out | ios::binary);<br />pokemon.SerializeToOsteam(&amp;output);<br /></pre><br />and read it like,<br /><br /><pre class="brush:cpp">fstream input("file", ios::in | ios:: binary);<br />Pokemon pokemon;<br />pokemon.ParseFromIsteam(&amp;input);<br />cout &lt;&lt; "Pokemon: " &lt;&lt; pokemon.species() &lt;&lt; endl;<br />cout &lt;&lt; "Trainer: " &lt;&lt; pokemon.trainer() &lt;&lt; endl;<br /></pre><br /><span class="sig">What are the advantages of protocol buffers?</span><br /><ul><li>You can add new fields to message formats without breaking backwards-compatibility; old binaries will just ignore the new field.  So, extending the protocol is simple, and you can do it without having to worry about breaking existing code.</li><li>It&#8217;s simpler, smaller, faster, and less ambiguous than XML.  Plus, it generates the data access classes, which are easier to use in programs.  I imagine that XML takes so much space and is harder to parse because you have to close tags.  Also, to manipulate XML you&#8217;d have to do things like finding a node &#8220;species&#8221; and then accessing its inner text, instead of just retrieving &#8220;species&#8221; immediately.</li></ul><br />Sources:<br /><a href="http://code.google.com/apis/protocolbuffers/docs/overview.html">Google: Protocol Buffers Developer Guide</a><br /><a href="http://en.wikipedia.org/wiki/Serialize">Wikipedia: Serialization</a><br /><a href="http://code.google.com/apis/protocolbuffers/docs/proto.html#enum">Google: Protocol Buffers Language Guide</a></div>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
-      <a class="prev" href="/blog/page/26/">&larr; Older</a>
+      <a class="prev" href="/liwanag/blog/page/26/">&larr; Older</a>
     
-    <a href="/blog/archives">Blog Archives</a>
+    <a href="/liwanag/blog/archives">Blog Archives</a>
     
-    <a class="next" href="/blog/page/24/">Newer &rarr;</a>
+    <a class="next" href="/liwanag/blog/page/24/">Newer &rarr;</a>
     
   </div>
 </div>
@@ -459,23 +473,23 @@ So, for now at least, I&#8217;m taking a class on distributed systems.  <a href=
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/12/15/test/">test</a>
+        <a href="/liwanag/blog/2013/12/15/test/">Test</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/11/04/cultural-differences-across-pokemon-x-y/">Cultural Differences Across Pokemon X & Y Websites</a>
+        <a href="/liwanag/blog/2013/11/04/cultural-differences-across-pokemon-x-y/">Cultural Differences Across Pokemon X & Y Websites</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/10/14/gravity/">Gravity</a>
+        <a href="/liwanag/blog/2013/10/14/gravity/">Gravity</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/09/25/delicious-bookmarklet-ui/">Delicious Bookmarklet UI</a>
+        <a href="/liwanag/blog/2013/09/25/delicious-bookmarklet-ui/">Delicious Bookmarklet UI</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/09/16/upstream-color/">Upstream Color</a>
+        <a href="/liwanag/blog/2013/09/16/upstream-color/">Upstream Color</a>
       </li>
     
   </ul>
@@ -507,7 +521,7 @@ So, for now at least, I&#8217;m taking a class on distributed systems.  <a href=
         });
     });
   </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
+  <script src="/liwanag/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
@@ -538,7 +552,7 @@ So, for now at least, I&#8217;m taking a class on distributed systems.  <a href=
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: programming | liwanag]]></title>
+  <title><![CDATA[Category: Programming | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:52:10-08:00</updated>
+  <updated>2013-12-15T16:19:56-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[I've been doing some mobile web work recently.]]></title>
+    <title type="html"><![CDATA[I've Been Doing Some Mobile Web Work Recently.]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2013/07/25/ive-been-doing-some-mobile-web-work/"/>
     <updated>2013-07-25T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2013/07/25/ive-been-doing-some-mobile-web-work</id>
@@ -36,7 +36,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[JavaScript things]]></title>
+    <title type="html"><![CDATA[JavaScript Things]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/08/20/javascript-things/"/>
     <updated>2012-08-20T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/08/20/javascript-things</id>
@@ -47,7 +47,7 @@ I get a little wary sometimes writing posts like these, especially since it invo
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Some HTML5/JavaScript links]]></title>
+    <title type="html"><![CDATA[Some HTML5/JavaScript Links]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/08/16/some-html5javascript-links/"/>
     <updated>2012-08-16T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/08/16/some-html5javascript-links</id>
@@ -58,7 +58,7 @@ Having done few HTML5 things, I've dug up some tutorials and interesting links.<
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Adding a new model to a database in Rails]]></title>
+    <title type="html"><![CDATA[Adding a New Model to a Database in Rails]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/08/16/adding-new-model-to-database-in-rails/"/>
     <updated>2011-08-16T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/08/16/adding-new-model-to-database-in-rails</id>

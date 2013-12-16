@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: life | liwanag]]></title>
+  <title><![CDATA[Category: Life | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/life/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:52:10-08:00</updated>
+  <updated>2013-12-15T16:19:56-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[2013 is off to a busy busy busy busy start.]]></title>
+    <title type="html"><![CDATA[2013 Is Off to a Busy Busy Busy Busy Start.]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2013/02/26/2013-is-off-to-busy-busy-busy-busy-start/"/>
     <updated>2013-02-26T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2013/02/26/2013-is-off-to-busy-busy-busy-busy-start</id>

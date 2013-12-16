@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: flash | liwanag]]></title>
+  <title><![CDATA[Category: Flash | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/flash/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:52:10-08:00</updated>
+  <updated>2013-12-15T16:19:56-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -47,7 +47,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[I JUST WANT MY CITY TO BE A CITY THAT I WOULD WANT TO LIVE IN]]></title>
+    <title type="html"><![CDATA[I JUST WANT MY CITY to BE a CITY THAT I WOULD WANT to LIVE In]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/05/07/i-just-want-my-city-to-be-city-that-i/"/>
     <updated>2011-05-07T00:00:00-07:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/05/07/i-just-want-my-city-to-be-city-that-i</id>
@@ -58,7 +58,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Incorporating ActionScript 3.0 code with a Flex Project]]></title>
+    <title type="html"><![CDATA[Incorporating ActionScript 3.0 Code With a Flex Project]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/01/30/incorporating-actionscript-30-code-with/"/>
     <updated>2011-01-30T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/01/30/incorporating-actionscript-30-code-with</id>

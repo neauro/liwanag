@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: limned | liwanag]]></title>
+  <title><![CDATA[Category: Limned | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/limned/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:52:10-08:00</updated>
+  <updated>2013-12-15T16:19:56-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[#amwriting playlist]]></title>
+    <title type="html"><![CDATA[#amwriting Playlist]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/02/02/amwriting-playlist/"/>
     <updated>2012-02-02T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/02/02/amwriting-playlist</id>

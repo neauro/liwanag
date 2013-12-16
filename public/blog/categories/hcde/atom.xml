@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: hcde | liwanag]]></title>
+  <title><![CDATA[Category: Hcde | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/hcde/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:52:10-08:00</updated>
+  <updated>2013-12-15T16:19:56-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -36,7 +36,7 @@ I've been spending the past couple of weeks finishing up winter quarter. &nbsp;I
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Sometimes I wish academic papers were just collections of bullet points]]></title>
+    <title type="html"><![CDATA[Sometimes I Wish Academic Papers Were Just Collections of Bullet Points]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2012/02/05/sometimes-i-wish-academic-papers-were/"/>
     <updated>2012-02-05T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2012/02/05/sometimes-i-wish-academic-papers-were</id>
@@ -58,7 +58,7 @@ The field of Human-Computer Interaction started in the 1980s, borne of cognitive
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[No one is safe]]></title>
+    <title type="html"><![CDATA[No One Is Safe]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2011/11/21/no-one-is-safe/"/>
     <updated>2011-11-21T00:00:00-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2011/11/21/no-one-is-safe</id>
