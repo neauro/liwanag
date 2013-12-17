@@ -9,7 +9,7 @@
   <meta name="author" content="nadine a.">
 
   
-  <meta name="description" content="This is a continuation of myself attempting to find out how to use Flex UI components with a previously created AS3 project.And it works fine, &hellip;">
+  <meta name="description" content="What&#8217;s a semaphore?A semaphore is a procted variable or abstract data type. It relates to controlling access to some resource shared by &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,80 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/14/q-semaphore-mutex/">[Q&a] Semaphore, Mutex</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-14T00:00:00-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<span class="sig">What&#8217;s a semaphore?</span><br />A semaphore is a procted variable or abstract data type.  It relates to controlling access to some resource shared by processes running simultaneously.  They&#8217;re useful in preventing race conditions and deadlocks (though they don&#8217;t prevent them completely).<br /><br />Semaphores don&#8217;t keep track of which resources are free or who is using the resources; they only keep track of whether resources are free.  There are two types of semaphores: <b>counting semaphores</b> and <b>binary semaphores</b>.  Counting semaphores only keep track of how much of the resource is available at a given time (i.e. &#8220;all of my resources are being used up now&#8230;oh, someone came back, okay, now I have one free which you can use&#8221;).  Binary semaphores only keep track of whether a resource is being used or not, i.e. whether it is presently unavailable or available.<br /><br />Semaphores can&#8217;t prevent errors that occur if a process that has acquired a lock for the resource forgets to release the lock, etc.<br /><br />Also, errors can still happen if there are different resources managed by different semaphores and processes need to use more than one resource at a time.  An interesting thing: the <a href="http://en.wikipedia.org/wiki/Dining_philosophers_problem">dining philosophers problem</a>, which illustrates the problems with multiple processes sharing multiple resources.  Essentially, five philosophers are sitting at a table, either eating or thinking.  They each have a fork to their left and right, and there is a bowl of spaghetti in the middle of the table.  The philosophers need to serve themselves and eat spaghetti with both forks, but don&#8217;t speak to each other, so one may pick up a left fork and wait for his right fork to become free so that he may eat.  Meanwhile, the guy using his right fork may be waiting for his own other fork to become free.  And so on, and so forth.<br /><br />A semaphore in this case would be like a person who is aware of which forks are being used and which ones are available, so that when the philosophers try to eat, they have to consult him first, and he&#8217;ll tell them whether there are any forks to pick up which they can use.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/_SdPKamJbrgg/TS9WBJzlB7I/AAAAAAAAAEk/QEHATD_NLWw/s1600/proceed%2Bcat.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="283" src="http://3.bp.blogspot.com/_SdPKamJbrgg/TS9WBJzlB7I/AAAAAAAAAEk/QEHATD_NLWw/s320/proceed%2Bcat.jpg" width="300" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">semaphore cat is semaphore</td></tr></tbody></table><br />One problem with semaphores: <strong>busy waiting</strong>, which is what you need to put into processes that are waiting for other processes to finish executing their critical section.  (Or, what philosophers are doing when they are waiting for their neighbors to finish eating.) The busy waiting is basically just a loop waiting for the mutex to free up, and it wastes CPU that another process could be productive with.  A process that does this is a <strong>spinlock</strong>, because &#8220;the process &#8216;spins&#8217; while waiting for the lock.&#8221;  Essentially, if a program knows it needs a lock before it does the next bit of code, it sits in a while loop until the needed lock is freed up.<br /><br /><br /><span class="sig">What&#8217;s a mutex?</span><br />A mutex is essentially a binary semaphore, though mutex specifically describes an abstraction which prevents two processes from executing the same piece of code or accessing the same data at the same time.  Basically, it limits access to a single resource, to one &#8220;owner&#8221; who is at that time allowed to do whatever it wants with it before releasing the mutex so someone else can do something.<br /><br /><br /><span class="sig">What does IRQL mean?</span><br />IRQL stands for Interrupt Request Level, and has something to do with a process, and, given incoming interrupts, which one of those interrupts should be able to interrupt the running process, and which should not.  For instance, if you&#8217;re just quickly trying to modify a single variable, then you don&#8217;t want anything to interrupt you.<br /><br />Basically (I think), each thread has its own IRQL.  If the OS receives another thread to run which has a higher IRQL than that first thread, however, then it will pause the lower-IRQL thread to run the higher-IRQL code.  Weird deadlocks may occur in this case, however, if:<br /><ol><li>lower-IRQL thread is running, and acquires a lock</li><li>lower-IRQL thread is interrupted; higher-IRQL thread begins execution</li><li>higher-IRQL thread needs the lock that lower-IRQL thread has</li><li>higher-IRQL lock cannot continue without that lock</li><li>lower-IRQL thread cannot continue without higher-IRQL finishing execution</li></ol>So, what you would want to do in this case is make sure that a thread that obtains a lock cannot be interrupted.<br /><br />If it does so happen that you don&#8217;t want any interrupts to your thread, then make sure that the IRQL is raised to <code>APC_LEVEL</code>.  This level is pretty much only run when you&#8217;re using Fast Mutexes.  Part of the reason why Fast Mutexes are faster than normal Mutexes in the Windows kernel is because they deny APC interrupts.  APC interrupts originate from the processor, toward itself or another processor.<br /><br /><br /><span class="sig">How do I use a mutex in the Windows NT kernel?</span><br /><a href="http://www-user.tu-chemnitz.de/~heha/oney_wdm/ch04f.htm">Here&#8217;s</a> a start&#8230;<br /><br /><br />Sources:<br /><a href="http://en.wikipedia.org/wiki/Semaphore_%28programming%29">Wikipedia: Semaphore (programming)</a><br /><a href="http://us.generation-nt.com/answer/fast-mutexes-guarded-mutexes-help-27627542.html">GNT: Fast mutexes and guarded mutexes?</a><br /><a href="http://blogs.technet.com/b/askperf/archive/2009/07/21/the-basics-of-mutexes-and-spin-locks.aspx">TechNet: The Basics of Mutexes and Spin Locks</a><br /><a href="http://blogs.msdn.com/b/doronh/archive/2010/02/02/what-is-irql.aspx">MSDN: What is IRQL?</a><br /><a href="http://www.google.com/url?sa=t&amp;source=web&amp;cd=1&amp;ved=0CBMQFjAA&amp;url=http%3A%2F%2Fdownload.microsoft.com%2Fdownload%2Fe%2Fb%2Fa%2Feba1050f-a31d-436b-9281-92cdfeae4b45%2FLocks.doc&amp;rct=j&amp;q=ex%20initialize%20fast%20mutex%20example&amp;ei=yJEzTf7ILIGqsAP4rqiFBg&amp;usg=AFQjCNEWYt0oNPRzKd8sXHFsm_CgrHKZBw&amp;sig2=4FQ-QHdGlj_42VPdrKqIxA&amp;cad=rja">Windows Hardware and Driver Central: Locks, Deadlocks, and Synchronization</a><br /><em>Operating System Concepts (8th Edition)</em>, Silberschatz, Galvin and Gagne, ISBN 978-0-470-12872-5.</div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/14/operating-systems-notes-chapter-2-3/">Operating Systems Notes [Chapter 2, 3]</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-14T00:00:00-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<span class="sig">OS Structures</span><br /><strong>Command shells</strong>, I guess, make it so that users can actually speak directly to the OS and do something, rather than writing a program to speak with the OS.  I didn&#8217;t realize this.<br /><br />To make requests of the OS otherwise, you&#8217;d need to do a <strong>system call</strong>.  Types of requests that you might make the the OS would involve process control, and file and device manipulation (i.e. writing, reading from a mouse or file).<br /><br />Since operating systems are huge and all its parts tend to be interconnected, some better ways to program them involve using <strong>layers</strong> or <strong>microkernels</strong>.<br /><br />In the layered system, the OS structure is broken into layers, with the lowest being hardware and the highest being the user interface.  Layers can speak to adjacent layers, but not further.  The advantage is that you could be working on one layer at a time, and assume that if it works that you can move on to the next layer.  The issue with this is that you make the assumption that layers would not need to have communication across layers, when really sometimes layers <em>do</em> need to speak across other layers in real life, i.e. a user program needing to alter a file.<br /><br />In a microkernel system, all non-essential kernel programs are implemented as system and user-level programs, which means that the kernel is as small as it can possibly be to code it.  In general, this minimal kernel would provide only process and memory management along with a way to communicate.  The main function of the microkernel now is only to facilitate communication between the client program and other services, with messages.  Advantage is that it&#8217;s also easy to extend a microkernel&#8217;s functionality.  Disadvantage: poor performance if you need to make tons of system calls.<br /><br />In general, modularity is important.<br /><br /><br /><span class="sig">Processes</span><br />A process is a program in execution.  It consists of an address space, at least one thread, and a set of OS resources.  The address space is memory which contains code and data for the running program, as well as data relevant to the threads: registers, instruction pointer, stack and stack pointer.  A process also has a set of OS resources, such as open files, network connections, etc.  A process contains everything you need to run the program, or to restart it, if it gets interrupted.<br /><br />Processes may be independent or cooperating, depending on how they interact with each other.  <strong>Cooperating processes</strong> require some way to communicate with each other: either through shared memory (through shared variables), or message passing (through a pipe).  With shared memory, application programmers manage the communication, whereas with message-passing, the operating system has to take care of communication.  Shared memory and message passing aren&#8217;t mutually exclusive.<br /><br />You can also communicate across computers in a client-server system using sockets, remote procedure calls, or pipes.  A socket is an endpoint for communication, so a connection between two applications consists of two sockets, one for each.  <a href="http://nuubu.blogspot.com/2011/01/remote-procedure-calls-rpc.html">Remote procedure calls</a> are when an application calls another application&#8217;s function across a system.  Pipes come in two flavors: ordinary, which allows parent and child processes to communicate; and named, which allows two unrelated processes to speak with each other.</div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -382,80 +456,6 @@ So, for now at least, I&#8217;m taking a class on distributed systems.  <a href=
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/01/04/green-tea-cupcakes/">Green Tea Cupcakes</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-04T00:00:00-08:00" pubdate data-updated="true">Jan 4<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_SdPKamJbrgg/TSNlnVx-gAI/AAAAAAAAADA/BHAAV2qvsCc/s1600/DSC_0334_2.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TSNlnVx-gAI/AAAAAAAAADA/BHAAV2qvsCc/s640/DSC_0334_2.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">mmmmm (pic by heatherchan)</td></tr></tbody></table><br />Yesterday Heatherchan came over and we made green tea cupcakes! <span class="shh">Also personally known to me as my cupcakes of revenge.</span> <em>Matcha</em> (抹茶) or green tea is a lovely/bitter powdered substance.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_SdPKamJbrgg/TSNoBFDqhRI/AAAAAAAAADM/K56Ce_KrZjM/s1600/DSC_0326_2.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TSNoBFDqhRI/AAAAAAAAADM/K56Ce_KrZjM/s640/DSC_0326_2.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">i got this matcha from the internet somewhere<br />(pic by heatherchan)</td></tr></tbody></table><br />The cupcakes that I&#8217;ve made with green tea have the matcha flavor without too much bitterness.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_SdPKamJbrgg/TSNomdIq9hI/AAAAAAAAADQ/Uk9ctDoNDwg/s1600/DSC_0322_2.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TSNomdIq9hI/AAAAAAAAADQ/Uk9ctDoNDwg/s640/DSC_0322_2.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">warm, not-too-sweet revenge<br />(pic by heatherchan)</td></tr></tbody></table><br />I altered/took the recipe from Taken/altered from a recipe <a href="http://www.eatmedelicious.com/2007/07/matcha-green-tea-cupcakes.html">here</a>.  It makes a batch of about <strong>24 cupcakes</strong>:<br /><br /><br /><strong>Ingredients</strong><br /><ul><li>1 cup (2 sticks) unsalted butter, room temperature</li><li>1 3/4 cups sugar</li><li>2 large eggs</li><li>2 large egg whites</li><li>3 cups all-purpose flour</li><li>2 teaspoons baking powder</li><li>1/8 teaspoon salt</li><li>1 cup milk</li><li>2 tablespoons matcha</li></ul><br /><strong>Instructions</strong><br /><ol><li>Preheat oven to 350 degrees.</li><li>If you&#8217;ve got your roommate&#8217;s plastic-rubber cupcake things, you&#8217;re all set.  Else, prepare paper cupcake things by spraying with butter stuff&#8230;I guess.  (This recipe apparently also makes a cake, so you could butter up a 1/2 pan.)</li><li>Put the butter in a mixing bowl.  Grab some object from your roommate that looks like it could suffice for mixing.  (I use a cake icing spreader, but a spatula will probably work too.) Sit down on the ground, set the bowl between your thighs, and beat furiously.  You could think about that ex-whatever that you had <span class="shh"><strike>(but avoid thinking about how green tea is his favorite flavor&#8230;oh)</strike></span>.  At the end, the butter should be kind of whippy.</li><li>Add sugar.  Repeat the between-legs beating thing.  The mixture should be light and fluffy and could possibly be on your pants and the cuff of your shirt.</li><li>Beat two eggs with a fork and add it to the mixture.  Walk around the kitchen if you want.  Skip some songs on your iPod until you have something sort of fast-paced. (Last Alliance&#8217;s &#8220;Katahiza no Yogore&#8221; is good.) By now your arm might be getting kind of tired.  Don&#8217;t worry.  Just keep thinking about green tea cupcakes.</li><li>Separate the whites from another two eggs, beat the whites with a fork, and add, and mix until&#8230;everything&#8217;s all mixed together.  <strong>Optional:</strong> You might accidentally allow the yolk to bleed into the whites.  This is (probably) okay.  Add it anyway.  <strong>Extra note:</strong> The initial recipe actually called for two yolks, but I read it as &#8220;whites&#8221; somehow, so&#8230;well&#8230;by the time of this writing I&#8217;ve actually made this recipe a couple of times, and it worked both ways, pretty much. <strong>Also:</strong> Save the yolks for breakfast tomorrow!</li><li><strike>Whisk</strike> Grab another fork and another bowl and mix together flour, baking powder, and salt in a bowl.  Add to batter and mix to combine.</li><li>Mix matcha in with the milk. Add to the batter and mix until combine.</li><li>Pour into cupcake things, about 3/4 of the way up.</li><li>Bake for 22-25 minutes until a cake tester comes out clean.</li><li>Remove from baking pans and then put something on them.  My favorite topping is cream cheese icing, but this time around we only put more green tea, which had the unfortunate side-effect of making the cupcakes look ominously moldy.</li><li>Set on a plate and offer to your roommates.  Take a bunch of pictures, pour out some sake, and consume~</li></ol><br /><strong>Notes:</strong><br />The green tea flavor in the cake is pretty subtle, so if you like matcha then you could probably get away with adding more.  I&#8217;ve tried using a matcha/sugar composite that I found in a store somewhere, but also powdered matcha itself, and they were both pretty good.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_SdPKamJbrgg/TSNrH_qbC7I/AAAAAAAAADY/NvZNYUUkNfQ/s1600/green+tea+cut.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://4.bp.blogspot.com/_SdPKamJbrgg/TSNrH_qbC7I/AAAAAAAAADY/NvZNYUUkNfQ/s640/green+tea+cut.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">cupcake made with pure matcha</td></tr></tbody></table><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_SdPKamJbrgg/TSNrGLccecI/AAAAAAAAADU/_pdrQWkdIgI/s1600/green+tea.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TSNrGLccecI/AAAAAAAAADU/_pdrQWkdIgI/s640/green+tea.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">cupcake with matcha/sugar mix</td></tr></tbody></table></div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/01/04/developing-protocol-buffers/">Developing Protocol Buffers</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-04T00:00:00-08:00" pubdate data-updated="true">Jan 4<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-Again taken from <a href="http://code.google.com/apis/protocolbuffers/docs/overview.html">t3h googs</a>, who developed protocol buffers in the first place.<br /><br /><br /><span class="sig">What are protocol buffers?</span><br />Protocol buffers are a &#8220;flexible, efficient, automated mechanism for serializing structured data&#8221; &#8211; like XML but smaller, faster, simpler.  In this case, I assume that &#8220;serializing data&#8221; refers to converting some data structure into an object that can be stored and then unpacked again into another computer environment, i.e. storing a list into a file or something so it can be sent over a network and then opened up again and read by someone else.  So, a protocol buffer provides a way for data to be moved across multiple computers, which explains why it&#8217;s relevant to <a href="http://nuubu.blogspot.com/2011/01/intro-to-distributed-systems.html">distributed systems</a>.<br /><br /><br /><span class="sig">How do protocol buffers work?</span><br />You have data, and you want to serialize it so that you can trasmit it to another network or computer in a message.  To specify how you want to serialize it, you have to <strong>define protocol buffer message types in <code>.proto</code> files</strong>.  Each protocol buffer message is a small, logical record of information with a series of name-value pairs.  A <code>.proto</code> file which defines a message containing information about a Pokemon would be like this:<br /><br /><pre class="brush: js">message Pokemon {<br />    required string species = 1;<br />    required int32 id = 2;<br />    optional string trainer = 3;<br />    optional string nickname = 4;<br /><br />    enum Type1 {<br />        FIRE = 0;<br />        WATER = 1;<br />        GRASS = 2;<br />    }<br />}       <br /></pre><br />So in this case, I&#8217;ve got a message that serializes data about a Pokemon.  The message contains information about a Pokemon, its trainer, its id, its nickname, and its type.  For a message to be a well-formed Pokemon message, it must contain exactly one of <code>species</code> and <code>id</code>, but can have zero or exactly one of <code>trainer</code> or <code>nickname</code>.  The <code>enum</code> means that the Pokemon will have only one of a predefined list of values &#8211; that is, only one type out of the three given types.<br /><br />Once the messages have been defined, they&#8217;re run against whatever protocol buffer compiler you have for your application&#8217;s language, which will generate <strong>data access classes</strong>.  These will provide a way to access each field defined in the message.  So, if you were using C++, the data access class created would be called <code>Pokemon</code>, and you could then use this <code>Pokemon</code> class to populate, serialize, and retrieve <code>Pokemon</code> protocol buffer messages.  Then you send out the message like,<br /><br /><pre class="brush:cpp">Pokemon pokemon;<br />pokemon.set_species("Charmander");<br />pokemon.set_id(4);<br />pokemon.set_trainer("Red");<br />fstream output("file", ios::out | ios::binary);<br />pokemon.SerializeToOsteam(&amp;output);<br /></pre><br />and read it like,<br /><br /><pre class="brush:cpp">fstream input("file", ios::in | ios:: binary);<br />Pokemon pokemon;<br />pokemon.ParseFromIsteam(&amp;input);<br />cout &lt;&lt; "Pokemon: " &lt;&lt; pokemon.species() &lt;&lt; endl;<br />cout &lt;&lt; "Trainer: " &lt;&lt; pokemon.trainer() &lt;&lt; endl;<br /></pre><br /><span class="sig">What are the advantages of protocol buffers?</span><br /><ul><li>You can add new fields to message formats without breaking backwards-compatibility; old binaries will just ignore the new field.  So, extending the protocol is simple, and you can do it without having to worry about breaking existing code.</li><li>It&#8217;s simpler, smaller, faster, and less ambiguous than XML.  Plus, it generates the data access classes, which are easier to use in programs.  I imagine that XML takes so much space and is harder to parse because you have to close tags.  Also, to manipulate XML you&#8217;d have to do things like finding a node &#8220;species&#8221; and then accessing its inner text, instead of just retrieving &#8220;species&#8221; immediately.</li></ul><br />Sources:<br /><a href="http://code.google.com/apis/protocolbuffers/docs/overview.html">Google: Protocol Buffers Developer Guide</a><br /><a href="http://en.wikipedia.org/wiki/Serialize">Wikipedia: Serialization</a><br /><a href="http://code.google.com/apis/protocolbuffers/docs/proto.html#enum">Google: Protocol Buffers Language Guide</a></div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/26/">&larr; Older</a>
@@ -473,6 +473,14 @@ Again taken from <a href="http://code.google.com/apis/protocolbuffers/docs/overv
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/12/16/fire/">Fire, Kristin Cashore</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/16/graceling/">Graceling, Kristin Cashore</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/12/15/test/">Moving to Octopress From Blogger</a>
       </li>
     
@@ -482,14 +490,6 @@ Again taken from <a href="http://code.google.com/apis/protocolbuffers/docs/overv
     
       <li class="post">
         <a href="/blog/2013/10/14/gravity/">Gravity</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/09/25/delicious-bookmarklet-ui/">Delicious Bookmarklet UI</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/09/16/upstream-color/">Upstream Color</a>
       </li>
     
   </ul>

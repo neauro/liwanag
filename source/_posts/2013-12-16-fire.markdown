@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Fire, Kristin Cashore"
+date: 2013-12-16 12:36:17 -0800
+comments: true
+categories: 
+ - book review
+---
+
+<img class="book-cover" src="{{ root_url}}/images/cover_fire.jpg" alt="Fire cover"/>
+<p class="caption">(<A href="https://www.goodreads.com/book/show/6137154-fire?from_search=true">via</a>)</p>
+
+<blockquote><p>It is not a peaceful time in the Dells. The young King Nash clings to his throne while rebel lords in the north and south build armies to unseat him. The mountains and forests are filled with spies and thieves and lawless men.</p>
+
+<p>This is where Fire lives. With a wild, irresistible appearance and hair the color of flame, Fire is the last remaining human monster. Equally hated and adored, she had the unique ability to control minds, but she guards her power, unwilling to steal the secrets of innocent people. Especially when she has so many of her own.</p>
+
+<p>Then Prince Brigan comes to bring her to King City, The royal family needs her help to uncover the plot against the king. Far away from home, Fire begins to realize there's more to her power than she ever dreamed. Her power could save the kingdom.</p>
+
+<p>If only she weren't afraid of becoming the monster her father was.</p></blockquote>
+
+[spoilers below]
+
+<em>Fire</em> was a fun read. I liked the strangeness of monsters and their many colors; I liked all the politics, the twist that Fire had killed her own father and the general confusion of royal bloodlines. Like in <em>Graceling</em>, sexual relationships aren't a huge deal. While reading, I hated Archer for being a posessive male character that we are meant to sympathize with; but thinking back, I don't think that his possessive behavior was ever excused by the story...except, I guess, for Fire's musing about how her innate monster beauty may have compelled Archer to become as horribly possessive as he was. This is uncomfortable because of its similarity to modern "victim-blaming" narratives, even if <em>Fire</em> explores Fire's strange ability to compell all humans when they look at her, not just men. It's also nice to see a romance not totally typical of YA: a non-virgin woman who falls in love with a man who already has a child.
