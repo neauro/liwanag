@@ -17,11 +17,16 @@ body>header {
   }
   h2 {
     font-family: "PT Sans";
-    font-size: 11pt;
+    font-size: 13pt;
     margin: 0px;
   }
 }
 
+body>footer {
+  background:0;
+  border-top:0;
+  text-transform:lowercase;
+}
 body>nav {
   border: 0;
   background: $body-gray;
@@ -30,6 +35,9 @@ body>nav {
   padding-top: 0;
   padding-bottom: 0;
   margin: 0;
+  body>nav li+li {
+    border-left:0;
+  }
   a, 
   a:hover,
   a:visited {
@@ -71,8 +79,20 @@ body > div > div { border-right-width: 0px;}
   background:none;
 }
 
-article h2 {
-  background:none;
+article {
+  header {
+    background:none;
+  }
+  h1 {
+    color:#222;
+  }
+  h2, h3, h4 {
+    font-weight:normal;
+  }
+  h2 {
+    margin-bottom:1rem;
+    background:none;
+  }
 }
 
 .book-cover {
@@ -88,4 +108,20 @@ article h2 {
 }
 article header p.meta {
   position:static;
+}
+p, article blockquote, ul, ol {
+  line-height:21pt;
+}
+
+aside.sidebar {
+  section h1 {
+    margin-bottom:0.3rem;
+  }
+  ul {
+    margin-top: 0.5rem;
+  }
+  li {
+  border-bottom:0;
+  padding:0;
+  }
 }
