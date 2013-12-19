@@ -41,7 +41,7 @@ body>nav {
 
 body {
   max-width:850px;
-  margin:0;
+  margin:0px auto;
 }
 html {
   background:$body-gray;
@@ -85,4 +85,7 @@ article h2 {
   font-size:90%;
   margin-top:-1.5rem;
   margin-bottom:1rem; 
+}
+article header p.meta {
+  position:static;
 }

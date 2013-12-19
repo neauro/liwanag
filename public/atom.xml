@@ -4,7 +4,7 @@
   <title><![CDATA[liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-16T21:13:10-08:00</updated>
+  <updated>2013-12-18T19:45:54-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -12,6 +12,64 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Asset_pipeline]]></title>
+    <link href="http://neauro.github.io/liwanag/blog/2013/12/18/asset-pipeline/"/>
+    <updated>2013-12-18T11:27:14-08:00</updated>
+    <id>http://neauro.github.io/liwanag/blog/2013/12/18/asset-pipeline</id>
+    <content type="html"><![CDATA[<p>Sources:
++ <a href="http://guides.rubyonrails.org/asset_pipeline.html">http://guides.rubyonrails.org/asset_pipeline.html</a>
++ <a href="http://coderberry.me/blog/2012/04/24/asset-pipeline-for-dummies/">http://coderberry.me/blog/2012/04/24/asset-pipeline-for-dummies/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Headers]]></title>
+    <link href="http://neauro.github.io/liwanag/blog/2013/12/18/headers/"/>
+    <updated>2013-12-18T09:49:17-08:00</updated>
+    <id>http://neauro.github.io/liwanag/blog/2013/12/18/headers</id>
+    <content type="html"><![CDATA[<p>Sources:</p>
+
+<ul>
+<li>http://net.tutsplus.com/tutorials/other/http-headers-for-dummies/</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Frozen]]></title>
+    <link href="http://neauro.github.io/liwanag/blog/2013/12/18/frozen/"/>
+    <updated>2013-12-18T09:24:39-08:00</updated>
+    <id>http://neauro.github.io/liwanag/blog/2013/12/18/frozen</id>
+    <content type="html"><![CDATA[<p>A and I went to see <em>Frozen</em>, a movie I had very little interest in seeing until I realized Idina Menzel was voicing a main character. There&rsquo;s been a lot said already for the lack of diversity amongst the characters (regarding both <a href="">race</a>, as well as <a href="http://sapphicdalliances.tumblr.com/post/68881922280">the representation of women</a>) and my disappointment about these issues in <em>Frozen</em> has exhausted me utterly. I don&rsquo;t want to talk about it. Instead, I want to note aspects of the overall story that A and I discussed after the movie.</p>
+
+<p>[ spoilers ahead ]</p>
+
+<h2><em>Frozen</em> is about Elsa and Anna</h2>
+
+<p>This is great. From the trailers, there was almost no indication that the story&rsquo;s main conflict involved the relationship between two women. Anna struggles somewhat with the men in the story, and though she desires &ldquo;true love&rdquo; at its beginning, lovers never usurp her existing relationship with her sister. At the end, Anna even plays the main role in saving both Elsa and herself, through the power of ~<em>True Love</em>~! Hurray!</p>
+
+<h2>But what does <em>Frozen</em> do with &ldquo;True Love&rdquo;?</h2>
+
+<p>&ldquo;True Love&rdquo; seems to be Frozen&rsquo;s theme. Elsa&rsquo;s version of True Love is &ldquo;Don&rsquo;t harm those who you love,&rdquo; and requires her to isolate herself as a precaution to harming her sister; the fact that doing so makes both her and Anna unhappy are not as important as the possiblity that Anna may be harmed. By the end of the movie, Elsa realizes (somewhat abruptly) that her version of True Love is flawed, presumably because her feelings of fear were controlling her ability to love.</p>
+
+<p>In contrast, Anna&rsquo;s version of true love — which could be described as &ldquo;Always believe in someone that you love&rdquo; — has absolutely no fear involved. Despite everyone&rsquo;s warnings and panic, Anna continues to believe the best of Elsa, even when Elsa actually <em>does</em> harm her. Ultimately, her love for Elsa allows Elsa to accept herself, somewhat abruptly, at the end of the movie, as if the word &ldquo;love&rdquo; itself were inherently magical.</p>
+
+<p>I like how Elsa and Anna&rsquo;s interpretations of love are contrasted in this movie, but one thing I don&rsquo;t like is that, though Elsa&rsquo;s view of love evolves through the movie, Anna&rsquo;s remains static. From the beginning Anna is the same &ldquo;open to loving people!&rdquo; character that she is shown to be from the beginning, despite events that show people can harm her: Elsa ostracizes her, Love Interest #1 (Hanns) betrays her. That these events don&rsquo;t change her outlook on life feels like a waste; rather than actively choosing to love people, for Anna it&rsquo;s just a given, and this takes away from her complexity and agency as a character.</p>
+
+<p>What&rsquo;s worse is that the events of the movie are put into motion by Elsa&rsquo;s fear that she might kill Anna, and by the end of the movie, it&rsquo;s revealed that there was no way that Elsa could have ever killed Anna. The entire time, Anna had a magical understanding of &ldquo;True Love&rdquo; that could have <em>always</em> saved her from Elsa&rsquo;s power, which makes the entire plot somewhat of a non-issue.</p>
+
+<h2>And what did the other characters do?</h2>
+
+<p>Given that the movie&rsquo;s main conflict is Elsa and Anna&rsquo;s relationship, and true love, the other major characters — Kristoff, Olaf, and Hanns — all felt thrown in, though I think that they all had potential to serve the &ldquo;true love&rdquo; theme with a little more focus. For example, why is it important that Kristoff is a seller of ice, and what was the point of the opening scene that is dedicated to showing his failure at selling ice? You learn later that Kristoff was adopted by the stone trolls, and distrusts other humans; so if Kristoff was actually homeless at the beginning of the movie, why did he have a sled and ice-harvesting tools at his disposal? (Or was he not homeless? Are we just supposed to be okay with his abduction?) Kristoff&rsquo;s distrust of humans was also played up, without explanation of how it came to be, as if he had dropped out of the sky as a perfectly-formed gruff male love interest. Treated differently, Kristoff could have been a great catalyst for Anna&rsquo;s development: he teaches her about the horrible things humans do; she fights it (&ldquo;No way, humans are inherently Lawful Good!&rdquo;); Kristoff points out that her sister is laying waste to their kingdom and also has been pretty mean; Anna cracks a bit; and then, right on cue, she is betrayed again by Hanns. <em>omg will she now become totally jaded? or will she still choose looove?</em></p>
+
+<p>Olaf was a character I grimaced at in the trailers for the movie and ended up being pleasantly entertained by. Even though his main purpose is comedic entertainment, it would have been nice to see more about how he affects Anna and Elsa&rsquo;s relationship. He seems to be their precious childhood snowman, and, to be honest, is the only indication Anna has that Elsa doesn&rsquo;t actually despite her</p>
+
+<p>[[ oh look, i&rsquo;m impaled ]]</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fire, Kristin Cashore]]></title>
@@ -36,7 +94,9 @@
 
 <p>[spoilers below]</p>
 
-<p><em>Fire</em> was a fun read. I liked the strangeness of monsters and their many colors; I liked all the politics, the twist that Fire had killed her own father and the general confusion of royal bloodlines. Like in <em>Graceling</em>, sexual relationships aren&rsquo;t a huge deal. While reading, I hated Archer for being a posessive male character that we are meant to sympathize with; but thinking back, I don&rsquo;t think that his possessive behavior was ever excused by the story&hellip;except, I guess, for Fire&rsquo;s musing about how her innate monster beauty may have compelled Archer to become as horribly possessive as he was. This is uncomfortable because of its similarity to modern &ldquo;victim-blaming&rdquo; narratives, even if <em>Fire</em> explores Fire&rsquo;s strange ability to compell all humans when they look at her, not just men. It&rsquo;s also nice to see a romance not totally typical of YA: a non-virgin woman who falls in love with a man who already has a child.</p>
+<p><em>Fire</em> was alright. I liked the strangeness of monsters and their many colors; I liked all the politics, the twist that Fire had killed her own father and the general confusion of royal bloodlines. As in <em><a href="http://neauro.github.io/liwanag/blog/2013-12-16-graceling/"/>Graceling</a></em>, the non-drama of sexual relationships is a relief. While reading, I hated Archer for being a posessive male character that we are meant to sympathize with; but thinking back, I don&rsquo;t think that his possessive behavior was ever excused by the story&hellip;except, I guess, for Fire&rsquo;s musing about how her innate monster beauty may have compelled Archer to become as horribly possessive as he was. This is uncomfortable because of its similarity to modern &ldquo;victim-blaming&rdquo; narratives, even if <em>Fire</em> explores Fire&rsquo;s strange ability to compel all humans when they look at her, not just men. It&rsquo;s also nice to see a romance not totally typical of YA: a non-virgin woman who falls in love with a man who already has a child.</p>
+
+<p>One downside is that the voice of Fire herself doesn&rsquo;t differ too much from Katsa&rsquo;s in <em>Graceling</em>. Fire feels like a parallel universe Katsa, whose story ultimately isn&rsquo;t as interesting. One of the main reasons I was so attracted to the <em>Graceling</em> was — well — the Graces — and since the Dell doesn&rsquo;t have them, and since Katsa&rsquo;s world doesn&rsquo;t have monsters, this book feels like it&rsquo;s set in an entirely different universe. There&rsquo;s none of the excitement of familiarity, the fun of adding to the breadth and meaning of <em>Graceling</em>&rsquo;s world. The one connection between <em>Graceling</em> and <em>Fire</em> is Leck, but we barely know him from the first book, and I&rsquo;m not interested in any mysteries about how he came to be, since by the end of <em>Graceling</em> he&rsquo;s already dead. Leck&rsquo;s descent into sadism in <em>Fire</em> isn&rsquo;t particularly complex, either; he is shown to be a sociopath from the very beginning, and all interactions that he has with Fire feel tacked on and separate from Fire&rsquo;s own character growth. Had there been more of a commonality with <em>Graceling</em>, <em>Fire</em> would have been more of a hit with me.</p>
 ]]></content>
   </entry>
   
@@ -289,36 +349,6 @@ That, and Palimpsest :)</div>
 Very evocative, I like it! :D Were you inspired by David Abram&#39;s work (The Spell of the Sensuous, Becoming Animal) at all?</div>
 </div>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Night Circus, Erin Morgenstern]]></title>
-    <link href="http://neauro.github.io/liwanag/blog/2013/05/21/the-night-circus-erin-morgenstern/"/>
-    <updated>2013-05-21T00:00:00-07:00</updated>
-    <id>http://neauro.github.io/liwanag/blog/2013/05/21/the-night-circus-erin-morgenstern</id>
-    <content type="html"><![CDATA[<div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-_CJ7P9mxIHU/UZwTXPjvbkI/AAAAAAAADoA/zsnV3Nc7omw/s1600/TheNightCircus.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://2.bp.blogspot.com/-_CJ7P9mxIHU/UZwTXPjvbkI/AAAAAAAADoA/zsnV3Nc7omw/s1600/TheNightCircus.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">(<a href="http://en.wikipedia.org/wiki/The_Night_Circus">source</a>)</td></tr></tbody></table><blockquote><em>The circus arrives without warning. No announcements precede it. It is simply there, when yesterday it was not. Within the black-and-white striped canvas tents is an utterly unique experience full of breathtaking amazements. It is called </em>Le Cirque des Rêves<em>, and it is only open at night. <br /><br />But behind the scenes, a fierce competition is underway—a duel between two young magicians, Celia and Marco, who have been trained since childhood expressly for this purpose by their mercurial instructors. Unbeknownst to them, this is a game in which only one can be left standing, and the circus is but the stage for a remarkable battle of imagination and will. Despite themselves, however, Celia and Marco tumble headfirst into love—a deep, magical love that makes the lights flicker and the room grow warm whenever they so much as brush hands. <br /><br />True love or not, the game must play out, and the fates of everyone involved, from the cast of extraordinary circus per­formers to the patrons, hang in the balance, suspended as precariously as the daring acrobats overhead. <br /><br />Written in rich, seductive prose, this spell-casting novel is a feast for the senses and the heart.</em></blockquote><br />So <i>The Night Circus</i>&nbsp;was fantastic. Morgenstern&#8217;s writing set such an atmosphere that wherever I read it I felt the black-and-white-striped tents rising all around me, the glow of closely-hanging lights.<br /><br />I&#8217;ve taken recently to thinking about books as made of three pillars — world-building, plot, and actual execution. <i>The Night Circus</i> was beautifully written, and set in a beautiful world. I felt the plot itself was a little lacking — the two main characters fall into love perhaps too easily — the Epic Battletimez seemingly promised by the cover description never really happen.<br /><br />But honestly, for me this was just fine. For a while <i>The Night Circus</i> cracked my head open and took me somewhere else, and it did a wonderful job of doing it.<br /><br />The design of the book was also gorgeous. Monochrome sunbursts! Little glowing flecks! It fit the mood of the book so well, and was sooo pretty.</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Prodigy, Marie Lu]]></title>
-    <link href="http://neauro.github.io/liwanag/blog/2013/05/21/prodigy-marie-lu/"/>
-    <updated>2013-05-21T00:00:00-07:00</updated>
-    <id>http://neauro.github.io/liwanag/blog/2013/05/21/prodigy-marie-lu</id>
-    <content type="html"><![CDATA[<div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/--io2SgTsm1g/UZwVgk3tjJI/AAAAAAAADog/i5xYKy3Gi-U/s1600/13414446.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://2.bp.blogspot.com/--io2SgTsm1g/UZwVgk3tjJI/AAAAAAAADog/i5xYKy3Gi-U/s320/13414446.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">(<a href="http://www.goodreads.com/book/show/13414446-prodigy">source</a>)</td></tr></tbody></table><blockquote><em>June and Day arrive in Vegas just as the unthinkable happens: the Elector Primo dies, and his son Anden takes his place. With the Republic edging closer to chaos, the two join a group of Patriot rebels eager to help Day rescue his brother and offer passage to the Colonies. They have only one request—June and Day must assassinate the new Elector.<br /><br />It’s their chance to change the nation, to give voice to a people silenced for too long. <br /><br />But as June realizes this Elector is nothing like his father, she’s haunted by the choice ahead. What if Anden is a new beginning? What if revolution must be more than loss and vengeance, anger and blood—what if the Patriots are wrong?<br /><br />In this highly-anticipated sequel, Lu delivers a breathtaking thriller with high stakes and cinematic action.</em></blockquote><br />[spoilers ahead] <br /><br />I finished <em>Prodigy</em> this past weekend, and enjoyed it. June and Day had more distinctive voices, and some of my confusions I had with the <a href="http://nuubu.blogspot.com/2012/10/legend-marie-lu.html">previous book</a> were addressed more clearly here. In particular, the history of the Republic and the Colonies and how they came to be in conflict with each other is finally revealed, and probably for the best in this book, rather than in <em>Legend</em>; I can&#8217;t imagine the needless bulk that would have been in the first book had all that exposition been thrown in there.<br /><br /><em>Prodigy</em>&#8217;s subversions of cliche were fun; just when you think June has no idea she&#8217;s being tricked, she reveals that she knows even more than you do about what&#8217;s going on, with a cleverness that isn&#8217;t eye-rolling. I thought that June and Day&#8217;s role in the rebellion as Beloved of the People was a little boring — <em>Mockingjay</em> was enough exploration of the &#8220;war celebrity&#8221; for me — though June and Day&#8217;s story, despite everything, is a little brighter than Katniss&#8217; battle angst.<br /><br />Overall, the motivations for each character were pretty well-done in <em>Prodigy</em>. I wish there had been a little more pattern to it — for example, at some point Tess asks Day, &#8220;If it were between me and June, who would you save?&#8221; Day answers, and though Day does later make a choice between June and the rebellion, this question made me expect and want a high-stress situation where Day&#8217;s true feelings between Tess and June were pressured out of him.<br /><br /><em>Prodigy</em>! More cheesecake to enjoy. I like the direction it took with making neither side of the Republic/Colonies war ideal — in fact, both sides were pretty repugnant — and I&#8217;m excited to see where the last book will go.</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Palimpsest, Catherynne M. Valente]]></title>
-    <link href="http://neauro.github.io/liwanag/blog/2013/05/21/palimpsest-catherynne-m-valente/"/>
-    <updated>2013-05-21T00:00:00-07:00</updated>
-    <id>http://neauro.github.io/liwanag/blog/2013/05/21/palimpsest-catherynne-m-valente</id>
-    <content type="html"><![CDATA[<div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-XKsVI6B0d_s/UZwWESW2vTI/AAAAAAAADoo/or_FCtkDhQI/s1600/513FhNJwgrL.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://3.bp.blogspot.com/-XKsVI6B0d_s/UZwWESW2vTI/AAAAAAAADoo/or_FCtkDhQI/s320/513FhNJwgrL.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">(<a href="http://www.amazon.com/Palimpsest-Catherynne-Valente/dp/0553385763">source</a>)</td></tr></tbody></table><blockquote><i>In the Cities of Coin and Spice and In the Night Garden introduced readers to the unique and intoxicating imagination of Catherynne M. Valente. Now she weaves a lyrically erotic spell of a place where the grotesque and the beautiful reside and the passport to our most secret fantasies begins with a stranger’s kiss.… <br /><br />Between life and death, dreaming and waking, at the train stop beyond the end of the world is the city of Palimpsest. To get there is a miracle, a mystery, a gift, and a curse—a voyage permitted only to those who’ve always believed there’s another world than the one that meets the eye. Those fated to make the passage are marked forever by a map of that wondrous city tattooed on their flesh after a single orgasmic night. To this kingdom of ghost trains, lion-priests, living kanji, and cream-filled canals come four travelers: Oleg, a New York locksmith; the beekeeper November; Ludovico, a binder of rare books; and a young Japanese woman named Sei. They’ve each lost something important—a wife, a lover, a sister, a direction in life—and what they will find in Palimpsest is more than they could ever imagine.</i></blockquote><br />Being terribly hungry for more of Valente&#8217;s writing after reading <a href="http://nuubu.blogspot.com/2013/05/deathless-catherynne-valente.html"><em>Deathless</em></a>, I chose <em>Palimpsest</em> to read next due to its focus on a city, a subject I have a weakness for ever since reading China Miéville.<br /><br />All I really have to say about this book is <em>wow</em>. My feedback for it is similar to anything I had to babble about <em>Deathless</em> — excellent, poetic, gorgeous. Like <em>Deathless</em>, though the plot was a little flimsy, I didn&#8217;t mind that much; whereas <em>Deathless</em> was suspended in a fairytale haze that made everything easy to digest, <em>Palimpsest</em> had all the (appropriate) tones of a dreamland, in which things don&#8217;t make utter sense but are all imbued with truth and urgency.<br /><br />Something else I appreciated about this book in particular was the character Amaya Sei. Though I&#8217;m not Japanese myself, I felt that the treatment of Sei as a character was great; she didn&#8217;t sink into stereotypes, she stood up on her own, and overall she was allowed to be a <em>person</em> rather than a caricature. It was also refreshing to read a story with such a variety of characters, diverse unabashedly and without slowing down to explain things: this person is mixed, this person is gay, and so on.<br /><br /><em>Palimpsest</em> was fantastic.</div>
 ]]></content>
   </entry>
   
