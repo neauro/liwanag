@@ -9,6 +9,8 @@ Well! It's over.
 
 I download *Allegiant* from the Seattle Public Library's eBook collection as soon as it became available, and read it over the course of a couple days, despite the looming presence of NaNoWriMo (which I've been keeping track of in <a href="http://neauro.tumblr.com/tagged/nnwm2013">my Tumblr</a>).
 
+[spoilers ahead]
+
 To be honest, I don't have much to say about it. The writing wasn't that interesting. There are a smattering of issues that other reviews have already discussed — such as how Tris and Four's voices were barely distinguishable from each other, something especially tough to deal with when reading on a Kindle. In some places *Allegiant* felt repetitive. Tris was repeatedly described as either "small" or "pale," and it felt like eyes carried many of the discussions in this book. (Though I admit I'm not overly fond in the first place of eyes described as communicating incredibly detailed emotions.)
 
 <blockquote>Now she looks pale and small, but her eyes make me think of wide-open skies that I have never actually seen, only dreamed of.</blockquote>
@@ -22,8 +24,6 @@ To be honest, I don't have much to say about it. The writing wasn't that interes
 <blockquote>She looks up at me, her eyes clear and eager.</blockquote>
 
 <blockquote>She smiles, but her eyes are glassy, like a dormant part of her is fighting its way out and spilling over.</blockquote>
-
-[spoilers ahead]
 
 I wasn't too interested in the big reveal of genetic tampering. Because it was just barely related to any events or concepts introduced in earlier books, it felt totally out of the blue. I could force a connection if I tried hard enough — maybe all the genetic stuff plays into the significance in earlier books about how "one choice can define you" —  but ultimately the genetic experiments felt unpleasantly disconnected and abrupt. Reveals are exciting and fun when you anticipate them, when you look back and realize that all the signs pointed toward them; not when they just slap you in the face under the guise of being totally mind-blowing.
 

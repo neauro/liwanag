@@ -38,6 +38,7 @@ body>footer {
   border-top:0;
   text-transform:lowercase;
 }
+
 body>nav {
   border: 0;
   background: $body-gray;
@@ -91,6 +92,17 @@ body > div > div { border-right-width: 0px;}
 }
 
 article {
+  .category-bit {
+    text-transform:lowercase;
+    font-size:90%;
+    a,
+    a:visited {
+      color:lighten($title-color,10%);
+    }
+    a:hover {
+      color:$title-color;
+    }
+  }
   blockquote {
     color: #4B4B4B;
     font-size:1em;

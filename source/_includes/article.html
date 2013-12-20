@@ -24,6 +24,7 @@
       <a rel="full-article" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>
     </footer>
   {% endif %}
+  <div class="category-bit">Categories: {% include post/categories.html %}</a>
 {% else %}
 <div class="entry-content">{{ content }}</div>
 {% endif %}
