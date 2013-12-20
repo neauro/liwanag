@@ -4,7 +4,7 @@
   <title><![CDATA[liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2013-12-15T16:29:15-08:00</updated>
+  <updated>2013-12-19T21:34:06-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -14,11 +14,253 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Test]]></title>
+    <title type="html"><![CDATA[Asset_pipeline]]></title>
+    <link href="http://neauro.github.io/liwanag/blog/2013/12/18/asset-pipeline/"/>
+    <updated>2013-12-18T11:27:14-08:00</updated>
+    <id>http://neauro.github.io/liwanag/blog/2013/12/18/asset-pipeline</id>
+    <content type="html"><![CDATA[<p>Sources:
++ <a href="http://guides.rubyonrails.org/asset_pipeline.html">http://guides.rubyonrails.org/asset_pipeline.html</a>
++ <a href="http://coderberry.me/blog/2012/04/24/asset-pipeline-for-dummies/">http://coderberry.me/blog/2012/04/24/asset-pipeline-for-dummies/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Headers]]></title>
+    <link href="http://neauro.github.io/liwanag/blog/2013/12/18/headers/"/>
+    <updated>2013-12-18T09:49:17-08:00</updated>
+    <id>http://neauro.github.io/liwanag/blog/2013/12/18/headers</id>
+    <content type="html"><![CDATA[<p>Sources:</p>
+
+<ul>
+<li>http://net.tutsplus.com/tutorials/other/http-headers-for-dummies/</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Frozen]]></title>
+    <link href="http://neauro.github.io/liwanag/blog/2013/12/18/frozen/"/>
+    <updated>2013-12-18T09:24:39-08:00</updated>
+    <id>http://neauro.github.io/liwanag/blog/2013/12/18/frozen</id>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="http://neauro.github.io/liwanag/images/frozen-poster.jpg" alt="Frozen poster"/></p>
+
+<p class="caption">(<A href="http://www.comingsoon.net/news/movienews.php?id=109012">via</a>)</p>
+
+
+<p>A and I went to see <em>Frozen</em>, a movie I had very little interest in seeing until I realized Idina Menzel was voicing a main character. There&rsquo;s been a lot said already for the lack of diversity amongst the characters (regarding both <a href="">race</a>, as well as <a href="http://sapphicdalliances.tumblr.com/post/68881922280">the representation of women</a>) and my disappointment about these issues in <em>Frozen</em> has exhausted me utterly. I don&rsquo;t want to talk about it. Instead, I want to note aspects of the overall story that A and I discussed after the movie.</p>
+
+<p>[ spoilers ahead ]</p>
+
+<h2><em>Frozen</em> is about Elsa and Anna</h2>
+
+<p>This is great. From the trailers, there was almost no indication that the story&rsquo;s main conflict involved the relationship between two women. Anna struggles somewhat with the men in the story, and though she desires &ldquo;true love&rdquo; at its beginning, lovers never usurp her existing relationship with her sister. At the end, Anna even plays the main role in saving both Elsa and herself, through the power of ~<em>True Love</em>~! Hurray!</p>
+
+<h2>But what does <em>Frozen</em> do with &ldquo;True Love&rdquo;?</h2>
+
+<p>&ldquo;True Love&rdquo; seems to be Frozen&rsquo;s main theme. Elsa&rsquo;s version of True Love is &ldquo;Don&rsquo;t harm those who you love,&rdquo; and requires her to isolate herself as a precaution to harming her sister; the fact that doing so makes both her and Anna unhappy are not as important as Anna&rsquo;s safety. At the end of the movie, Elsa realizes (somewhat abruptly) that her version of True Love is flawed, presumably because it&rsquo;s more about fearing herself, rather than loving someone else. (…right? This actually happened so suddenly that I&rsquo;m just going to believe that this is the case.)</p>
+
+<p>In contrast, Anna&rsquo;s version of true love — which could be described as &ldquo;Always believe in someone that you love&rdquo; — has absolutely no fear involved. Despite everyone&rsquo;s warnings and panic, Anna continues to believe the best of Elsa, even when Elsa actually <em>does</em> harm her.</p>
+
+<p>I like how Elsa and Anna&rsquo;s interpretations of love clash in this movie, but one thing I don&rsquo;t like is that, though Elsa&rsquo;s view of love evolves by the end of the movie, Anna&rsquo;s view remains static. From the beginning Anna is the same &ldquo;open to loving people!&rdquo; character that she&rsquo;s shown to be from the beginning, despite events that show people can harm her: Elsa ostracizes her, Love Interest #1 (Hans) betrays her. That these events don&rsquo;t change her outlook on life feels like a waste; rather than actively choosing to love people, for Anna it&rsquo;s just a given, and this takes away from her complexity and agency as a character.</p>
+
+<p>What&rsquo;s worse is that the events of the movie are put into motion by Elsa&rsquo;s fear that she might kill Anna, and by the end of the movie, it&rsquo;s revealed that there was no way that Elsa could have ever killed Anna at all. The entire time, Anna had a magical understanding of &ldquo;True Love&rdquo; that could have <em>always</em> saved her from Elsa&rsquo;s power, which makes the entire plot somewhat of a non-issue.</p>
+
+<h2>And what did the other characters do?</h2>
+
+<p>Given that the movie&rsquo;s main conflict is Elsa and Anna&rsquo;s relationship, and true love, the other major characters — Kristoff, Olaf, and Hans — all felt thrown in. I would have loved to see them all focused to serve the &ldquo;true love&rdquo; theme by addressing love in different ways. Treated differently, Kristoff could have been a great catalyst for Anna&rsquo;s development of her version of love. I&rsquo;m inagining him, a character distrusting of other humans, teaching her about the horrible things humans do; she fights it (&ldquo;No way, humans are inherently Lawful Good!&rdquo;); Kristoff then points out that her sister is laying waste to their kingdom and also has been pretty mean in general to people; Anna cracks a bit; and then, right on cue, Anna is betrayed again by Hans.</p>
+
+<p><img class="book-cover" src="http://neauro.github.io/liwanag/images/anna.jpg" alt="Frozen poster"/></p>
+
+<p class="caption">omg will she now become totally jaded? or will she still choose looove? (<A href="http://turntherightcorner.com/2013/09/27/movie-trailer-for-disneys-frozen/disneys-frozen-2013-screenshot-princess-anna/">via</a>)</p>
+
+
+<p>Kristoff&rsquo;s dislike of humans is played up without explanation of how it came to be, as if he had simply dropped out of the sky as a perfectly-formed gruff male love interest. I would have loved to see more time spent on him and his relationship with Sven and the snow trolls, rather than other seemingly extraneous details of his character. For example, why is it important that Kristoff is an ice merchant, and what was the point of the opening scene that is dedicated to showing his childlike failure at selling ice? You learn later that Kristoff was adopted by the trolls, and distrusts other humans; so if Kristoff was actually homeless at the beginning of the movie, why did he have a sled and ice-harvesting tools at his disposal? (Or was he not homeless? Are we just supposed to be okay with his abduction?) My headcanon involves Kristoff having saved Sven from the cruelties of humans in his life — meeting the trolls — realizing that they&rsquo;re way better.</p>
+
+<p>Olaf was a character I grimaced at in the movie trailers and ended up being pleasantly entertained by.</p>
+
+<p><img class="book-cover" src="http://neauro.github.io/liwanag/images/olaf.gif" alt="Frozen poster"/></p>
+
+<p class="caption">oh youu (<A href="http://worldbuiltfor2.tumblr.com/post/69015715475/when-someone-emotionally-hurts-you-but-you-have-to">via</a>)</p>
+
+
+<p>Even though his main purpose is comedic entertainment, it would have been nice to see more about what he means to Anna and Elsa&rsquo;s relationship. He&rsquo;s their precious childhood snowman, and is really the only indication Anna has that Elsa still treasures her after years of being isolated.</p>
+
+<p><img class="book-cover" src="http://neauro.github.io/liwanag/images/olaf.jpg" alt="Frozen poster"/></p>
+
+<p class="caption">love again, anna! do iiit! (<A href="http://www.rotoscopers.com/2013/09/27/ten-things-we-loved-about-the-new-frozen-trailer/">via</a>)</p>
+
+
+<p>As for the last major-ish character, Hans: I wasn&rsquo;t too interested in him, and wish that all the time devoted to him was given to the other characters instead. Hans is too flat, an antagonist that comes out of nowhere, affects no one uniquely, and isn&rsquo;t redeemed. Anna could have been betrayed by any other person; Kristoff could have found any other, more character-specific reason to back off from being with Anna.</p>
+
+<h2>In conclusion</h2>
+
+<p>I had a lot of fun watching <em>Frozen</em>, particularly with the ~<em>twist</em>~ of Anna saving herself. And her kiss at the end with Kristoff was such consensual wow! Also, the particle effects were great.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fire, Kristin Cashore]]></title>
+    <link href="http://neauro.github.io/liwanag/blog/2013/12/16/fire/"/>
+    <updated>2013-12-16T12:36:17-08:00</updated>
+    <id>http://neauro.github.io/liwanag/blog/2013/12/16/fire</id>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="http://neauro.github.io/liwanag/images/cover_fire.jpg" alt="Fire cover"/></p>
+
+<p class="caption">(<A href="https://www.goodreads.com/book/show/6137154-fire?from_search=true">via</a>)</p>
+
+
+
+
+<blockquote><p>It is not a peaceful time in the Dells. The young King Nash clings to his throne while rebel lords in the north and south build armies to unseat him. The mountains and forests are filled with spies and thieves and lawless men.</p>
+
+<p>This is where Fire lives. With a wild, irresistible appearance and hair the color of flame, Fire is the last remaining human monster. Equally hated and adored, she had the unique ability to control minds, but she guards her power, unwilling to steal the secrets of innocent people. Especially when she has so many of her own.</p>
+
+<p>Then Prince Brigan comes to bring her to King City, The royal family needs her help to uncover the plot against the king. Far away from home, Fire begins to realize there&#8217;s more to her power than she ever dreamed. Her power could save the kingdom.</p>
+
+<p>If only she weren&#8217;t afraid of becoming the monster her father was.</p></blockquote>
+
+
+<p>[spoilers below]</p>
+
+<p><em>Fire</em> was alright. I liked the strangeness of monsters and their many colors; I liked all the politics, the twist that Fire had killed her own father and the general confusion of royal bloodlines. As in <em><a href="http://neauro.github.io/liwanag/blog/2013-12-16-graceling/"/>Graceling</a></em>, the non-drama of sexual relationships is a relief. While reading, I hated Archer for being a posessive male character that we are meant to sympathize with; but thinking back, I don&rsquo;t think that his possessive behavior was ever excused by the story&hellip;except, I guess, for Fire&rsquo;s musing about how her innate monster beauty may have compelled Archer to become as horribly possessive as he was. This is uncomfortable because of its similarity to modern &ldquo;victim-blaming&rdquo; narratives, even if <em>Fire</em> explores Fire&rsquo;s strange ability to compel all humans when they look at her, not just men. It&rsquo;s also nice to see a romance not totally typical of YA: a non-virgin woman who falls in love with a man who already has a child.</p>
+
+<p>One downside is that the voice of Fire herself doesn&rsquo;t differ too much from Katsa&rsquo;s in <em>Graceling</em>. Fire feels like a parallel universe Katsa, whose story ultimately isn&rsquo;t as interesting. One of the main reasons I was so attracted to the <em>Graceling</em> was — well — the Graces — and since the Dell doesn&rsquo;t have them, and since Katsa&rsquo;s world doesn&rsquo;t have monsters, this book feels like it&rsquo;s set in an entirely different universe. There&rsquo;s none of the excitement of familiarity, the fun of adding to the breadth and meaning of <em>Graceling</em>&rsquo;s world. The one connection between <em>Graceling</em> and <em>Fire</em> is Leck, but we barely know him from the first book, and I&rsquo;m not interested in any mysteries about how he came to be, since by the end of <em>Graceling</em> he&rsquo;s already dead. Leck&rsquo;s descent into sadism in <em>Fire</em> isn&rsquo;t particularly complex, either; he is shown to be a sociopath from the very beginning, and all interactions that he has with Fire feel tacked on and separate from Fire&rsquo;s own character growth. Had there been more of a commonality with <em>Graceling</em>, <em>Fire</em> would have been more of a hit with me.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Graceling, Kristin Cashore]]></title>
+    <link href="http://neauro.github.io/liwanag/blog/2013/12/16/graceling/"/>
+    <updated>2013-12-16T11:26:00-08:00</updated>
+    <id>http://neauro.github.io/liwanag/blog/2013/12/16/graceling</id>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="http://neauro.github.io/liwanag/images/cover_graceling.jpg" alt="Graceling cover"/></p>
+
+<p class="caption">(<A href="https://www.goodreads.com/book/show/3236307-graceling">via</a>)</p>
+
+
+
+
+<blockquote><p>Katsa has been able to kill a man with her bare hands since she was eight - she&#8217;s a Graceling, one of the rare people in her land born with an extreme skill. As niece of the king, she should be able to live a life of privilege, but Graced as she is with killing, she is forced to work as the king&#8217;s thug.</p>
+
+<p>When she first meets Prince Po, Graced with combat skills, Katsa has no hint of how her life is about to change.</p>
+
+<p>She never expects to become Po&#8217;s friend.</p>
+
+<p>She never expects to learn a new truth about her own Grace - or about a terrible secret that lies hidden far away&#8230;</p></blockquote>
+
+
+<p>[spoilers below]</p>
+
+<p>I finished <em>Graceling</em> and its companions in less than a week. I liked them — I liked the fairytale-ish turn of phrases (&ldquo;she had one eye blue and one eye green&rdquo;), the strangeness and OPness of Graces, the nondrama of sexual relationships. In <em>Graceling</em>, I can see how Katsa comes to like Po, and how her attraction to him is unique to her and her situation — being unable to trust that she wouldn&rsquo;t hurt anyone, he gives her a situation in which she can finally be herself.</p>
+
+<p>The pacing was a little strange. One chapter near the beginning is devoted to exposition about the world, and is incredibly difficult to read through: there are so many new names to remember, so much information that gets in the way of the action I wanted to return to. The ending of the story drops suddenly as well: after Katsa primes the pirates to be ready for Leck&rsquo;s possible attack, it turns out Leck has already arrived at her supposed safehaven. Some of the motivations were tough for me to understand as well. How did Katsa and Po know so abruptly that Bitterblue was to be protected, at the cost of their own life? If Katsa was so adamant about not having children, why did she feel so strongly protective of Bitterblue? (I understand that you can not want to have children, and still like them; but there wasn&rsquo;t much other evidence for why Katsa would take to Bitterblue so strongly, especially given the distance with which she seemed to hold other acquaintances.) Why was Po ashamed of being blind? In fact, what was the purpose of those chapters at the end where the main Leck-related conflict has already been resolved, and all that&rsquo;s left is to angst about Po&rsquo;s blindness?</p>
+
+<p>Overall <em>Graceling</em> was an entertaining read, and all the more fun because Katsa&rsquo;s &ldquo;true&rdquo; Grace was hinted at pretty well and it was fun to figure out for yourself what her talent actually was. I&rsquo;m also a fan of how she worked out what sort of relationship that she wanted with Po in the end, though, like with Brave, I felt a little dissonance with what she perceived marriage to be. It&rsquo;s strange to read fantasy and sit tight for explanations of multiple kingdoms and magic powers — and yet never be told why there are such conservative constructions of marriage, and why they have remained unchallenged. The limitations that we have in Real Life — patriarchy, religious morals — aren&rsquo;t elaborated on in <em>Graceling</em> and some other fantasy novels. It&rsquo;s strange to read books where misogyny exists because that&rsquo;s &ldquo;just the the way it is,&rdquo; even if characters challenge it later.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Moving to Octopress From Blogger]]></title>
     <link href="http://neauro.github.io/liwanag/blog/2013/12/15/test/"/>
     <updated>2013-12-15T15:17:07-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2013/12/15/test</id>
-    <content type="html"><![CDATA[<p>test test</p>
+    <content type="html"><![CDATA[<p>After eight years using Blogger, I&rsquo;ve finally decided to move away. One of the first reasons I first started using it in high school was because Blogger was one of the only free hosting services I knew where I could also control the styling; but after several Blogger updates, and several years of telling myself I&rsquo;d eventually learn Blogger syntax well enough to style as I like, I&rsquo;ve given up. I have other things I&rsquo;d rather do than invest time parsing Blogger, and Octopres offers more built-in tools <em>and</em> flexibility: I can have <a href="http://octopress.org/docs/blogging/code/">nice code snippets</a> and have whatever extra scripts I&rsquo;d like without worrying they&rsquo;d interfere with Blogger esoterica. Additionally, after reading <a href="https://medium.com/p/c7cc156bc5d9">this article</a> I&rsquo;ve been a little more wary of data ownership, and with Octopress, I can host on Github where I know everything is mine.</p>
+
+<p>I&rsquo;ve also been eyeing <a href="https://ghost.org/">ghost</a> recently and though it looks awesome, I decided against it for now for several reasons. Currently, there&rsquo;s no easy way to import posts from Blogger, and I didn&rsquo;t want to deal with the extra overhead of figuring out where to host. A couple days ago I received access to Ghost&rsquo;s subscription hosting, but I don&rsquo;t want to commit to paying money when this blog is mostly for lolzy purposes.</p>
+
+<p>So, this is how I got my blog set up again:</p>
+
+<h2>Get Octopress Up and Running</h2>
+
+
+<p>To actually figure out how to get Octopress running, I referenced several tutorials:</p>
+
+<ol>
+<li><a href="http://octopress.org/docs/blogging/">Octopress: Blogging Basics</a></li>
+<li><a href="http://webdesign.tutsplus.com/tutorials/applications/getting-started-with-octopress/">Webdesign Tuts+: Getting started with Octopress</a></li>
+<li><a href="http://blog.ialja.com/2013/03/22/goodbye-blogger-hello-octopress/">iAlja&#8217;s Blog: Goodbye Blogger, Hello Octopress!</a></li>
+</ol>
+
+
+
+
+<h2>Convert Old Blogger Posts to Be Octopress-Readable</h2>
+
+
+<p>
+From one of the previous links, I learned how to convert all my old posts to a form Octopress could work with. To do it, open up your old blog in blogger, then go to <code>Settings &gt; Other &gt; Export</code> to download your blog as an XML file. Then, I used <a href="https://gist.github.com/juniorz/1564581">this script</a> to run the conversion.</p>
+
+<p>I ran into some issues here, mostly with titles that contained quotation marks or tags that contained colons; whenever this happened I went through the XML and just removed the symbols that were causing things to explode.</p>
+
+<h2>Deploy to Github Pages</h2>
+
+
+<p>Finally, I followed <a href="http://octopress.org/docs/deploying/github/">these instructions</a> to deploy my blog for free to Github Pages. I still ran into some problems here — when I deployed, the online version of the blog on Github lacked all styles and scripts — this requried a change to the <code>root</code> in config.yml to be <code>/liwanag</code>, since on Github the blog is acccessed through the URL <a href="http://neauro.github.io/liwanag.">http://neauro.github.io/liwanag.</a> Making this change to root upsets the styles and scripts linking locally, though&hellip;so I&rsquo;ve still got to iron this out and find the magical tweaks that will allow one root value to work both locally and online. There&rsquo;s also the matter that my blog is big enough that running &ldquo;rake generate&rdquo; takes a minute or so to run&hellip;but I&rsquo;m willing to accept that for now.</p>
+
+<h2>That&#8217;s it!</h2>
+
+
+<p>As one final change, I&rsquo;ve changed the name of this blog. Previously, it was &ldquo;nuubu&rdquo; — a romanization of &ldquo;noob&rdquo; spelled in Japanese, chosen offhandedly because I originally intended this blog to be my corner for new things I&rsquo;ve learned. Because &ldquo;nuubu&rdquo; may be appropriative, and because I don&rsquo;t feel particularly strongly about clinging to the identity of &ldquo;noob&rdquo; anyway, I&rsquo;ve now named it &ldquo;liwanag,&rdquo; which means &ldquo;light&rdquo; in Tagalog. To be honest, I couldn&rsquo;t really think of another name at the time, and &ldquo;liwanag&rdquo; just sounds nice and makes me think of how blog-writing (that is, writing for an unknwon audience, or &ldquo;bringing things to light&rdquo;) helps me think more clearly.</p>
+
+<p><a href="http://nuubu.blogspot.com">nuubu</a> remains active, because many of the images linked to here point to where they&rsquo;ve been uploaded on Blogger, and because I don&rsquo;t want to lose what little bit of popularity those posts have accumulated (specifically, the Rosetta Stone error, and Alpacasso). But overall I&rsquo;m excited and happy for this bright new world. ✧ʕ̢̣̣̣̣̩̩̩̩·͡˔·ོɁ̡̣̣̣̣̩̩̩̩✧</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Allegiant, Veronica Roth]]></title>
+    <link href="http://neauro.github.io/liwanag/blog/2013/11/19/allegiant/"/>
+    <updated>2013-11-19T20:40:01-08:00</updated>
+    <id>http://neauro.github.io/liwanag/blog/2013/11/19/allegiant</id>
+    <content type="html"><![CDATA[<p>Well! It&rsquo;s over.</p>
+
+<p>I download <em>Allegiant</em> from the Seattle Public Library&rsquo;s eBook collection as soon as it became available, and read it over the course of a couple days, despite the looming presence of NaNoWriMo (which I&rsquo;ve been keeping track of in <a href="http://neauro.tumblr.com/tagged/nnwm2013">my Tumblr</a>).</p>
+
+<p>[spoilers ahead]</p>
+
+<p>To be honest, I don&rsquo;t have much to say about it. The writing wasn&rsquo;t that interesting. There are a smattering of issues that other reviews have already discussed — such as how Tris and Four&rsquo;s voices were barely distinguishable from each other, something especially tough to deal with when reading on a Kindle. In some places <em>Allegiant</em> felt repetitive. Tris was repeatedly described as either &ldquo;small&rdquo; or &ldquo;pale,&rdquo; and it felt like eyes carried many of the discussions in this book. (Though I admit I&rsquo;m not overly fond in the first place of eyes described as communicating incredibly detailed emotions.)</p>
+
+<blockquote>Now she looks pale and small, but her eyes make me think of wide-open skies that I have never actually seen, only dreamed of.</blockquote>
+
+
+
+
+<blockquote>There is a wavering expression in her eyes, like she is a heap of leaves about to be scattered by the wind.</blockquote>
+
+
+
+
+<blockquote>He has kept his eyes averted since I sat in the chair and they cut the strip of plastic binding my wrists together. For just for a moment, his eyes touch mine, and I know it’s time to start lying.</blockquote>
+
+
+
+
+<blockquote>Her fingers are on his throat, taking his pulse, and her eyes are wide and empty. […] Her dark eyes are wide with fear as she says, “Are you hurt?”</blockquote>
+
+
+
+
+<blockquote>She looks up at me, her eyes clear and eager.</blockquote>
+
+
+
+
+<blockquote>She smiles, but her eyes are glassy, like a dormant part of her is fighting its way out and spilling over.</blockquote>
+
+
+<p>I wasn&rsquo;t too interested in the big reveal of genetic tampering. Because it was just barely related to any events or concepts introduced in earlier books, it felt totally out of the blue. I could force a connection if I tried hard enough — maybe all the genetic stuff plays into the significance in earlier books about how &ldquo;one choice can define you&rdquo; —  but ultimately the genetic experiments felt unpleasantly disconnected and abrupt. Reveals are exciting and fun when you anticipate them, when you look back and realize that all the signs pointed toward them; not when they just slap you in the face under the guise of being totally mind-blowing.</p>
+
+<p>I was also disappointed that two of the more obvious characters of color — Tori Wu, and Uriah — were killed off. Uriah&rsquo;s death acted solely as a catalyst for more of Four&rsquo;s angst, which he had enough of already, between worrying about his parents and worrying about his genetic purity. Tori&rsquo;s death accomplished nothing but the sorrow of a secondary character I hardly knew. Their deaths felt like a lazy way to get a rise out of the reader by taking away characters that had always been &ldquo;good people.&rdquo;</p>
+
+<p>This is the way that I feel about Tris&rsquo;s death as well. Her final reason for sacrificing herself wasn&rsquo;t related to anything else that she desired so desperately in the book: for her community to not die, for her to be with Four. I do like the twist in her character — how she first chose Dauntless, and then, in the end, chose again to be selfless Abegnation — but because I didn&rsquo;t see how it fit into an overall theme for the third book, this too felt like a cheap way to get me to have emotions about what was going on.</p>
+
+<p>I&rsquo;ve tried a couple times now to explain more about why the ending of Allegiant was so disappointing to me, but I&rsquo;ve found <a href="http://myallegiantreview.blogspot.com/2013/11/breaking-down-ending-to-allegiant.html">this blog post</a> that has already done all of the (super comprehensive) work.</p>
+
+<p>The fact that this ending has, for many readers, &ldquo;ruined the entire series&rdquo; also reminds me of <a href="http://www.ted.com/talks/daniel_kahneman_the_riddle_of_experience_vs_memory.html">this TED Talk</a>, in which the speaker talks about how the end of an experience can ruin the entire thing.</p>
+
+<blockquote>But now there is another question: &#8220;How much did these patients think they suffered?&#8221; And here is a surprise. The surprise is that Patient A had a much worse memory of the colonoscopy than Patient B. The stories of the colonoscopies were different, and because a very critical part of the story is how it ends. And neither of these stories is very inspiring or great &#8211; but one of them is this distinct &#8230; (Laughter) but one of them is distinctly worse than the other. And the one that is worse is the one where pain was at its peak at the very end; it&#8217;s a bad story. How do we know that? Because we asked these people after their colonoscopy, and much later, too, &#8220;How bad was the whole thing, in total?&#8221; And it was much worse for A than for B, in memory.</blockquote>
+
+
+
 ]]></content>
   </entry>
   
@@ -170,79 +412,6 @@ Several hundred years ago, humans were nearly exterminated by giants. Giants are
 Nadine, you are so awesome. :)</div>
 </div>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Omen Sits on a Fissure’s Edge, Where the Core of the Earth Once Stretched Up to Reach the Stars, and, Finding the Skyscape Out of Reach, Collapsed Its Crags on Veins of Silver and Opal.]]></title>
-    <link href="http://neauro.github.io/liwanag/blog/2013/06/02/omen-sits-on-fissures-edge-where-core/"/>
-    <updated>2013-06-02T00:00:00-07:00</updated>
-    <id>http://neauro.github.io/liwanag/blog/2013/06/02/omen-sits-on-fissures-edge-where-core</id>
-    <content type="html"><![CDATA[<div class='post'>
-While it gathered its strength, refugees and wrens came between the seams of obsidian to erect homes strung like beads between wires and bridges: a necklace of a town, a veil on the sky-staring bride.<br /><br />Because of the earth’s longing, they say, things happen here not by science but by intention, and the citizens are fluent in the tongue of symbols. They set their calendars not to the sun or moon, but to the shadows of wrens whose flocks the wind sings into staffs and blots. They sequence their itineraries to the shapes of leaf-stripped branches. Those seeking counsel spin at the edge of the canyons and upon stopping take the advice of a mushroom spotted in the bramble — or a drop of rain falling on the right ring finger — or a whiff of windfallen apples fermenting on the jags. A child playing on the bridges might, upon seeing her ball wince away from a sharp stone, decide then that it’s time for her to travel the world and grow into herself.<br /><br />But it is hard to leave the guidance of the wishing earth, to go to the villages where only words mean anything, and the denizens refuse to listen unless you hollow yourself like a shell and echo their noises back to them. Many soon return, stumbling back, their knees and knuckles embracing veins of silver and opal. They tip their heads back, and the clouds touch their cheeks with rain, and purr with thunder. When they return, they stay, and would only leave again to meet the stars.<br /><hr /><div style="font-size: 90%;">Figment Theme 5/22/2013: There are so many cities in the world, and a nearly infinite number of fictional towns in addition. Pick an intangible noun (think “hope,” “friendship,” “fear,” “loathing,”) and write a short scene set in a town with that name.</div></div>
-<h2>Comments</h2>
-<div class='comments'>
-<div class='comment'>
-<div class='author'>nadine a.</div>
-<div class='content'>
-That, and Palimpsest :)</div>
-</div>
-<div class='comment'>
-<div class='author'>axcho</div>
-<div class='content'>
-Very evocative, I like it! :D Were you inspired by David Abram&#39;s work (The Spell of the Sensuous, Becoming Animal) at all?</div>
-</div>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Night Circus, Erin Morgenstern]]></title>
-    <link href="http://neauro.github.io/liwanag/blog/2013/05/21/the-night-circus-erin-morgenstern/"/>
-    <updated>2013-05-21T00:00:00-07:00</updated>
-    <id>http://neauro.github.io/liwanag/blog/2013/05/21/the-night-circus-erin-morgenstern</id>
-    <content type="html"><![CDATA[<div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-_CJ7P9mxIHU/UZwTXPjvbkI/AAAAAAAADoA/zsnV3Nc7omw/s1600/TheNightCircus.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://2.bp.blogspot.com/-_CJ7P9mxIHU/UZwTXPjvbkI/AAAAAAAADoA/zsnV3Nc7omw/s1600/TheNightCircus.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">(<a href="http://en.wikipedia.org/wiki/The_Night_Circus">source</a>)</td></tr></tbody></table><blockquote><em>The circus arrives without warning. No announcements precede it. It is simply there, when yesterday it was not. Within the black-and-white striped canvas tents is an utterly unique experience full of breathtaking amazements. It is called </em>Le Cirque des Rêves<em>, and it is only open at night. <br /><br />But behind the scenes, a fierce competition is underway—a duel between two young magicians, Celia and Marco, who have been trained since childhood expressly for this purpose by their mercurial instructors. Unbeknownst to them, this is a game in which only one can be left standing, and the circus is but the stage for a remarkable battle of imagination and will. Despite themselves, however, Celia and Marco tumble headfirst into love—a deep, magical love that makes the lights flicker and the room grow warm whenever they so much as brush hands. <br /><br />True love or not, the game must play out, and the fates of everyone involved, from the cast of extraordinary circus per­formers to the patrons, hang in the balance, suspended as precariously as the daring acrobats overhead. <br /><br />Written in rich, seductive prose, this spell-casting novel is a feast for the senses and the heart.</em></blockquote><br />So <i>The Night Circus</i>&nbsp;was fantastic. Morgenstern&#8217;s writing set such an atmosphere that wherever I read it I felt the black-and-white-striped tents rising all around me, the glow of closely-hanging lights.<br /><br />I&#8217;ve taken recently to thinking about books as made of three pillars — world-building, plot, and actual execution. <i>The Night Circus</i> was beautifully written, and set in a beautiful world. I felt the plot itself was a little lacking — the two main characters fall into love perhaps too easily — the Epic Battletimez seemingly promised by the cover description never really happen.<br /><br />But honestly, for me this was just fine. For a while <i>The Night Circus</i> cracked my head open and took me somewhere else, and it did a wonderful job of doing it.<br /><br />The design of the book was also gorgeous. Monochrome sunbursts! Little glowing flecks! It fit the mood of the book so well, and was sooo pretty.</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Prodigy, Marie Lu]]></title>
-    <link href="http://neauro.github.io/liwanag/blog/2013/05/21/prodigy-marie-lu/"/>
-    <updated>2013-05-21T00:00:00-07:00</updated>
-    <id>http://neauro.github.io/liwanag/blog/2013/05/21/prodigy-marie-lu</id>
-    <content type="html"><![CDATA[<div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/--io2SgTsm1g/UZwVgk3tjJI/AAAAAAAADog/i5xYKy3Gi-U/s1600/13414446.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://2.bp.blogspot.com/--io2SgTsm1g/UZwVgk3tjJI/AAAAAAAADog/i5xYKy3Gi-U/s320/13414446.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">(<a href="http://www.goodreads.com/book/show/13414446-prodigy">source</a>)</td></tr></tbody></table><blockquote><em>June and Day arrive in Vegas just as the unthinkable happens: the Elector Primo dies, and his son Anden takes his place. With the Republic edging closer to chaos, the two join a group of Patriot rebels eager to help Day rescue his brother and offer passage to the Colonies. They have only one request—June and Day must assassinate the new Elector.<br /><br />It’s their chance to change the nation, to give voice to a people silenced for too long. <br /><br />But as June realizes this Elector is nothing like his father, she’s haunted by the choice ahead. What if Anden is a new beginning? What if revolution must be more than loss and vengeance, anger and blood—what if the Patriots are wrong?<br /><br />In this highly-anticipated sequel, Lu delivers a breathtaking thriller with high stakes and cinematic action.</em></blockquote><br />[spoilers ahead] <br /><br />I finished <em>Prodigy</em> this past weekend, and enjoyed it. June and Day had more distinctive voices, and some of my confusions I had with the <a href="http://nuubu.blogspot.com/2012/10/legend-marie-lu.html">previous book</a> were addressed more clearly here. In particular, the history of the Republic and the Colonies and how they came to be in conflict with each other is finally revealed, and probably for the best in this book, rather than in <em>Legend</em>; I can&#8217;t imagine the needless bulk that would have been in the first book had all that exposition been thrown in there.<br /><br /><em>Prodigy</em>&#8217;s subversions of cliche were fun; just when you think June has no idea she&#8217;s being tricked, she reveals that she knows even more than you do about what&#8217;s going on, with a cleverness that isn&#8217;t eye-rolling. I thought that June and Day&#8217;s role in the rebellion as Beloved of the People was a little boring — <em>Mockingjay</em> was enough exploration of the &#8220;war celebrity&#8221; for me — though June and Day&#8217;s story, despite everything, is a little brighter than Katniss&#8217; battle angst.<br /><br />Overall, the motivations for each character were pretty well-done in <em>Prodigy</em>. I wish there had been a little more pattern to it — for example, at some point Tess asks Day, &#8220;If it were between me and June, who would you save?&#8221; Day answers, and though Day does later make a choice between June and the rebellion, this question made me expect and want a high-stress situation where Day&#8217;s true feelings between Tess and June were pressured out of him.<br /><br /><em>Prodigy</em>! More cheesecake to enjoy. I like the direction it took with making neither side of the Republic/Colonies war ideal — in fact, both sides were pretty repugnant — and I&#8217;m excited to see where the last book will go.</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Palimpsest, Catherynne M. Valente]]></title>
-    <link href="http://neauro.github.io/liwanag/blog/2013/05/21/palimpsest-catherynne-m-valente/"/>
-    <updated>2013-05-21T00:00:00-07:00</updated>
-    <id>http://neauro.github.io/liwanag/blog/2013/05/21/palimpsest-catherynne-m-valente</id>
-    <content type="html"><![CDATA[<div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-XKsVI6B0d_s/UZwWESW2vTI/AAAAAAAADoo/or_FCtkDhQI/s1600/513FhNJwgrL.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://3.bp.blogspot.com/-XKsVI6B0d_s/UZwWESW2vTI/AAAAAAAADoo/or_FCtkDhQI/s320/513FhNJwgrL.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">(<a href="http://www.amazon.com/Palimpsest-Catherynne-Valente/dp/0553385763">source</a>)</td></tr></tbody></table><blockquote><i>In the Cities of Coin and Spice and In the Night Garden introduced readers to the unique and intoxicating imagination of Catherynne M. Valente. Now she weaves a lyrically erotic spell of a place where the grotesque and the beautiful reside and the passport to our most secret fantasies begins with a stranger’s kiss.… <br /><br />Between life and death, dreaming and waking, at the train stop beyond the end of the world is the city of Palimpsest. To get there is a miracle, a mystery, a gift, and a curse—a voyage permitted only to those who’ve always believed there’s another world than the one that meets the eye. Those fated to make the passage are marked forever by a map of that wondrous city tattooed on their flesh after a single orgasmic night. To this kingdom of ghost trains, lion-priests, living kanji, and cream-filled canals come four travelers: Oleg, a New York locksmith; the beekeeper November; Ludovico, a binder of rare books; and a young Japanese woman named Sei. They’ve each lost something important—a wife, a lover, a sister, a direction in life—and what they will find in Palimpsest is more than they could ever imagine.</i></blockquote><br />Being terribly hungry for more of Valente&#8217;s writing after reading <a href="http://nuubu.blogspot.com/2013/05/deathless-catherynne-valente.html"><em>Deathless</em></a>, I chose <em>Palimpsest</em> to read next due to its focus on a city, a subject I have a weakness for ever since reading China Miéville.<br /><br />All I really have to say about this book is <em>wow</em>. My feedback for it is similar to anything I had to babble about <em>Deathless</em> — excellent, poetic, gorgeous. Like <em>Deathless</em>, though the plot was a little flimsy, I didn&#8217;t mind that much; whereas <em>Deathless</em> was suspended in a fairytale haze that made everything easy to digest, <em>Palimpsest</em> had all the (appropriate) tones of a dreamland, in which things don&#8217;t make utter sense but are all imbued with truth and urgency.<br /><br />Something else I appreciated about this book in particular was the character Amaya Sei. Though I&#8217;m not Japanese myself, I felt that the treatment of Sei as a character was great; she didn&#8217;t sink into stereotypes, she stood up on her own, and overall she was allowed to be a <em>person</em> rather than a caricature. It was also refreshing to read a story with such a variety of characters, diverse unabashedly and without slowing down to explain things: this person is mixed, this person is gay, and so on.<br /><br /><em>Palimpsest</em> was fantastic.</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Deathless, Catherynne M. Valente]]></title>
-    <link href="http://neauro.github.io/liwanag/blog/2013/05/21/deathless-catherynne-valente/"/>
-    <updated>2013-05-21T00:00:00-07:00</updated>
-    <id>http://neauro.github.io/liwanag/blog/2013/05/21/deathless-catherynne-valente</id>
-    <content type="html"><![CDATA[<div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-KoLczMpKC88/UZwU7dnS6AI/AAAAAAAADoY/Jzwh3rRCwvo/s1600/8694389.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://3.bp.blogspot.com/-KoLczMpKC88/UZwU7dnS6AI/AAAAAAAADoY/Jzwh3rRCwvo/s320/8694389.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">(<a href="http://www.goodreads.com/book/show/8694389-deathless">source</a>)</td></tr></tbody></table><blockquote><em>Koschei the Deathless is to Russian folklore what devils or wicked witches are to European culture: a menacing, evil figure; the villain of countless stories which have been passed on through story and text for generations. But Koschei has never before been seen through the eyes of Catherynne Valente, whose modernized and transformed take on the legend brings the action to modern times, spanning many of the great developments of Russian history in the twentieth century.<br /><br />Deathless, however, is no dry, historical tome: it lights up like fire as the young Marya Morevna transforms from a clever child of the revolution, to Koschei’s beautiful bride, to his eventual undoing. Along the way there are Stalinist house elves, magical quests, secrecy and bureaucracy, and games of lust and power. All told, Deathless is a collision of magical history and actual history, of revolution and mythology, of love and death, which will bring Russian myth back to life in a stunning new incarnation.</em></blockquote><br /><em>I can&#8217;t even believe that I&#8217;ve never read anything by Catherynne Valente before.</em> Her writing is so gorgeous that I found myself struggling to slow down, to digest every word. True to the reviews on the inside cover, <em>Deathless</em> reads like modern fairytale, and for that reason even the stranger things in the book — Marya&#8217;s scars like tiger stripes, her hair thick as snakes, her &#8220;twelve mothers&#8221; you never quite meet, the palaces she walks of twitching skin — sink and seep in easily, where in a less poetic book they might have instead made me wince. Similarly, things that might have bothered me in other books, I was fine with here. Years transpire believably in paragraphs. We leave Marya and return months later once she has already made friends we don&#8217;t know, which she soon loses and spends the rest of the book crying for. Totally cool with it.<br /><br />I loved Valente&#8217;s use of fairytale-esque repetition, the minimalist exposition and description that was just <em>barely</em> there. It was just the right amount of description to push you off the edge of things, and let the rest of you fly away into a sort of landscape that your own mind painted into her sketches.<br /><br />It occurs to me that this makes it sound as if you have to put a lot of effort into understanding things, but this isn&#8217;t quite the case. Reading Valente&#8217;s writing is like reading Tarot cards. You see the images — fill your mind with them — and all the intricacies come floating up on their own.<br /><br />Does that make sense either? To be honest, there&#8217;s no description I have that can do justice; all I can say is that after reading this book I&#8217;ve become a seriose fan, and have already started for everything else she&#8217;s written.</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[May Garden/Growing Update: Radishes, Blueberries, Tillandsia, Succulents, & Etc.]]></title>
-    <link href="http://neauro.github.io/liwanag/blog/2013/05/19/may-gardengrowing-update-radishes/"/>
-    <updated>2013-05-19T00:00:00-07:00</updated>
-    <id>http://neauro.github.io/liwanag/blog/2013/05/19/may-gardengrowing-update-radishes</id>
-    <content type="html"><![CDATA[<div class='post'>
-Garden stuff has been progressing without me writing much about it because recently I am lucky if I can manage to wake up early enough or stay up long enough at home to water anything, much less take photos of it and muse upon its growth. Suffice to say that at the start of spring I went crazy over some on-sale seeds and attempted to plant some in seed starter pots.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-HbVoI1I65dc/UZkzqoJegjI/AAAAAAAADmA/xv4ionrdSvE/s1600/pots.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="425" src="http://1.bp.blogspot.com/-HbVoI1I65dc/UZkzqoJegjI/AAAAAAAADmA/xv4ionrdSvE/s640/pots.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">march pots</td></tr></tbody></table><br />Dragon&#8217;s Tongue Wax Beans in particular looked super cool and exciting and got off to a great start indoors…<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-bxXJjsUTwl8/UZk0YNfGEzI/AAAAAAAADmI/c6o1a7VLsEg/s1600/b20cad109e0611e2977522000a9f308b_6.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-bxXJjsUTwl8/UZk0YNfGEzI/AAAAAAAADmI/c6o1a7VLsEg/s1600/b20cad109e0611e2977522000a9f308b_6.jpg" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">lil things</td></tr></tbody></table><br />…but when I transplanted them outside, they didn&#8217;t last two weeks. Maybe I didn&#8217;t harden them off enough? Maybe, like swiss chard, they&#8217;re too delicate to withstand transplanting? When I transplanted them I also planted some new beans, and these happen to be doing really well. Unlike the indoor starts, they have very deep green leaves and thick stems.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-BWMd4Y28qBI/UZk0e1u9oNI/AAAAAAAADmQ/0fb0RZ25HP0/s1600/beans.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://3.bp.blogspot.com/-BWMd4Y28qBI/UZk0e1u9oNI/AAAAAAAADmQ/0fb0RZ25HP0/s640/beans.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">transplants in the back, new beans in the front</td></tr></tbody></table><br />My other surprise is the success of my radishes, which I planted outdoors in March alongside some arugula and swiss chard. Look, they&#8217;re doing it! They&#8217;re really growing!<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-Wlw-8ULdxk0/UZk0mRvdBQI/AAAAAAAADmY/sssd_-6eP5M/s1600/radish.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="640" src="http://1.bp.blogspot.com/-Wlw-8ULdxk0/UZk0mRvdBQI/AAAAAAAADmY/sssd_-6eP5M/s640/radish.jpg" width="480" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">radishes</td></tr></tbody></table><br />They&#8217;re probably the most attractive-looking edible thing I&#8217;ve grown this far, especially since the spinach and swiss chard I started growing before last winter tasted pretty mediocre. My mistake was not staggering out their sowing, however, so I pretty much just have this batch and that&#8217;s it for now.<br /><br />Speaking of the spinach, as soon as the heat started getting up to around 70 degrees Fahrenheit, they started sending up flowers. The plants rise up over my knee now, and their stalks are as thick as my fingers, and it&#8217;s hard to believe that they used to be just little seeds.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-nrNtX57556s/UZk01kBXMTI/AAAAAAAADmg/isuH3F_SXMk/s1600/spinach.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://2.bp.blogspot.com/-nrNtX57556s/UZk01kBXMTI/AAAAAAAADmg/isuH3F_SXMk/s640/spinach.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">biiig spinaches</td></tr></tbody></table><br />My lime tree has really perked up now that the weather has gotten better, though has still suffered from leaves that are pale green and strangely droopy and bendy. They feel almost elastic. Some internet research has uncovered that I, in my passion to not drown it, I may be <em>under watering</em> it. Since being given a couple thorough soaks, the leaves indeed seem a little stiffer and greener. I&#8217;ve also repotted it into something larger and more sturdy than its initial black pot. No flowers or fruit yet, probably because it&#8217;s been stressed and dehydrated for the better part of its life with me.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-2K9oGih_FtA/UZk5k9YELFI/AAAAAAAADm8/kUQGMmKcBW4/s1600/lime.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="http://3.bp.blogspot.com/-2K9oGih_FtA/UZk5k9YELFI/AAAAAAAADm8/kUQGMmKcBW4/s640/lime.jpg" width="424" /></a></div><br /><br />Speaking of stressed and dehydrated, before the winter started Andou and I received a very impressive-looking 30 year old jade tree&#8230;<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-FBtg2WrZ7_0/UZk4kr_GXTI/AAAAAAAADmw/pxyd6OAy_aQ/s1600/JADE.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="640" src="http://1.bp.blogspot.com/-FBtg2WrZ7_0/UZk4kr_GXTI/AAAAAAAADmw/pxyd6OAy_aQ/s640/JADE.jpg" width="424" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">jade tree on the sunniest part of our house, the laundry room</td></tr></tbody></table><br />I was very concerned about killing it, especially since, despite my diligent watering, its leaves began to fall off in gooey yellow curls. Some internet research has uncovered that I, in my passion to not kill it, I was probably <em>over watering</em> it. I&#8217;ve since then toned down and the tree seems okay on its new perch over the dryer. One branch even bloomed little white blossoms! Whoa!<br /><br />My air plants from last year are doing well. In the picture below, the top plant had one pup that is now fairly large, and the bottom actually had two pups, so it&#8217;s getting to be a handful.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-ePFiQPKUfGE/UZk6H_Nc0ZI/AAAAAAAADnM/iV_Tzcv5RKk/s1600/DSC_0008.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="640" src="http://1.bp.blogspot.com/-ePFiQPKUfGE/UZk6H_Nc0ZI/AAAAAAAADnM/iV_Tzcv5RKk/s640/DSC_0008.jpg" width="480" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">spot the pups!</td></tr></tbody></table><br />It&#8217;s been about a year since <a href="http://nuubu.blogspot.com/2012/09/tillandsia-pups.html">I got them at the UW Street Fair</a>, and when the fair rolled around again this weekend I was excited to pick up more! Four more, in fact. I was excited to get ones with weirder tentacle shapes, and then also picked up two teensy blooming ones, one of which already looks like it&#8217;s growing a pup. The two little ones are already a year old and were blooming already, so it makes me a little bewildered about why my plants from last year are not blooming. Maybe I should invest in some fertilizer.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-K9mnSDnlg8c/UZk62g87ozI/AAAAAAAADnY/gdU6fXWDE2k/s1600/new+tillandsia.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://1.bp.blogspot.com/-K9mnSDnlg8c/UZk62g87ozI/AAAAAAAADnY/gdU6fXWDE2k/s640/new+tillandsia.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">spot the pup!</td></tr></tbody></table><br />Speaking of plants retrieved at fairs, my sedums are doing okay. The iceplant-looking one is faring the best of all of them. I&#8217;ve moved three of them to a little pot I bought at Daiso and tried to give them succulent soil to see if they would do any better than in normal potting soil, but thus far I don&#8217;t observe any difference.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-gxWzNb7CxSk/UZk8esDbULI/AAAAAAAADno/0tJ7GN8_R44/s1600/sedum.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://3.bp.blogspot.com/-gxWzNb7CxSk/UZk8esDbULI/AAAAAAAADno/0tJ7GN8_R44/s640/sedum.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">sedums in a long pot</td></tr></tbody></table><br />Speaking of succulent soil, the reason why I had some is because I got another succulent! I saw it on sale at the hardware store and couldn&#8217;t resist. Donkey/burro tail plants are so neat-looking. Some of the little bean-leaves had detached and fallen between into the dirt inside the pot, so I took them out and placed them in their own pots to see if they might grow into new plants.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-NY0YtOmu5JE/UZk8k9hneQI/AAAAAAAADnw/mxgqWYJAGFE/s1600/succulent+tail.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://4.bp.blogspot.com/-NY0YtOmu5JE/UZk8k9hneQI/AAAAAAAADnw/mxgqWYJAGFE/s640/succulent+tail.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">burro tail on the dryer</td></tr></tbody></table><br />And that&#8217;s (almost) all of what I have growing.</div>
 ]]></content>
   </entry>
   
