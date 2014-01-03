@@ -62,6 +62,7 @@ body>nav {
 body {
   max-width:850px;
   margin:0px auto;
+  font-size:11pt;
 }
 html {
   background:$body-gray;
@@ -109,6 +110,10 @@ article {
   }
   header {
     background:none;
+    .entry-title {
+      font-size:1.9em;
+      font-weight:normal;
+    }
   }
   h1 {
     color:#222;
@@ -137,7 +142,7 @@ article header p.meta {
   position:static;
 }
 p, article blockquote, ul, ol {
-  line-height:21pt;
+  line-height:19pt;
 }
 
 aside.sidebar {
