@@ -7,10 +7,10 @@ $red: #CC1743;
 a {
   color:$red;
   &:hover {
-    color:lighten($red,30%);
+    color:lighten($red,10%) !important;
   }
   &:visited {
-    color: desaturate($red, 10%);
+    color: desaturate($red, 10%) !important;
   }
 }
 
@@ -54,7 +54,7 @@ body>nav {
   a:hover,
   a:visited {
     text-shadow:none;
-    color:lighten($title-color,20%);
+    color:lighten($title-color,20%) !important;
     text-transform:lowercase; 
   }
 }

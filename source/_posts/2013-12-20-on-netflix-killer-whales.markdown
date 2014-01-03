@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "on_netflix_killer_whales"
+title: "Netflix: Such Killer Whales"
 date: 2013-12-20 06:55:33 -0800
 comments: true
 categories:  [netflix, movie]
