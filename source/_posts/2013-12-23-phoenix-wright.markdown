@@ -1,33 +1,22 @@
 ---
 layout: post
-title: "Some Things Re: Phoenix Wright: Dual Destinies"
+title: "Some Thoughts Re: Phoenix Wright: Dual Destinies"
 date: 2013-12-23 11:03:14 -0800
 comments: true
 categories: [video games, phoenix wright]
-published: false
 ---
 
-<img class="book-cover" src="{{ root_url}}/images/aceattorney5.jpg" alt="Apollo Justice, Phoenix Wright, and Athena Cykes from Phoenix Wright: Dual Destinies"/>
+<img class="book-cover" src="{{ root_url}}/images/aceattorney5.png" alt="Apollo Justice, Phoenix Wright, and Athena Cykes from Phoenix Wright: Dual Destinies"/>
 <p class="caption">(<A href="http://www.joystiq.com/2013/10/24/phoenix-wright-dual-destinies-review-f8ea4d29/">via</a>)</p>
 
-After NaNoWriMo finished, my pastime of choice during my commute became playing through *Phoenix Wright: Dual Destinies*. I finally finished the main story as well as the DLC the other day.
+After NaNoWriMo finished, my pastime of choice during my commute became playing through *Phoenix Wright: Dual Destinies*.
 
 [ spoilers ahead ]
 
-## Athena falling on her face during the opening cinematic was cringeworthy.
-*Man.* I was really, *really* hoping that this game wouldn't have another cynical dude sweatdropping at the enthusiasms of a sidekick whose an infantile woman, if not just because it's already done: Maya, Pearls, and Trucy *all* already play this role.
+Athena was a cool protagonist, though scenes where she was relegated to "cyncial dude's naive, enthusiastic female sidekick" were yawny. (Come on! Maya and Trucy are already these characters, we don't need more of them.) Ultimately it's nice to see that Athena has her own reasons for entering the attourneyforce, and though they were man-centered they were also totally platonic, which was nice. Athena's devoting to "saving" Blackquill also mirrored her desire to save her best friend, Juniper Woods, which meant her dramatic, heroic tendencies at least were in character.
 
-Fortunately, unlike the other games where female main characters only play humorous sidekicks or damsels, Athena is a playable protag in this game, and has her own motivations. Her main reason for entering the attorneyforce turns out to be because she wants to save a dude, Simon Blackquill — but it's totally platonic, and matches with her desire to save people in general, including her best friend, Juniper Woods. Hurray for friendships!
+Mostly I was happy to see old characters again, even Apollo Justice, who I disliked before but liked in *Dual Destinies*, probably because he was now a familiar face, haha. What I wanted most out of this game was to see Maya again, but I guess a note from her will do in lieu of *nothing*.
 
-## Speaking of friendships, 
-I was one of those people for whom the only redeeming quality of *Apollo Justice* was the presence of Phoenix Wright himself at the end (complete with <a href="http://www.japanator.com/survey-says-just-what-on-earth-is-gap-moe--13198.phtml">gyappu moe</a>!). Coming into *Dual Destinies*, however, I was pleasantly surprised by how much I liked Apollo now, probably because he was now a familiar bro instead of an usurper.
+I also liked *Dual Destinies*' execution of "telling the end at the beginning." One of my favorite parts was realizing that Apollo had had an eyepatch over his eye even *before the courtroom explosion* — it was a fun/cute manipulation of the audience's assumptions that that particular bandage was just part of his injuries.
 
-I was also really happy to see both Pearls and Edgeworth again, and the presence of the both of them in the fifth case contributed to why it was my favorite of all the ones in the game. It was just a relief to come back to the personalities that I've known, and see how they've changed since I've seen them last. To be honest, what I wanted most out of this game was to see Maya again — and I'm disappointed that she never showed up in person, but at the very least it was explained where she went in the first place.
-
-
-## *Dual Destinies* is also an effective example of how compelling it can be to tell the ending at the beginning.
-It's not explained why Apollo starts the game wearing a strange jacket, and later, when you realize that he was wounded in the courtroom explosion, it's a mystery why Apollo already has an eyepatch even before the bomb has been detonated. Skipping back and forth through time did confuse me somewhat, however, and I wish the second "Ninetails Vale" case had added more development of the main characters, or the world. As a standalone case it wasn't incredibly interesting anyway, especially since you, once again, know who the murderer is from the beginning.
-
-## 3
-
-
+Good examples of "the end at the beginning" does *not*, however, include all the times that the game felt obliged to either tell you who the antagonist was, or make it clearly obvious, and PWDD's "<a href="http://www.awkwardzombie.com/index.php?page=0&comic=123013">serious case of the hand-holdies</a>" led to me to really only loving the game's final case, and feeling shruggy about the others. It would have been nice if each case had contributed more to each character's development as well; "Ninetails Vale" in particular didn't feel tied to anything in the larger story, and as a standalone wasn't terribly interesting to me either.

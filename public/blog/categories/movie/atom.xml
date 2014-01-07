@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Movie | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/movie/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2014-01-02T21:42:29-08:00</updated>
+  <updated>2014-01-07T14:31:59-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -18,7 +18,7 @@
     <link href="http://neauro.github.io/liwanag/blog/2013/12/20/on-netflix-killer-whales/"/>
     <updated>2013-12-20T06:55:33-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2013/12/20/on-netflix-killer-whales</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/blackfish-poster.jpg" alt="Blackfish poster"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/blackfish-poster.jpg" alt="Blackfish poster"/></p>
 
 <p class="caption">(<A href="http://www.magpictures.com/blackfish/">via</a>)</p>
 
@@ -38,7 +38,7 @@
     <link href="http://neauro.github.io/liwanag/blog/2013/12/18/frozen/"/>
     <updated>2013-12-18T09:24:39-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2013/12/18/frozen</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/frozen-poster.jpg" alt="Frozen poster"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/frozen-poster.jpg" alt="Frozen poster"/></p>
 
 <p class="caption">(<A href="http://www.comingsoon.net/news/movienews.php?id=109012">via</a>)</p>
 
@@ -65,7 +65,7 @@
 
 <p>Given that the movie&rsquo;s main conflict is Elsa and Anna&rsquo;s relationship, and true love, the other major characters — Kristoff, Olaf, and Hans — all felt thrown in. I would have loved to see them all focused to serve the &ldquo;true love&rdquo; theme by addressing love in different ways. Treated differently, Kristoff could have been a great catalyst for Anna&rsquo;s development of her version of love. I&rsquo;m inagining him, a character distrusting of other humans, teaching her about the horrible things humans do; she fights it (&ldquo;No way, humans are inherently Lawful Good!&rdquo;); Kristoff then points out that her sister is laying waste to their kingdom and also has been pretty mean in general to people; Anna cracks a bit; and then, right on cue, Anna is betrayed again by Hans.</p>
 
-<p><img class="book-cover" src="{{ root_url}}/images/anna.jpg" alt="Frozen poster"/></p>
+<p><img class="book-cover" src="/images/anna.jpg" alt="Frozen poster"/></p>
 
 <p class="caption">omg will she now become totally jaded? or will she still choose looove? (<A href="http://turntherightcorner.com/2013/09/27/movie-trailer-for-disneys-frozen/disneys-frozen-2013-screenshot-princess-anna/">via</a>)</p>
 
@@ -74,14 +74,14 @@
 
 <p>Olaf was a character I grimaced at in the movie trailers and ended up being pleasantly entertained by.</p>
 
-<p><img class="book-cover" src="{{ root_url}}/images/olaf.gif" alt="Frozen poster"/></p>
+<p><img class="book-cover" src="/images/olaf.gif" alt="Frozen poster"/></p>
 
 <p class="caption">oh youu (<A href="http://worldbuiltfor2.tumblr.com/post/69015715475/when-someone-emotionally-hurts-you-but-you-have-to">via</a>)</p>
 
 
 <p>Even though his main purpose is comedic entertainment, it would have been nice to see more about what he means to Anna and Elsa&rsquo;s relationship. He&rsquo;s their precious childhood snowman, and is really the only indication Anna has that Elsa still treasures her after years of being isolated.</p>
 
-<p><img class="book-cover" src="{{ root_url}}/images/olaf.jpg" alt="Frozen poster"/></p>
+<p><img class="book-cover" src="/images/olaf.jpg" alt="Frozen poster"/></p>
 
 <p class="caption">love again, anna! do iiit! (<A href="http://www.rotoscopers.com/2013/09/27/ten-things-we-loved-about-the-new-frozen-trailer/">via</a>)</p>
 

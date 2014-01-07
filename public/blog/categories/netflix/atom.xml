@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Netflix | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/netflix/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2014-01-02T21:42:29-08:00</updated>
+  <updated>2014-01-07T14:31:59-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -18,7 +18,7 @@
     <link href="http://neauro.github.io/liwanag/blog/2013/12/20/on-netflix-killer-whales/"/>
     <updated>2013-12-20T06:55:33-08:00</updated>
     <id>http://neauro.github.io/liwanag/blog/2013/12/20/on-netflix-killer-whales</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/blackfish-poster.jpg" alt="Blackfish poster"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/blackfish-poster.jpg" alt="Blackfish poster"/></p>
 
 <p class="caption">(<A href="http://www.magpictures.com/blackfish/">via</a>)</p>
 
