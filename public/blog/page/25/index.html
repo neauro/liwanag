@@ -9,7 +9,7 @@
   <meta name="author" content="nadine a.">
 
   
-  <meta name="description" content="Operating Systems Notes [Chapter 6: Process Synchronization] Jan 18th, 2011 So a cooperating process is one that can affect or be affected by other &hellip;">
+  <meta name="description" content="How Do You Populate a Flex Spark List With Information From an Array? Jan 21st, 2011 First, you have to wrap the array up in a Collection class, and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,52 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/21/how-do-you-populate-flex-spark-list/">How Do You Populate a Flex Spark List With Information From an Array?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-21T00:00:00-08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+First, you have to wrap the array up in a Collection class, and then you connect that Collection class to the Flex component.  Here&#8217;s my understanding of how the three of these things relate to each other in general:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_SdPKamJbrgg/TToSbSYmLXI/AAAAAAAAAE4/qklhGy7hiRs/s1600/nuubu%2Bflex%2Bcomps.png" imageanchor="1" style="margin-left:1em; margin-right:1em"><img border="0" height="230" width="320" src="http://4.bp.blogspot.com/_SdPKamJbrgg/TToSbSYmLXI/AAAAAAAAAE4/qklhGy7hiRs/s320/nuubu%2Bflex%2Bcomps.png" /></a></div><br />In general, Collections also give you more functions to sort or filter arrays.  Also, if you alter the ArrayCollection &#8211; by adding or removing an item &#8211; you&#8217;ll affect the underlying array.<br /><br />In code, this is something that would (in general) work to link a List component to an array:<br /><br /><pre class="brush:cpp">&lt;?xml version="1.0" encoding="utf-8"?&gt;<br /><s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" <br />      xmlns:s="library://ns.adobe.com/flex/spark" <br />      xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600"><br /><br /> <fx:Script><br />  <![CDATA[<br />   import mx.collections.*;<br />   protected var array:Array;<br />   protected var arrayCollection:ArrayCollection = new ArrayCollection();<br /><br />   arrayCollection.source = array;<br />   list.dataProvider = arrayCollection;<br />  ]]><br /> </fx:Script><br /> <s:List x="642" y="183" id="list" height="200" width="100"></s:List><br /></s:Application><br /></pre><br /><br />Sources:<br /><a href="http://livedocs.adobe.com/flex/3/html/help.html?content=about_dataproviders_1.html">Adobe: Using Data Providers and Collections</a><br /><a href="http://livedocs.adobe.com/flex/3/html/help.html?content=dpcontrols_1.html#478370">Adobe: List control</a><br /><a href="http://blog.flexdevelopers.com/2009/03/flex-basics-arraycollection.html">Flex Developers & Development: ArrayCollection Basics</a><br /><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/collections/ArrayCollection.html">Adobe: ArrayCollection documentation</a></div>
+</div>
+  
+  
+  <div class="category-bit">Categories: 
+
+<span class="categories">
+  
+    <a class='category' href='/liwanag/blog/categories/actionscript/'>actionscript</a>, <a class='category' href='/liwanag/blog/categories/flex/'>flex</a>, <a class='category' href='/liwanag/blog/categories/programming/'>programming</a>
+  
+</span>
+
+</a>
+
+
+    </article>
   
   
     <article>
@@ -493,52 +539,6 @@ Nice solution, it worked great for me.  I only needed to reference the stage at 
 <span class="categories">
   
     <a class='category' href='/liwanag/blog/categories/c/'>c</a>, <a class='category' href='/liwanag/blog/categories/compsci/'>compsci</a>, <a class='category' href='/liwanag/blog/categories/notes/'>notes</a>, <a class='category' href='/liwanag/blog/categories/qna/'>qna</a>
-  
-</span>
-
-</a>
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/liwanag/blog/2011/01/06/operating-systems-notes-lecture-2/">Operating Systems Notes [Lecture 2]</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-06T00:00:00-08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-An operating system provides <a href="http://nuubu.blogspot.com/2011/01/operating-system-notes-chapter-1.html">a middle ground</a> between hardware and software, so making an operating system depends a lot on what hardware you have underlying it.  Computer hardware, however, has the amazing capacity to (at least until fairly recently) follow <strong>Moore&#8217;s Law</strong>, which states that <em>the number of transistors that can be placed inexpensively on an integrated circuit has doubled approximately every two years.</em>  I guess this trend has persisted for half a century, making it so that processors and memory have become ridiculously cheap, ridiculously fast.<br /><br />What this means is, the hardware conditions that you assume and initially create your operating system for may not hold true, and then you&#8217;ll be screwed.<br /><br />One interesting thing is that, though processor performance has increased throughout the years, disk capacity has become 10x as fast as processor performance.  Disk performance has <em>not</em> kept up, having only increased by a factor of 200 since 1983 (from 500 kb/s to ~100 mb/s).  Bandwidth presently is 100x as fast as processor performance, and 10x as fast as disk performance.<br /><br />An obvious implication of these unexpected growths is this: What happens if you have always designed systems so that they spend processing power so as to save &#8220;scarce&#8221; storage and bandwidth?<br /><br />Another thing: operating systems must load programs into main memory in order to execute them, but main memory is not large enough to hold everything all at once, and occasionally you&#8217;ll have to fetch data from the disc.  A computer going out of its way to fetch data from the disc is like a human going out of its way to fetch something from Pluto.  <em>Uphill.  Both ways.  In space.</em><br /><br />In general, hardware can dictate a lot about how simple or complex it will be to implement an OS.  Early OS (like DOS) didn&#8217;t have virtual memory, because the hardware didn&#8217;t allow it; and until recently, Intel-based PCs still didn&#8217;t support 64-bit addressing, though other platforms have had it since forever, like IBM, MIPS, etc.<br /><br />Features were also sometimes built into hardware to support OS building, like timer operation, memory protection, interrupts and exceptions, system calls.<br /><br /><strong>System calls</strong> are there so that the user can call an OS procedure, which is otherwise protected and kept out of hand&#8217;s reach on top of the refridgerator in kernel mode, so that the user doesn&#8217;t eat it all and spill it all over everything.  Once the user is done having a dessert cookie, the OS moves back into user mode, and relinquishes control back to the user.<br /><br />The kernel must save the state that the user was in before the user wanted to eat a cookie, so that it can remember what it was doing before it was interrupted, and resume.<br /><br />So in general the OS sits around waiting for events to happen that it can deal with.  Events can be interrupts, which are sent by programs, or they can be exceptions.  <strong>Exceptions</strong> are thrown by hardware once it detects certain rules being violated (like if someone tries to write to a read-only file), and when they happen control must be passed to the OS&#8217;s handler, with the saved state at the time of the fault.  Exceptions are a performance optimization in that the OS doesn&#8217;t have to deal with figuring out when things are going wrong &#8211; the hardware detects the violation &#8211; and detecting exceptions would be a big hassle for the OS because those extra checks would have to be written into the kernel, taking valuable space.<br /><br />In the meantime, interrupts allow for <strong>asynchronous I/O</strong>.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/_SdPKamJbrgg/TSasz1jh5fI/AAAAAAAAAD8/9lBMBA1S9E0/s1600/os%2Bio%2Bcontrol.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/_SdPKamJbrgg/TSasz1jh5fI/AAAAAAAAAD8/9lBMBA1S9E0/s320/os%2Bio%2Bcontrol.jpg" width="246" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">this is how we deal with I/O interrupts around here</td></tr></tbody></table><br />So, I/O interrupts can happen at any time, any place.  How do you protect yourself from getting interrupted so much that you end up never getting anything done?  Your OS will have to be able to <strong>synchronize concurrent processes</strong> by guaranteeing that short instructions (read-modify-write) will happen automatically; or maybe, by not letting certain processes get interrupted until their finished; or maybe, by having special atomic instructions, such as the read-modify-write, which you execute immediately.<br /><br /><strong>Concurrent programming</strong> is a huge deal and is a huge difference between systems programming and &#8220;traditional application programming,&#8221; which I&#8217;m starting to feel is like, the lame computer programming.<br /><br /><br /><br />Sources:<br />Lecture 2 notes<br /><a href="http://en.wikipedia.org/wiki/Moore's_law">Wikipedia: Moore&#8217;s Law</a></div>
-</div>
-  
-  
-  <div class="category-bit">Categories: 
-
-<span class="categories">
-  
-    <a class='category' href='/liwanag/blog/categories/compsci/'>compsci</a>, <a class='category' href='/liwanag/blog/categories/notes/'>notes</a>, <a class='category' href='/liwanag/blog/categories/operating-systems/'>operating systems</a>
   
 </span>
 
