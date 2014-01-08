@@ -3,7 +3,7 @@ layout: post
 title: "New Tumblr: Delightful UX"
 date: 2014-01-07 14:39:07 -0800
 comments: true
-categories: [ux]
+categories: [ui/ux, tumblr]
 ---
 
 <img class="book-cover" src="{{ root_url}}/images/delightful-ux.png" alt="Screenshot of delightful-ux.tumblr.com"/>

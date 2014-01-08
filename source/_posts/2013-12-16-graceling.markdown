@@ -5,6 +5,7 @@ date: 2013-12-16 11:26:00 -0800
 comments: true
 categories: 
  - book review
+ - book recs
 ---
 
 <img class="book-cover" src="{{ root_url}}/images/cover_graceling.jpg" alt="Graceling cover"/>

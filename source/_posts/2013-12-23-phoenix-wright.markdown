@@ -3,7 +3,7 @@ layout: post
 title: "Some Thoughts Re: Phoenix Wright: Dual Destinies"
 date: 2013-12-23 11:03:14 -0800
 comments: true
-categories: [video games, phoenix wright]
+categories: [video games, games, phoenix wright]
 ---
 
 <img class="book-cover" src="{{ root_url}}/images/aceattorney5.png" alt="Apollo Justice, Phoenix Wright, and Athena Cykes from Phoenix Wright: Dual Destinies"/>

@@ -4,7 +4,7 @@ title: Frozen
 subtitle: It was a bit unfocused, but fun
 date: 2013-12-18 09:24:39 -0800
 comments: true
-categories: [movie]
+categories: [movies]
 ---
 
 <img class="book-cover" src="{{ root_url}}/images/frozen-poster.jpg" alt="Frozen poster"/>
