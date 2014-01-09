@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Design | liwanag]]></title>
   <link href="http://neauro.github.io/liwanag/blog/categories/design/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/liwanag/"/>
-  <updated>2014-01-08T10:50:46-08:00</updated>
+  <updated>2014-01-08T14:06:19-08:00</updated>
   <id>http://neauro.github.io/liwanag/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -12,17 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[I Have a New Portfolio!]]></title>
-    <link href="http://neauro.github.io/liwanag/blog/2013/07/25/i-have-new-portfolio/"/>
-    <updated>2013-07-25T00:00:00-07:00</updated>
-    <id>http://neauro.github.io/liwanag/blog/2013/07/25/i-have-new-portfolio</id>
-    <content type="html"><![CDATA[<div class='post'>
-<div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-0FbqJ-cYSWY/UfHTOt3KZTI/AAAAAAAADwI/LEtsox-4SGg/s1600/Screen+Shot+2013-07-23+at+Tue,+Jul23,+2013.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="488" src="http://4.bp.blogspot.com/-0FbqJ-cYSWY/UfHTOt3KZTI/AAAAAAAADwI/LEtsox-4SGg/s640/Screen+Shot+2013-07-23+at+Tue,+Jul23,+2013.png" width="640" /></a></div><br /><br />It is partially inspired by <a href="http://blog.alexcornell.com/the-worst-portfolio-ever">The Worst Portfolio Ever</a> (many elements of which my <a href="http://nuubu.blogspot.com/2012/12/new-portfolio-layout-woo.html">last design</a> shared, such as "a big pretty picture on top that means nothing," haha).<br /><br />My goals this time were to:<br /><ul><li>actually talk about my projects</li><li>show more pictures of my projects</li><li>add some more fun things — like my cosplay, or pictures of Alpacasso</li><li>use new things I've learned — such as CSS transitions and Bootstrap</li></ul><div><a href="http://neauro.com/">Success!</a></div></div>
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Racermate Wireframes]]></title>
@@ -81,6 +70,17 @@ Let me know what you think once you do!</div>
 I haven&#39;t read everything yet but I&#39;ll check out all of them!</div>
 </div>
 </div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Good Design Moves Tumblr Has Made Recently Which I Really Appreciate]]></title>
+    <link href="http://neauro.github.io/liwanag/blog/2011/08/08/good-design-moves-tumblr-has-made/"/>
+    <updated>2011-08-08T00:00:00-07:00</updated>
+    <id>http://neauro.github.io/liwanag/blog/2011/08/08/good-design-moves-tumblr-has-made</id>
+    <content type="html"><![CDATA[<div class='post'>
+<strong>Tiled Photosets</strong><br />If you wanted to post more than one picture at a time on Tumblr, it used to be that the pictures would be placed into a little slideshow applet.  It was really elegant and cute; you would see one picture at a time, and could press a little rounded arrow to move on to the next picture.<br /><br />The problem is, no one would use it.  Or at least, if people did post this way, it didn't get interacted with.  (At least, I didn't, and the rare frequency with which I met up with a photoset on my dashboard makes me think that others didn't really like this method of posting either.)  On Tumblr people just scroll, scroll, scroll.  Occasionally laugh.  And don't stop for your dang photosets.<br /><br />Then, suddenly!  A tiled photoset appears!<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-CZrjAQAmsGI/TkCxzPGtDgI/AAAAAAAAAVg/78Ui_m8CiTk/s1600/photoset.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="526" src="http://4.bp.blogspot.com/-CZrjAQAmsGI/TkCxzPGtDgI/AAAAAAAAAVg/78Ui_m8CiTk/s640/photoset.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">with varied photo sizes, even!</td></tr></tbody></table><br />All of a sudden, you can see all the pictures in a photoset at once!  Plus the given layouts for different pictures make them all look really artsy, which Tumblr users love, because let's be honest, over half of us are there just reblogging stuff.  Though another mark of how cool this feature is is how people have taken creative liberties with it, making sets of images like <a href="http://natsura.tumblr.com/post/8598587153/flashinglightsandecstasy-lol-xd">this</a>, or <a href="http://natsura.tumblr.com/post/8572474978">this</a>, or even <a href="http://natsura.tumblr.com/post/8436544789">this</a>.<br /><br />Making a feature which fits with how people actually use the product, and allows them to be creative?  ++!<br /><br /><br /><strong>Reblogging Tags</strong><br />I actually just noticed this today.  Never again will I have to repopulate the tags of something that I'm reblogging.  As an example, <a href="http://textless.tumblr.com/">textless.tumblr</a> is a great blog for macro photography of insects (and other animals), and the photographer always dutifully tags all of his posts with whatever is pictured.  <em>Wooly Aphid.  Larva.  Wasp Mimic. Secropia Silkmoth.</em>  (These tags often even get cut off in the dashboard post.  I can't find an example now, but may later.)  In any case, though I love the accuracy of it, no way am I going to spend any time tagging these reblogs with anything more than "photo" and maybe "bug."<br /><br />Fortunately, now tags also get reblogged!  So, now reblogging things can make you feel even more productive with even less energy. :)<br /><br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-S_bvkOlgoOE/TkC4Lq-KX2I/AAAAAAAAAVo/bnrweSPmG8E/s1600/photoset2.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="258" src="http://3.bp.blogspot.com/-S_bvkOlgoOE/TkC4Lq-KX2I/AAAAAAAAAVo/bnrweSPmG8E/s400/photoset2.jpg" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">thanks, tumblr. &nbsp;you the bomb</td></tr></tbody></table><br /><strong>Edit:</strong><br />Now if only tags were easier to remove than pressing that teensy little X beside every rounded-corner box.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-oWzXOJfPEgI/TkNLEo_SODI/AAAAAAAAAV4/7vyWJbuxfDA/s1600/tumblr3.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="230" src="http://2.bp.blogspot.com/-oWzXOJfPEgI/TkNLEo_SODI/AAAAAAAAAV4/7vyWJbuxfDA/s400/tumblr3.jpg" width="400" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: left;"><b>Edit 2:</b></div><div class="separator" style="clear: both; text-align: left;">This feature was eventually removed. I wonder why :(</div></div>
 
 ]]></content>
   </entry>
