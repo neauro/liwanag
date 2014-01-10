@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Game Recs | liwanag]]></title>
   <link href="http://neauro.github.io/blog/categories/game-recs/atom.xml" rel="self"/>
   <link href="http://neauro.github.io/"/>
-  <updated>2014-01-08T20:33:57-08:00</updated>
+  <updated>2014-01-09T15:16:27-08:00</updated>
   <id>http://neauro.github.io/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -18,7 +18,7 @@
     <link href="http://neauro.github.io/blog/2014/01/08/thomas-was-alone/"/>
     <updated>2014-01-08T09:52:26-08:00</updated>
     <id>http://neauro.github.io/blog/2014/01/08/thomas-was-alone</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/twa.png" alt="Screenshot of Thomas Was Alone"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/twa.png" alt="Screenshot of Thomas Was Alone"/></p>
 
 <p class="caption">(<a href="http://www.mobygames.com/game/windows/thomas-was-alone/screenshots/gameShotId,566500/">via</a>)</p>
 

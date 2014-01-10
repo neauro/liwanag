@@ -9,7 +9,7 @@
   <meta name="author" content="nadine a.">
 
   
-  <meta name="description" content="Incorporating ActionScript 3.0 Code With a Flex Project Jan 30th, 2011 So my project of incorporating Flex UI with an ActionScript project has just &hellip;">
+  <meta name="description" content="Operating Systems Notes [Memory Management] Feb 11th, 2011 What&#8217;s so cool about memory management anyway broSo unlike way back when in the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,144 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/02/11/operating-systems-notes-memory/">Operating Systems Notes [Memory Management]</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-11T00:00:00-08:00" pubdate data-updated="true">Feb 11<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<span class="sig">What&#8217;s so cool about memory management anyway bro</span><br />So unlike way back when in the time of punchcards &amp; etc., we use computers which are capable of <strong>multiprogramming</strong>, a feature of which is the ability to have multiple processes and jobs in memory all at once.<br /><br />We&#8217;ve already looked at ways that an operating system&#8217;s <a href="http://nuubu.blogspot.com/2011/01/operating-systems-notes-chapter-5-cpu.html">processing power</a> can be utilized effectively when you have many different processes executing simultaneously, but how can memory &#8211; also a scarce resource in a computer &#8211; be distributed across processes?  The goal of memory management is to <strong>maximize memory utilization and system throughput</strong>.<br /><br />You also have to make sure that you can manage memory so as to:<br /><ol><li><strong>Protect</strong>: that is, make sure processes execute in isolation, so they don&#8217;t interfere with each other</li><li><strong>Translate fast</strong>: that is, make sure that memory lookups are speedy despite the fact that protection kind of slows stuff down</li><li><strong>Context switch fast</strong>: that is, make sure memory hardware is updated when old processes are removed from the CPU and new processes are given to it</li></ol><br />On a hardware level, when you&#8217;re dealing with memory, you&#8217;re really messing around with <strong>base registers</strong> and <strong>limit registers</strong>.   Base registers contain the address of a start of a program,  and limit registers contain the length of the program.  Both of these things define the scope of a program&#8217;s memory.<br /><br />Programs get their code and data loaded into memory so that they can be run in processes.  It&#8217;s important to keep the memory that processes use separate, so that they don&#8217;t interfere with each other, overwriting the other program&#8217;s code and making it crash and such.  The memory that a program has is allocated is called its <strong>address space</strong>.  In the olden days, if a program couldn&#8217;t fit into memory, then you&#8217;d have to manually overwrite parts of the code that you weren&#8217;t using presently.<br /><br /><br /><span class="sig">Virtual Memory</span><br />Virtual memory is an abstraction provided by the operating system for memory management.  Thanks to virtual memory, we can do cool things like:<br /><ul><li>allow programs to execute even if their entire address space isn&#8217;t in physical memory</li><li>let programs execute with less RAM than they really &#8220;need&#8221;</li><li>isolate processes from each other so that they can&#8217;t name addresses that other processes can use</li></ul>This is mainly because programs don&#8217;t really use all of the code that they&#8217;re written with &#8211; for instance, a program with if-statements will either execute one branch of the if-statement or the other, and there&#8217;s no real need to allocate space for code that isn&#8217;t run.<br /><br />On a hardware level, virtual memory relies on translation-lookaside buffers (TLB&#8217;s), page tables, page fault handling&#8230;you&#8217;ll also need to deal with swapping and segmentation.  <strong>Swapping</strong> is the memory-equivalent of context switching for processing power.  When you do a context switch between processes, you remove the old process from using CPU and allocate that CPU to the new process; in swapping, you remove memory from the previous process and give it to the new one.<br /><br /><br /><span class="sig">Virtual Addresses</span><br />So, this whole time when we&#8217;ve been talking about how <a href="http://nuubu.blogspot.com/2011/01/operating-systems-notes-chapter-2-3.html">a process consists of an address space</a> (along with at least one thread and OS resources), what we&#8217;ve really meant is that processes have a set of <strong>virtual addresses</strong>.  Once more: a process&#8217;s address space is its set of virtual addresses.<br /><br />And what are virtual addresses?  They are the layer of abstraction between a process and physical memory.  When the CPU executes instructions from a loaded program, it uses the virtual addresses for pointers, arguments to load and store instructions, and so on.  Virtual addresses must be translated by hardware into physical addresses, the actual location of the data stored on disk.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-KotutHv0Kkk/TVTbDb2stkI/AAAAAAAAAGE/c_t2mc_tACA/s1600/viraddr1.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="226" src="http://4.bp.blogspot.com/-KotutHv0Kkk/TVTbDb2stkI/AAAAAAAAAGE/c_t2mc_tACA/s320/viraddr1.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">so, here we&#8217;ve got: process p&#8217;s pointer, which points to a virtual address in p&#8217;s address space. &nbsp;that in turn points to a physical address in physical memory.  the physical address is what points to the actual data.</td></tr></tbody></table><br /><br /><span class="sig">How do you translate virtual addresses into physical addresses?</span><br />Virtual addresses (in the process address space) and physical addresses (on disk) don&#8217;t correspond exactly to each other &#8211; that is, a virtual address in space 0 doesn&#8217;t necessarily point to a physical address in space 0.  So, how does a virtual address translate to a physical address?<br /><br />To translate in the olden days, the physical memory would be partitioned, in one of two ways:<br /><ol><li><strong>Fixed partitions.</strong>  The physical memory would be broken up into fixed-size partitions, so that the physical address could be obtained by adding the virtual address and the base register.  When a context switch happened, a new base register would be loaded.  This was a simple way of doing things but has <strong>fragmentation problems</strong> &#8211; both <strong>internal fragmentation</strong> (which happens when the physical memory partition is larger than what the program needs) and <strong>external fragmentation</strong> (which happens when you may have two small partitions remaining, and one large job which won&#8217;t fit into each separately).<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-Ty-M47nOJzo/TVTdQWMAdkI/AAAAAAAAAGM/ftBjaeeoabo/s1600/viraddr2.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="203" src="http://4.bp.blogspot.com/-Ty-M47nOJzo/TVTdQWMAdkI/AAAAAAAAAGM/ftBjaeeoabo/s320/viraddr2.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">with fixed partitions,<br />physical address = virtual address + base register<br />the limit register check is to make sure you don&#8217;t overstep physical memory</td></tr></tbody></table><br /></li><li><strong>Variable partitions.</strong> In this case, the physical memory would be broken up into variable-size partitions, the size dependant on the program.  Again, the physical address is equal to the virtual address plus the base register.  Variable partitioning <strong>fixes internal fragmentation</strong>, since you won&#8217;t allocate more than a program needs and therefore waste space that other programs could use &#8211; <strong>but you still have external fragmentation</strong>, because as you load and unload jobs, holes are left scattered behind.  (This is slightly different than external fragmentation in fixed partition systems.)<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-4zihtB6CQNQ/TVTeWbpF6jI/AAAAAAAAAGU/0-y3xwKJIkI/s1600/viraddr3.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="245" src="http://1.bp.blogspot.com/-4zihtB6CQNQ/TVTeWbpF6jI/AAAAAAAAAGU/0-y3xwKJIkI/s320/viraddr3.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">with variable partitions,<br />physical address = virtual address + base register<br />the limit register makes sure you don&#8217;t overstep memory<br />the black parts denote unused holes in the memory 3:</td></tr></tbody></table></li></ol><br /><br />One way to deal with external fragmentation is to be like,<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-iVkxoUAgHa0/TVTfpWKPs_I/AAAAAAAAAGc/5ngILCCIYpQ/s1600/viraddr4.jpg" imageanchor="1"><img border="0" height="234" src="http://3.bp.blogspot.com/-iVkxoUAgHa0/TVTfpWKPs_I/AAAAAAAAAGc/5ngILCCIYpQ/s320/viraddr4.jpg" width="320" /></a></div><br />and basically push all the allocated physical memory together.  Which is bad because you have to do this manually and like, all the time.<br /><br />So, a better way to do things in general is to be like, PAGES, BRO.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-29MhcnKDPZQ/TVTf8yOllPI/AAAAAAAAAGk/xqYlIwU95HQ/s1600/viraddr5.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="250" src="http://3.bp.blogspot.com/-29MhcnKDPZQ/TVTf8yOllPI/AAAAAAAAAGk/xqYlIwU95HQ/s320/viraddr5.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">PAGES. &nbsp;YE</td></tr></tbody></table><br /><br /><span class="sig">Pages and Page Tables</span><br />So with pages, processes view their address space as some memory ranging from indexes 0 to N, but in reality the mapping of those address spaces to physical addresses points every which way all over the disk.  The program doesn&#8217;t know this at all, and isolation is still provided to all program&#8217;s because a program still can&#8217;t reference memory outside of its virtual address space.<br /><br />So.  A virtual address is comprised of a virtual page number (VPN), as well as some offset.  A physical address is comprised of a page frame number (PFN), as well as some offset.  Now, to translate from a virtual address to a physical address, you need to divide the address space into equal-sized &#8220;pages,&#8221; and then use one more thing: the <strong>page table</strong>.  The page table contains the mapping between a virtual address&#8217;s VPN and a physical address&#8217;s PFN, and this is how a program with a virtual address can access physical memory, memory on disk.  Once more, for good measure: a page table maps a <em>virtual address page</em> to a <em>physical page frame</em>.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_SdPKamJbrgg/TVThyWocAlI/AAAAAAAAAGs/cQVcDkDCC0U/s1600/viraddr6.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="215" src="http://4.bp.blogspot.com/_SdPKamJbrgg/TVThyWocAlI/AAAAAAAAAGs/cQVcDkDCC0U/s320/viraddr6.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">it&#8217;s easy, right?</td></tr></tbody></table><br /><br />Page tables contain <strong>page table entries (PTEs)</strong>, which look something like this:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_SdPKamJbrgg/TVTiaKBOuiI/AAAAAAAAAG0/EutComkh8Jg/s1600/viraddr7.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="91" src="http://1.bp.blogspot.com/_SdPKamJbrgg/TVTiaKBOuiI/AAAAAAAAAG0/EutComkh8Jg/s320/viraddr7.jpg" width="320" /></a></div><ul><li>the <strong>valid bit</strong> says whether or not this PTE can be used &#8211; that is, whether or not the virtual address is valid, meaning it actually maps to some physical address, which points to a location in physical memory.</li><li>the <strong>referenced bit</strong> says whether the page has been accessed &#8211; that is, whether it&#8217;s been read from or written to at all</li><li>the <strong>modified bit</strong> says whether or not the page is dirty, meaning a write has occurred to that page</li><li>the <strong>protection bits</strong> control which operations (read, write, execute, etc.) are allowed to be used on this page</li><li>and finally, the PFN determines the &#8220;physical page,&#8221; the location in physical memory that the given virtual address points to.  Like how a base register contains the starting address of a process&#8217;s virtual address space, a physical page&#8217;s start address is determined by the PFN.</li></ul><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-IjOgv0A9WCU/TVTurOC7yJI/AAAAAAAAAHE/1vfxhYR5OlA/s1600/viraddr9.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="232" src="http://2.bp.blogspot.com/-IjOgv0A9WCU/TVTurOC7yJI/AAAAAAAAAHE/1vfxhYR5OlA/s320/viraddr9.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">here&#8217;s the picture from earlier without the page table photoshopped out of it</td></tr></tbody></table><br /><br /><strong>The great thing about paging</strong> is that makes it easy to allocate physical memory to a program &#8211; physical memory is now ordered in a list of frames, and when you want to allocate it, just remove it from the list of &#8220;free&#8221; frames.  This solves external fragmentation and all the troublesome-ness of managing the holes left behind from loading and unloading programs.<br /><br />And, it lends itself naturally to <strong>virtual memory</strong>, because a program doesn&#8217;t need to be completely resident in the memory anymore &#8211; only partially, only the parts that you care about right now (or soon).  If it so happens that you need code that is not presently in memory (which you&#8217;ll know, because when you use a virtual address to access something not in memory, the valid bit in the PTE will cry out), you take a <strong>page fault</strong>, and the code or data that you need will be brought into memory.<br /><br />Remaining problems: internal fragmentation, since a process still may not use memory in exact multiples of pages.  Also, there&#8217;s a great overhead in referencing anything, since instead of accessing that thing directly, you&#8217;re making two look-ups, first through the page table, and then into physical memory itself.  <span class="shh">(This can be solved with TLBs &#8211; more on that later.)</span><br /><br />The other problem: page tables can be huge.  Consider that each process has its own address space, which means you need one page table entry per page in the address space.  Operating systems typically have separate page tables per process, and things can get huge fast.  The solution to this is to&#8230;page the page tables lol.<br /><br /><br /><span class="sig">And yet another way to translate virtual addresses into physical addresses: segmentation</span><br />To do segmentation, partition not the physical memory, but the address spaces, into logical units: one partition for stack, one for code, one for the heap, one for subroutines&#8230;<br /><br />A virtual address that is a part of this address space will then consist of a <strong>segment number</strong> and an <strong>offset</strong>.<br /><br /><strong>The good thing about this: it&#8217;s more logical</strong>, since without segmentation, what the linker does during compilation is take a bunch of modules that call each other and linearizes them.  These modules are all independent and are treated that way when the address space is segmented.  Segmentation is also a natural extension of variable-sized partitions; where there&#8217;s one variable partition per process, there&#8217;s many segments per process.  Segmentation also facilitates sharing and reuse of code.<br /><br /><strong>Disadvantages: just like a variable partition system, segmentation can have all the horrific external fragmentation, even if linking is simpler.</strong><br /><br />On a hardware level, you would need a segment table with multiple base/limit register pairs, one per segment in the address space.  The physical address would be yielded by adding the virtual address offset to the base address of the segment.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_SdPKamJbrgg/TVTsVUM3gXI/AAAAAAAAAG8/rfJKLzVUE18/s1600/viraddr8.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="238" src="http://3.bp.blogspot.com/_SdPKamJbrgg/TVTsVUM3gXI/AAAAAAAAAG8/rfJKLzVUE18/s320/viraddr8.jpg" width="320" /></a></div><br />Anyway, to fix the problem that segmentation has with external fragmentation, you can mix segmentation and paging.  Use segments to manage logical units, and then use paging to partition segments into fixed-size chunks.  Each segment will have its own page table (rather than there being one page table per address space), and memory allocation once again becomes easy and cool, without external fragmentation problems.<br /><br /><br /><br />Sources:<br />lecture 10 notes<br /><a href="http://www.science-dictionary.com/definition/base-register.html">Science-Dictionary: base register</a><br /><a href="http://answers.yahoo.com/question/index?qid=20090520065552AAOWEvZ">Yahoo Answers: Base and limit register?</a><br />section 5 notes</div>
+</div>
+  
+  
+  <div class="category-bit">Categories: 
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/compsci/'>compsci</a>, <a class='category' href='/blog/categories/notes/'>notes</a>, <a class='category' href='/blog/categories/operating-systems/'>operating systems</a>
+  
+</span>
+
+</a>
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/02/05/okay-dude-so-planting-nachos-is/">Okay Dude, So, Planting Nachos Is Actually Kind of Cute</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-05T00:00:00-08:00" pubdate data-updated="true">Feb 5<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_SdPKamJbrgg/TU4ySbyJ4dI/AAAAAAAAAFk/Ipk2855l4uk/s1600/nachos1.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="534" src="http://3.bp.blogspot.com/_SdPKamJbrgg/TU4ySbyJ4dI/AAAAAAAAAFk/Ipk2855l4uk/s640/nachos1.jpg" width="640" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_SdPKamJbrgg/TVBwgqjNpbI/AAAAAAAAAF0/qtPvgGw2FOI/s1600/nachos01.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="532" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TVBwgqjNpbI/AAAAAAAAAF0/qtPvgGw2FOI/s640/nachos01.jpg" width="640" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_SdPKamJbrgg/TVByO8ZIlfI/AAAAAAAAAF8/NTGFfh633Ko/s1600/nachos02.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="532" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TVByO8ZIlfI/AAAAAAAAAF8/NTGFfh633Ko/s640/nachos02.jpg" width="640" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_SdPKamJbrgg/TU4yXQ69pVI/AAAAAAAAAFs/Imea2ZBUA_I/s1600/nachos3.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="532" src="http://3.bp.blogspot.com/_SdPKamJbrgg/TU4yXQ69pVI/AAAAAAAAAFs/Imea2ZBUA_I/s640/nachos3.jpg" width="640" /></a></div><br />Other things I approve of:<br /><ul><li>being able to sell bushels of stuff</li><li>apparently being able to craft stuff when I reach level 25 (after I get tons of people to help me build the wineries and craft areas and whatever, I guess)</li><li>FINALLY FINDING A QUEEN BEE OMG AUGH FINALLY</li></ul></div>
+</div>
+  
+  
+  <div class="category-bit">Categories: 
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/games/'>games</a>, <a class='category' href='/blog/categories/video-games/'>video games</a>
+  
+</span>
+
+</a>
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/02/04/operating-systems-notes-deadlocks/">Operating Systems Notes [Deadlocks]</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-04T00:00:00-08:00" pubdate data-updated="true">Feb 4<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+So.  Real talk.  I guess deadlocks kind of suck.<br /><br /><strong>A deadlock is an irreducible circular dependence</strong>.  You would use locks  to <a href="http://nuubu.blogspot.com/2011/01/operating-systems-notes-chapter-6.html">synchronize</a> threads and keep them from messing with each other when they&#8217;re working on shared resources, like a global variable.<br /><br />When a deadlock happens, the two threads can&#8217;t advance because they each own a lock to a resource that the other one needs in order to continue on.<br /><br />Deadlocks can be visible as cycles.  In this next picture, process P1 has R1 and only needs R2 to proceed.  However, P2 owns R2 and needs R1 to proceed.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/_SdPKamJbrgg/TUw0_-YLnBI/AAAAAAAAAFM/Fqt7QcRHTOM/s1600/deadlock1.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="166" src="http://1.bp.blogspot.com/_SdPKamJbrgg/TUw0_-YLnBI/AAAAAAAAAFM/Fqt7QcRHTOM/s320/deadlock1.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">and so, unhappiness abounds</td></tr></tbody></table><br /><br />A cycle doesn&#8217;t necessarily always signal a deadlock, however, as in this picture.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_SdPKamJbrgg/TUw2F2J0RXI/AAAAAAAAAFU/WT2g1Yhukg8/s1600/deadlock2.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TUw2F2J0RXI/AAAAAAAAAFU/WT2g1Yhukg8/s320/deadlock2.jpg" width="206" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">yaaaaay</td></tr></tbody></table><br />Here, you would think there would be a cycle involving the processes P1 and P3, and the resources R1 and R2.  But, P2 could potentially release its ownership of the resource R1, and then P1 would be able to advance, and then the cycle would be broken.   Thus the <em>irreducible</em> part of the definition of deadlocks.  A graph can be reduced if a thread within that graph can have all of its requests granted.<br /><br /><br />In the case of code, a deadlock could look something like this.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/_SdPKamJbrgg/TUw4Mx7zGTI/AAAAAAAAAFc/11kExpNbcBs/s1600/deadlock3.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="124" src="http://1.bp.blogspot.com/_SdPKamJbrgg/TUw4Mx7zGTI/AAAAAAAAAFc/11kExpNbcBs/s320/deadlock3.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">:(</td></tr></tbody></table><br />A deadlock happens in this case if Thread1 and Thread2 are running simultaneously, and Thread1 acquires lock A and Thread2 acquires lock B.  Then, they both need the lock that the other thread has to proceed.  No advancement.<br /><br />One way to deal with a case like this would be to make a function which would grab two locks for a thread simultaneously, instead of one at a time.<br /><br /><br /><span class="sig">Avoiding Deadlocks</span><br />There are three methods you can use to avoid deadlocks: preventative, avoidance, and detection.<br /><br /><strong>Prevention</strong> is a static method of avoidance.  You can make sure each thread obtains all the locks that it needs, and waits until all are available before moving.  The downside to this method is that you may end up making the system move more slowly &#8211; ideally you want some threads to do what work they can do with what they&#8217;ve got, not having to wait.  This is called <em>hold and wait</em>.<br /><br />In <em>circular wait</em>, resources are ordered, which means threads obtain locks to the resources in sequence.  This works because you won&#8217;t have threads grabbing things out of order and causing deadlocks.  But there&#8217;s disadvantages too: new locks will need to be added to the right spot, <em>all</em> resources would have to be ordered, including drives and networks and things, and how would you determine how to order those resources?  It&#8217;s kind of messy.<br /><br /><strong>Avoidance</strong> is a dynamic way of dealing with deadlocks, meaning I think that the system handles it, rather than the threads themselves.  There&#8217;s also a <em>circular wait</em>, but it&#8217;s different.  In avoidance, each thread states how many resources it needs max, and the system uses the Banker&#8217;s Algorithm on the request to see if the system could allocate that max to that thread, and still have enough resources remaining to let all the other threads finish their execution.<br /><br />Basically, with every thread&#8217;s request for its max resources, do this:<ul><li>Pretend that you granted the request</li><li>Pretend that you granted everyone else&#8217;s requests too</li><li>Can the resulting graph of threads and resources (as above) be reduced?</li><li>If yes, allocate the requested resource to that first requesting thread.  If not, block dat thread!</li></ul><br />With <strong>detection</strong>, also dynamic, the technique is to check to see if there&#8217;s a deadlock, and then eliminate it when you find one.  I&#8217;m pretty sure databases do a lot of stuff like this.  It&#8217;s easy to see if a deadlock has occurred already because the OS or relevant scheduler is aware of the processes and resources that are using/in use, so once you&#8217;ve found a deadlock, you should restart one of the threads, and hopefully that thread will have enough resources to run again in the next millisecond or two.  <br /><br /><br /><br />Sources:<br />section 5 notes<br />lecture 9 notes<br /><a href="http://en.wikipedia.org/wiki/Deadlock#Detection">Wikipedia: Deadlock Detection</a></div>
+</div>
+  
+  
+  <div class="category-bit">Categories: 
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/compsci/'>compsci</a>, <a class='category' href='/blog/categories/notes/'>notes</a>, <a class='category' href='/blog/categories/operating-systems/'>operating systems</a>
+  
+</span>
+
+</a>
+
+
+    </article>
   
   
     <article>
@@ -393,152 +531,6 @@ So a <strong>cooperating process</strong> is one that can affect or be affected 
 <span class="categories">
   
     <a class='category' href='/blog/categories/c/'>c</a>, <a class='category' href='/blog/categories/operating-systems/'>operating systems</a>, <a class='category' href='/blog/categories/programming/'>programming</a>, <a class='category' href='/blog/categories/qna/'>qna</a>
-  
-</span>
-
-</a>
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/01/14/q-semaphore-mutex/">[Q&a] Semaphore, Mutex</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-14T00:00:00-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-<span class="sig">What&#8217;s a semaphore?</span><br />A semaphore is a procted variable or abstract data type.  It relates to controlling access to some resource shared by processes running simultaneously.  They&#8217;re useful in preventing race conditions and deadlocks (though they don&#8217;t prevent them completely).<br /><br />Semaphores don&#8217;t keep track of which resources are free or who is using the resources; they only keep track of whether resources are free.  There are two types of semaphores: <b>counting semaphores</b> and <b>binary semaphores</b>.  Counting semaphores only keep track of how much of the resource is available at a given time (i.e. &#8220;all of my resources are being used up now&#8230;oh, someone came back, okay, now I have one free which you can use&#8221;).  Binary semaphores only keep track of whether a resource is being used or not, i.e. whether it is presently unavailable or available.<br /><br />Semaphores can&#8217;t prevent errors that occur if a process that has acquired a lock for the resource forgets to release the lock, etc.<br /><br />Also, errors can still happen if there are different resources managed by different semaphores and processes need to use more than one resource at a time.  An interesting thing: the <a href="http://en.wikipedia.org/wiki/Dining_philosophers_problem">dining philosophers problem</a>, which illustrates the problems with multiple processes sharing multiple resources.  Essentially, five philosophers are sitting at a table, either eating or thinking.  They each have a fork to their left and right, and there is a bowl of spaghetti in the middle of the table.  The philosophers need to serve themselves and eat spaghetti with both forks, but don&#8217;t speak to each other, so one may pick up a left fork and wait for his right fork to become free so that he may eat.  Meanwhile, the guy using his right fork may be waiting for his own other fork to become free.  And so on, and so forth.<br /><br />A semaphore in this case would be like a person who is aware of which forks are being used and which ones are available, so that when the philosophers try to eat, they have to consult him first, and he&#8217;ll tell them whether there are any forks to pick up which they can use.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/_SdPKamJbrgg/TS9WBJzlB7I/AAAAAAAAAEk/QEHATD_NLWw/s1600/proceed%2Bcat.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="283" src="http://3.bp.blogspot.com/_SdPKamJbrgg/TS9WBJzlB7I/AAAAAAAAAEk/QEHATD_NLWw/s320/proceed%2Bcat.jpg" width="300" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">semaphore cat is semaphore</td></tr></tbody></table><br />One problem with semaphores: <strong>busy waiting</strong>, which is what you need to put into processes that are waiting for other processes to finish executing their critical section.  (Or, what philosophers are doing when they are waiting for their neighbors to finish eating.) The busy waiting is basically just a loop waiting for the mutex to free up, and it wastes CPU that another process could be productive with.  A process that does this is a <strong>spinlock</strong>, because &#8220;the process &#8216;spins&#8217; while waiting for the lock.&#8221;  Essentially, if a program knows it needs a lock before it does the next bit of code, it sits in a while loop until the needed lock is freed up.<br /><br /><br /><span class="sig">What&#8217;s a mutex?</span><br />A mutex is essentially a binary semaphore, though mutex specifically describes an abstraction which prevents two processes from executing the same piece of code or accessing the same data at the same time.  Basically, it limits access to a single resource, to one &#8220;owner&#8221; who is at that time allowed to do whatever it wants with it before releasing the mutex so someone else can do something.<br /><br /><br /><span class="sig">What does IRQL mean?</span><br />IRQL stands for Interrupt Request Level, and has something to do with a process, and, given incoming interrupts, which one of those interrupts should be able to interrupt the running process, and which should not.  For instance, if you&#8217;re just quickly trying to modify a single variable, then you don&#8217;t want anything to interrupt you.<br /><br />Basically (I think), each thread has its own IRQL.  If the OS receives another thread to run which has a higher IRQL than that first thread, however, then it will pause the lower-IRQL thread to run the higher-IRQL code.  Weird deadlocks may occur in this case, however, if:<br /><ol><li>lower-IRQL thread is running, and acquires a lock</li><li>lower-IRQL thread is interrupted; higher-IRQL thread begins execution</li><li>higher-IRQL thread needs the lock that lower-IRQL thread has</li><li>higher-IRQL lock cannot continue without that lock</li><li>lower-IRQL thread cannot continue without higher-IRQL finishing execution</li></ol>So, what you would want to do in this case is make sure that a thread that obtains a lock cannot be interrupted.<br /><br />If it does so happen that you don&#8217;t want any interrupts to your thread, then make sure that the IRQL is raised to <code>APC_LEVEL</code>.  This level is pretty much only run when you&#8217;re using Fast Mutexes.  Part of the reason why Fast Mutexes are faster than normal Mutexes in the Windows kernel is because they deny APC interrupts.  APC interrupts originate from the processor, toward itself or another processor.<br /><br /><br /><span class="sig">How do I use a mutex in the Windows NT kernel?</span><br /><a href="http://www-user.tu-chemnitz.de/~heha/oney_wdm/ch04f.htm">Here&#8217;s</a> a start&#8230;<br /><br /><br />Sources:<br /><a href="http://en.wikipedia.org/wiki/Semaphore_%28programming%29">Wikipedia: Semaphore (programming)</a><br /><a href="http://us.generation-nt.com/answer/fast-mutexes-guarded-mutexes-help-27627542.html">GNT: Fast mutexes and guarded mutexes?</a><br /><a href="http://blogs.technet.com/b/askperf/archive/2009/07/21/the-basics-of-mutexes-and-spin-locks.aspx">TechNet: The Basics of Mutexes and Spin Locks</a><br /><a href="http://blogs.msdn.com/b/doronh/archive/2010/02/02/what-is-irql.aspx">MSDN: What is IRQL?</a><br /><a href="http://www.google.com/url?sa=t&amp;source=web&amp;cd=1&amp;ved=0CBMQFjAA&amp;url=http%3A%2F%2Fdownload.microsoft.com%2Fdownload%2Fe%2Fb%2Fa%2Feba1050f-a31d-436b-9281-92cdfeae4b45%2FLocks.doc&amp;rct=j&amp;q=ex%20initialize%20fast%20mutex%20example&amp;ei=yJEzTf7ILIGqsAP4rqiFBg&amp;usg=AFQjCNEWYt0oNPRzKd8sXHFsm_CgrHKZBw&amp;sig2=4FQ-QHdGlj_42VPdrKqIxA&amp;cad=rja">Windows Hardware and Driver Central: Locks, Deadlocks, and Synchronization</a><br /><em>Operating System Concepts (8th Edition)</em>, Silberschatz, Galvin and Gagne, ISBN 978-0-470-12872-5.</div>
-</div>
-  
-  
-  <div class="category-bit">Categories: 
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/compsci/'>compsci</a>, <a class='category' href='/blog/categories/notes/'>notes</a>, <a class='category' href='/blog/categories/qna/'>qna</a>
-  
-</span>
-
-</a>
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/01/14/operating-systems-notes-chapter-2-3/">Operating Systems Notes [Chapter 2, 3]</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-14T00:00:00-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-<span class="sig">OS Structures</span><br /><strong>Command shells</strong>, I guess, make it so that users can actually speak directly to the OS and do something, rather than writing a program to speak with the OS.  I didn&#8217;t realize this.<br /><br />To make requests of the OS otherwise, you&#8217;d need to do a <strong>system call</strong>.  Types of requests that you might make the the OS would involve process control, and file and device manipulation (i.e. writing, reading from a mouse or file).<br /><br />Since operating systems are huge and all its parts tend to be interconnected, some better ways to program them involve using <strong>layers</strong> or <strong>microkernels</strong>.<br /><br />In the layered system, the OS structure is broken into layers, with the lowest being hardware and the highest being the user interface.  Layers can speak to adjacent layers, but not further.  The advantage is that you could be working on one layer at a time, and assume that if it works that you can move on to the next layer.  The issue with this is that you make the assumption that layers would not need to have communication across layers, when really sometimes layers <em>do</em> need to speak across other layers in real life, i.e. a user program needing to alter a file.<br /><br />In a microkernel system, all non-essential kernel programs are implemented as system and user-level programs, which means that the kernel is as small as it can possibly be to code it.  In general, this minimal kernel would provide only process and memory management along with a way to communicate.  The main function of the microkernel now is only to facilitate communication between the client program and other services, with messages.  Advantage is that it&#8217;s also easy to extend a microkernel&#8217;s functionality.  Disadvantage: poor performance if you need to make tons of system calls.<br /><br />In general, modularity is important.<br /><br /><br /><span class="sig">Processes</span><br />A process is a program in execution.  It consists of an address space, at least one thread, and a set of OS resources.  The address space is memory which contains code and data for the running program, as well as data relevant to the threads: registers, instruction pointer, stack and stack pointer.  A process also has a set of OS resources, such as open files, network connections, etc.  A process contains everything you need to run the program, or to restart it, if it gets interrupted.<br /><br />Processes may be independent or cooperating, depending on how they interact with each other.  <strong>Cooperating processes</strong> require some way to communicate with each other: either through shared memory (through shared variables), or message passing (through a pipe).  With shared memory, application programmers manage the communication, whereas with message-passing, the operating system has to take care of communication.  Shared memory and message passing aren&#8217;t mutually exclusive.<br /><br />You can also communicate across computers in a client-server system using sockets, remote procedure calls, or pipes.  A socket is an endpoint for communication, so a connection between two applications consists of two sockets, one for each.  <a href="http://nuubu.blogspot.com/2011/01/remote-procedure-calls-rpc.html">Remote procedure calls</a> are when an application calls another application&#8217;s function across a system.  Pipes come in two flavors: ordinary, which allows parent and child processes to communicate; and named, which allows two unrelated processes to speak with each other.</div>
-</div>
-  
-  
-  <div class="category-bit">Categories: 
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/compsci/'>compsci</a>, <a class='category' href='/blog/categories/notes/'>notes</a>, <a class='category' href='/blog/categories/operating-systems/'>operating systems</a>
-  
-</span>
-
-</a>
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/01/14/flexas3-errors-with-stage-and-event/">Flex/AS3: Errors With Stage and Event Listeners</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-14T00:00:00-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-This is a continuation of myself attempting to find out how to <a href="http://nuubu.blogspot.com/2010/12/problem-how-do-i-use-flex-components-to.html">use Flex UI components with a previously created AS3 project</a>.<br /><br />And it works fine, except for this error which I get when running in debug mode:<br /><br /><code>TypeError: Error #1009: Cannot access a property or method of a null object reference.</code><br /><br />It turns out that this error refers to a part of the AS3 code which does something with this variable called the stage.  This stage variable was an instance of the <strong>Stage</strong> class, and it&#8217;s made when the Flash Player starts.  SWF files are loaded into the stage container, and all of their objects that display are DisplayObjects, and are children of the stage.  All DisplayObject instances also have a <code>stage</code> property which references the stage that is displaying them.  <span class="shh">Also: Stage is a singleton class, meaning there&#8217;s only one of them, and it can&#8217;t be modified by lowly programmers, and is always at the top level of the display hierarchy within a Flash Player.</span><br /><br />Anyway, the error occurs (I think) because my parent (UI) application loads onto the stage before the embedded (AS3) application.  The AS3 app then tries to use the <code>stage</code> property before it&#8217;s even on the stage.  The solution is to make sure that the embedded SWF is on the stage before you try instantiating or doing anything.<br /><br />To fix it, I essentially wrapped up offending code in an event listener which would wait until the stage was loaded to execute.  So, this code which lets the stage listen for keyboard input:<br /><br /><pre class="brush: cpp"><br />stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler);<br /><br /></pre><br />became<br /><br /><pre class="brush: cpp"><br />addEventListener(Event.ADDED_TO_STAGE, function (e:Event):void {<br />  stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler);<br />});<br /><br /></pre><br />Not sure if this is good style or not.<br /><br /><br />Sources:<br /><a href="http://www.kirupa.com/forum/showthread.php?p=2129548#post2129548">Kirupa: ActionScript 3 Tip of the Day</a><br /><a href="http://jaycsantos.com/flash/do-you-know-actionscript-as3-stage/">jaycsantos.com: Do you know ActionScript?  AS3 Stage</a><br /><a href="http://board.flashkit.com/board/showthread.php?t=792605">Flash Kit: TypeError: Error #1009</a></div>
-<h2>Comments</h2>
-<div class='comments'>
-<div class='comment'>
-<div class='author'>Lewis R Strasburg</div>
-<div class='content'>
-Nice solution, it worked great for me.  I only needed to reference the stage at the very beginning for a &quot;Press Any Key to Start&quot; scenario, and it wasn&#39;t working until now.  Thanks!</div>
-</div>
-</div>
-</div>
-  
-  
-  <div class="category-bit">Categories: 
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/actionscript/'>actionscript</a>, <a class='category' href='/blog/categories/flash/'>flash</a>, <a class='category' href='/blog/categories/flex/'>flex</a>, <a class='category' href='/blog/categories/troubleshooting/'>troubleshooting</a>
   
 </span>
 

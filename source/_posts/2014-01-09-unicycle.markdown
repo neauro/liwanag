@@ -1,0 +1,14 @@
+---
+layout: post
+title: "unicycle"
+date: 2014-01-09 15:22:52 -0800
+comments: true
+published: false
+categories: 
+ - school
+ - projects
+ - hcde
+ - web design
+---
+
+For HCDE 518 this quarter I worked with three others (Joshua Coppola, Irene Huberman, and Matt Yukubousky) to create a website that would support freecycling at UW.
