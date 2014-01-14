@@ -3,7 +3,6 @@ layout: post
 title: "Web Design: UniCycle"
 date: 2014-01-09 15:22:52 -0800
 comments: true
-published: false
 categories: 
  - school
  - projects
@@ -15,5 +14,67 @@ For HCDE 518 the theme of our projects was "UX for Good." I teamed up with three
 
 One problem in encouraging environmentally friendly choices is that the immediate results of such choices are often negative. Good environmental decisions don't pay off for the actual environment immediately, and often your only tangible "reward" is the fact that you've spent more time or money being good, as in the case of going to farmer's markets to buy organic or local produce. (Though for some I know the payoff of farmer's markets is better-tasting food, and forming relationships with the community, etc.)
 
-We were all interested in designing *something* for our nearby community, and at some point someone finally brought up the concept of "freecycling," which is the term for a community that gives and gets items from each other for free. (It's really more like "free-reusing" than "free-recycling.) We realized that such a system is perfect for implementation in a college campus, where living situations are temporary and fluid, requiring people to predictably give and get furniture like beds and couches when the academic year turns. Additionally, undergraduates in particular, lacking free-flowing cash, have a need of used items like textbooks and whatever other paraphernalia required of them in classes, like clickers. Groups in Seattle exist already for freecycling, such as <a href="http://groups.yahoo.com/neo/groups/freecycleseattle/info">Seattle Freecycle</a>, but none geared specifically for students who might need to quickly get rid of a bed before move-out, or require a specific edition of a book for a class.
+We were all interested in designing *something* for our nearby community, and at some point someone finally brought up the concept of "freecycling," which is the term for a community that gives and gets items from each other for free. (In this sense, it's really more like "free-reusing" than "free-recycling.") We realized that such a system is perfect for implementation in a college campus, where living situations are temporary and fluid, requiring people to predictably give and get furniture like beds and couches when the academic year turns. Additionally, undergraduates in particular, lacking free-flowing cash, have a need of used items like textbooks and whatever other paraphernalia required of them in classes, like clickers. Groups in Seattle exist already for freecycling, such as <a href="http://groups.yahoo.com/neo/groups/freecycleseattle/info">Seattle Freecycle</a>, but none geared specifically for students who might need to quickly get rid of a bed before move-out, or require a specific edition of a book for a class.
 
+Realizations in hand, we established our design question: <strong>How can we use technology to encourage reuse of goods within the University of Washington community?</strong>
+
+And after Bruce Perry came up with the perfect name for our project — <em>UniCycle</em> — we were all in.
+
+
+<h2>Surveys</h2>
+<img class="book-cover" src="{{ root_url}}/images/unicycle/surveys.png" alt="Screenshot of some survey responses."/>
+<p class="caption">screenshot of some survey responses</p>
+We developed a (somewhat long-ass) survey to kick off our user research, and distributed it across our social networks, the UW group we found at Reddit, and a Facebook group devoted to "UW Textbook Exchange." The feedback we received overall to the idea of "a site where people can easily exchange textbooks" was very positive:
+
+<blockquote>“This idea is great and I hope it takes form soon! It eliminates the middle man like buffalo exchange that rips off the sellers and charges more for certain items to buyers to make profit." - /u/huskygurll</blockquote>
+
+On the bright side, we learned that there are some clear pain points when students try to get rid of their stuff. Though many students desire to sell their textbooks and furniture, many do not because they don't want to go through the hassle of setting up prices, haggling, meeting up with people. In the case of female students, there was also the extra overhead of making sure they were safe when interacting with strangers.
+
+Though we initially wanted to create a site that was devoted to <em>just</em> students giving each other things for free, students' reported consciousness of money made this unfeasible. Survey participants reported occasinally that, if they could not get enough money for Item X, they'd rather keep it. With this in mind, we decided to design a hub for students to not just give each other things for free, but also sell or barter them away. "Free items" could continue to be our main headliner, however, something to draw people in the same way that Priceline draws customers with their "name your own price" system.
+
+
+<h2>Design Mapping</h2>
+<img class="book-cover" src="{{ root_url}}/images/unicycle/designmapping.png" alt="Team UniCycle design mapping, and a close-up photo of the design mapping."/>
+<p class="caption">design mapping</p>
+One design technique that was new to be this quarter was <strong>design mapping</strong>, which involves thinking through a user flow and taking note of everything that comes up using sticky notes. Green notes can stand for goals, pink notes for concerns, yellow for extra considerations, blue for possible new features — and so on. One thing I love about design mapping is that you are able to keep track of everything. When talking about how to support Yosh's desire to buy an old couch online, we don't need to silence the person that starts talking about bed bugs, and chastise them for going off-topic — we just add it to the map, and continue forward.
+
+Design mapping helped us get a grip on the kinds of behaviors that we wanted to support with UniCycle: buy a used item, put a used item up for sale, contact a seller, and so on.
+
+
+<h2>Sketches</h2>
+We did a ton of sketches. Just, tons of them.
+
+<img class="book-cover" src="{{ root_url}}/images/unicycle/sketches2.png" alt="Sketching UniCycle UI on a whiteboard."/>
+<p class="caption">here are just a few of them</p>
+
+I have to admit that it was hard to come up with so many ideas individually and then have to figure out how to actually move forward. It took us most of the afternoon, a huge whiteboard, and a lot of back-and-forth to decide on the almost-final interface that we wanted to go with, Once we did decide, it was tough to decide who was going to have the responsibility of moving forward with creating a paper prototype, or creating a digital prototype with something like Axure, which some of us wanted experience using.
+
+It was at this time that we decided to try out a search based on "hashtags," like Twitter or Tumblr. Because people could sell a variety of items on this site, we thought this would best allow them to categorize their items as they see fit. Additionally, hashtags like <code>#chem300</code> could be catch-alls for whatever you needed for a Chemistry 300 course: textbooks, clickers, lab coats, and so on.
+
+
+<h2>Paper Prototyping</h2>
+<img class="book-cover" src="{{ root_url}}/images/unicycle/paperprototype.png" alt="Photos of the UniCycle paper prototype."/>
+<p class="caption">photos of the paper prototype</p>
+
+I took partial responsibility for the paper prototype and the ensuing paper-scrap fest. Rendering the variety of items that people could "search for" using our paper UI was the most challenging bit, as was searching for the right pieces to show on the display. We created little modals to mimic "Loading results..." which were fun to use, and we also tried to solve for cases in which our paper prototype testers might search for an item that we didn't anticipate.
+
+
+<h2>Interactive Prototype</h2>
+<img class="book-cover" src="{{ root_url}}/images/unicycle/unicycle_prototype.png" alt="Screenshot of UniCycle Interactive Prototype."/>
+<p class="caption">screenshot of UniCycle's interactive prototype</p>
+
+Our final product was an interactive prototype made in Axure by all of us, using a pretty fantastic blend of Axure's built-in SVN versioning and Dropbox. It is currently hosted <a href="http://students.washington.edu/jhc1/hcde518/start.html">here</a>.
+
+My most beloved aspects of it are those that give feedback to users' actions. For example, the main page features tickets that enumerate the number of goods reused thus far, to surface the fact that people really *are* accomplishing something great through their small actions.
+
+We also have some special tweaks just for UW students. For example, if you are looking for a particular textbook, you can list it on UniCycle. If you're selling, you can list a book by ISBN and have the titles and authors filled in automatically. Once you list a book, you are also made aware of the number of people who might already have that book marked as "wanted" — which is intended to help people feel like it's easy to sell on UniCycle. We also surface "duedates" for items, valuable if a user is trying to get rid of a bed before their lease is up.  
+
+After having dealt with it for a majority of the quarter, I'm not totally sold on Axure yet, and will not likely use it to personally make hi-fidelity prototypes in the future. At that point in the process, I'd just prefer to code things up myself. Additionally, I personally love the speed and humble honesty of paper prototyping, compared to Axure's interactive prototypes, which to me slip somewhat into the uncanny valley.
+
+That being said, I'm sure there will come a time when Axure is uniquely valuable, and I did like having to *not* worry about vertically centering random elements in CSS. Coding UniCycle as the sole programmer in a team of four would have been extremely taxing and it's nice that using Axure allowed us to work on a level playing field.
+
+
+<h2>In Conclusion</h2>
+I don't know that I'll return to UniCycle given the plethora of other projects I have, but it would be great to see it go places, especially given the need for it at UW. Too much goes wasted; and I'd love to see people get into the habit of asking their community for needed items, as well as help others when it's needed.
+
+I've also made a <a href="{{ root_url}}/files/hcde518_portfolio_deck.pdf">portfolio deck</a> that goes over other details for this project.
