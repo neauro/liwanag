@@ -9,12 +9,12 @@ categories:
  - short story
 ---
 
-<img class="book-cover" src="{{ root_url}}/images/chronectomy1.jpg" alt="AU Issue VIII at Bulldog News"/>
+<img class="book-cover" src="{{ root_url}}/images/chronectomy1.JPG" alt="AU Issue VIII at Bulldog News"/>
 <p class="caption">AU Issue VIII at Bulldog News</p>
 
 I'm into my last couple months as a UW student, and these are my last couple months to submit to <a href="http://strayingfromreality.wordpress.com/">AU</a>, UW's speculative fiction journal. Since the <a href="{{ root_url}}/blog/2012-12-30-short-story-golemists-work.html">last time I've written about it</a> I've had two more acceptances! The story that I'll talk about in this post is *Chronectomy*, written for the Winter 2012, Issue VIII prompt: *chronos*, or time.
 
-<img class="book-cover" src="{{ root_url}}/images/chronectomy2.jpg" alt="Chronectomy!"/>
+<img class="book-cover" src="{{ root_url}}/images/chronectomy2.JPG" alt="Chronectomy!"/>
 <p class="caption">Chronectomy! I LOVE what the editors did with the "O's."</p>
 
 I came up with an idea almost immediately and wrote furiously for a couple hours before realizing I was writing entirely the wrong story, and redid the entire thing. I'm still working on a place to host my short stories online, but at least for now you can read *Chronectomy* on <a href="http://neauro.com">my portfolio</a>.

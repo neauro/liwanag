@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "unicycle"
+title: "Web Design: UniCycle"
 date: 2014-01-09 15:22:52 -0800
 comments: true
 published: false
@@ -11,4 +11,9 @@ categories:
  - web design
 ---
 
-For HCDE 518 this quarter I worked with three others (Joshua Coppola, Irene Huberman, and Matt Yukubousky) to create a website that would support freecycling at UW.
+For HCDE 518 the theme of our projects was "UX for Good." I teamed up with three others (Joshua Coppola, Irene Huberman, and Matt Yukubousky) who were interested in solving climate change, and after admitting that "solving climate change" was going to be out of scope for the quarter, we searched for ways that we could encourage people to make better environmental choices.
+
+One problem in encouraging environmentally friendly choices is that the immediate results of such choices are often negative. Good environmental decisions don't pay off for the actual environment immediately, and often your only tangible "reward" is the fact that you've spent more time or money being good, as in the case of going to farmer's markets to buy organic or local produce. (Though for some I know the payoff of farmer's markets is better-tasting food, and forming relationships with the community, etc.)
+
+We were all interested in designing *something* for our nearby community, and at some point someone finally brought up the concept of "freecycling," which is the term for a community that gives and gets items from each other for free. (It's really more like "free-reusing" than "free-recycling.) We realized that such a system is perfect for implementation in a college campus, where living situations are temporary and fluid, requiring people to predictably give and get furniture like beds and couches when the academic year turns. Additionally, undergraduates in particular, lacking free-flowing cash, have a need of used items like textbooks and whatever other paraphernalia required of them in classes, like clickers. Groups in Seattle exist already for freecycling, such as <a href="http://groups.yahoo.com/neo/groups/freecycleseattle/info">Seattle Freecycle</a>, but none geared specifically for students who might need to quickly get rid of a bed before move-out, or require a specific edition of a book for a class.
+

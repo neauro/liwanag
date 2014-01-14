@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Football: Great for the Audience"
+date: 2014-01-13 19:17:44 -0800
+comments: true
+categories: 
+ - game design
+ - photo
+ - lifemisc
+---
+
+This past weekend I finally learned about football, something I've never been terribly interested in. The most recent game I watched was Kind Of A Big Deal for the city I live in.
+
+<img class="book-cover" src="{{ root_url}}/images/sea2.jpg" alt="Rain and cars and a distant Seattle Space Needle."/>
+<p class="caption">distant space needle.</a></p>
+
+It strikes me that football is an incredibly fun game to watch because the "four downs" system provides a multitude of little goals to rejoice about. Each play is rife with struggle, with a victory that can turn into loss in an instant. It reminds me of Mark Rosewater's description of <a href="http://www.wizards.com/magic/magazine/article.aspx?x=mtg/daily/mm/174">interaction and a catch-up feature</a> as things that "every game needs." At each "down," both teams have the potential not just to stop each other, but to improve their own standing. It's a powerful interval.
+
+Watching the game this past weekend was the first time in my life that I really, finally <em>got</em> it. I didn't know there were separate offensive and defensive teams; I didn't know that there were people whose singular jobs were to run, or to kick, and that the had individual tutors. It's pretty inspiring.
+
+<img class="book-cover" src="{{ root_url}}/images/sea1.jpg" alt="Seattle Space Needle with a flag that reads '12' on top "/>
+<p class="caption">#gohawks! and, fun fact: "the 12th man" is a copyrighted phrase. <a href="http://en.wikipedia.org/wiki/12th_man_(football)#Texas_A.26M_trademark_issues_and_Seattle_Seahawks_lawsuit">a phrase <em>not</em> copyrighted by us.</a></p>
+

@@ -20,7 +20,7 @@ The prompt being something related to *Victorian Combat*, he first went around r
 
 A obtained a bunch of card sleeves and post-it notes for our paper prototyping. The point of the game is to create an invention over several rounds, then present it at "showtime" to everyone and roll dice to see if your invention explodes. Thus far, players construct machines using three decks: one deck to describe a "power source" (like "electric"), one deck to describe a "subject" (like "kittens"), and one deck to describe the actual invention (like "generator").
 
-<img class="book-cover" src="{{ root_url}}/images/inventothon/playtest1_cards.jpg" alt="Playtest cards"/>
+<img class="book-cover" src="{{ root_url}}/images/inventothon/playtest1_cards.JPG" alt="Playtest cards"/>
 <p class="caption">physically impossible bathtub packer</p>
 
 We also gathered friends to do a playtest at a cafe.
