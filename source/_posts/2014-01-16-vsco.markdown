@@ -1,0 +1,34 @@
+---
+layout: post
+title: "In Praise of #vscocam"
+date: 2014-01-16 09:16:32 -0800
+comments: true
+categories: 
+ - app recs
+ - photo
+---
+
+After about seven years with the same litle phone, I finally decided to upgrade. If I'm being honest, I did it because the iPhone 5S/5C camera seemed like such an improvement over the previous, and I really wanted to have access to a camera usable in ordinary situations. (My old Motorola was also starting to have problems — bad audio, bad button sensitivity.)
+
+<img class="book-cover" src="{{ root_url}}/images/vsco0.jpg" alt="My old phone."/>
+<p class="caption">goodbye dear friend</p>
+
+The pictures that my phone takes are great — better than the pictures my old work iPod had, and definitely better than no pictures taken at all. But, what makes my silly phone photos really fun and gorgeous is the <a href="http://vsco.co/vscocam">VSCO Cam app</a>.  
+
+<img class="book-cover" src="{{ root_url}}/images/vsco1.jpg" alt="the foggy ferry dock on thanksgiving"/>
+<p class="caption">the foggy ferry dock on thanksgiving</p>
+
+You can take pictures from the app or import them, and then control expore, temperature, white balance, saturation...I have to admit, though, that it took me forever to realize that bottom bar that showed all these editing options is actually something you can scroll from left to right.
+
+<img class="book-cover" src="{{ root_url}}/images/vscobar.png" alt="a photo of a girl"/>
+<p class="caption">these colors were seriously bland and boring before i edited it.<br/>and,there's that bar. it doesn't look scrollable at all.</p>
+
+There are also a variety of filters which, to me, are way more subtle and attractive than Instagram's filters. I admit that I use the F2 filter way more than the others.
+
+<img class="book-cover" src="{{ root_url}}/images/vsco2.jpg" alt="foggy seattle"/>
+<p class="caption">foggy cityline</p>
+
+Feel free to check out <a href="http://instagram.com/neauro">my Instagram</a> for more photos.
+
+<img class="book-cover" src="{{ root_url}}/images/vsco3.jpg" alt="the cranes at seattle pier"/>
+<p class="caption">the dinosaur-like cranes at the pier</p> 
