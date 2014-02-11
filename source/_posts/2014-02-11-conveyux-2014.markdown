@@ -1,0 +1,36 @@
+---
+layout: post
+title: "ConveyUX 2014, by Blink"
+date: 2014-02-11 09:59:14 -0800
+comments: true
+categories: 
+ - ux
+ - conveyux
+ - conference
+---
+
+This past week I attended <a href="http://www.conveyux.com/">ConveyUX</a>, a now two-year-old UX conference presented by <a href="http://www.blinkux.com/">Blink</a>. I also attended last year, and was impressed by the growth that this conference has had since then. There were over twice the number of attendees, and everyone was incredibly friendly. Don Norman was the keynote speaker and I got him to sign my copy of *The Design of Everyday Things*!
+
+<img class="book-cover" src="{{ root_url}}/images/doet.jpg" alt="The inside cover of Design of Everyday Things, and signature of its author, Don Norman"/>
+<p class="caption">yess!</p>
+
+I took a lot of notes — not so much to help me remember stuff later (though notes are helpful for that purpose), but because it helps keep my mind from wandering, and helps ideas stick more tightly.
+
+<img class="book-cover" src="{{ root_url}}/images/doet.jpg" alt="My scanned notes from ConveyUX"/>
+<p class="caption">such notes</p>
+
+The following are some of my high-level takeaways from the talks I attended.
+
+<h3>Keynote, Don Norman</h3>
+<ul>
+<li>UX is not about websites, it's about life.</li>
+<li>Putting a picture of a button on a screen does not "afford" touching; it "signifies" that the user should touch.</li>
+<li>Designers pride themselves on answering the right question, and not on solving the exact problem they're trying to solve.</li>
+<li>(Don) Norman's Law: </li>
+<li></li>
+</ul>
+
+<h3>Keynote, Don Norman</h3>
+<ul>
+<li></li>
+</ul>
