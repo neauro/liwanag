@@ -3,7 +3,7 @@ layout: post
 title: "Netflix: Such Killer Whales"
 date: 2013-12-20 06:55:33 -0800
 comments: true
-categories:  [netflix, movies]
+categories:  [netflix, movies, documentaries]
 ---
 <img class="book-cover" src="{{ root_url}}/images/blackfish-poster.jpg" alt="Blackfish poster"/>
 <p class="caption">(<A href="http://www.magpictures.com/blackfish/">via</a>)</p>
