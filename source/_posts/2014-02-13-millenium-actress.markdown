@@ -9,7 +9,7 @@ categories:
  - anime recs
  - movie recs
 ---
-<img class="book-cover" src="{{ root_url}}/images/milennium.jpg" alt="Millenium Actress poster"/>
+<img class="book-cover" src="{{ root_url}}/images/millenium.jpg" alt="Millenium Actress poster"/>
 <p class="caption">(<A href="http://en.wikipedia.org/wiki/Millennium_Actress/">via</a>)</p>
 <blockquote>A movie studio is being torn down. TV interviewer Genya Tachibana has tracked down its most famous star, Chiyoko Fujiwara, who has been a recluse since she left acting some 30 years ago. Tachibana delivers a key to her, and it causes her to reflect on her career; as she's telling the story, Tachibana and Kyoji Ida, his long-suffering cameraman are drawn in. The key was given to her as a teenager by a painter and revolutionary that she helped to escape the police. She becomes an actress because it will make it possible to track him down, and she spends the next several decades acting out that search in various genres and eras. (<a href="http://en.wikipedia.org/wiki/Millennium_Actress">via</a>)</blockquote>
 
