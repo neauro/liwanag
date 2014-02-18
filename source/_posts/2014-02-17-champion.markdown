@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Champion, Marie Lu"
+date: 2014-02-17 16:06:33 -0800
+comments: true
+categories: 
+ - books
+ - book review
+ - book recs
+---
+
+<img class="book-cover" src="{{ root_url}}/images/champion.jpg" alt="Cover of Champion, which features a black and red rose"/>
+<p class="caption">(<A href="https://www.goodreads.com/book/show/14290364-champion">via</a>)</p>
+<blockquote>June and Day have sacrificed so much for the people of the Republic—and each other—and now their country is on the brink of a new existence. June is back in the good graces of the Republic, working within the government’s elite circles as Princeps-Elect, while Day has been assigned a high-level military position. <br/><br/> 
+But neither could have predicted the circumstances that will reunite them: just when a peace treaty is imminent, a plague outbreak causes panic in the Colonies, and war threatens the Republic’s border cities. This new strain of plague is deadlier than ever, and June is the only one who knows the key to her country’s defense. But saving the lives of thousands will mean asking the one she loves to give up everything. <br/><br/>
+With heart-pounding action and suspense, Marie Lu’s bestselling trilogy draws to a stunning conclusion. (<a href="https://www.goodreads.com/book/show/14290364-champion">Goodreads</a>)</blockquote>
+
+(I've also wrote about the previous book in the *Legend* trilogy, <a href="{{ root_url}}/source/_posts/2012-10-06-legend-marie-lu.html"><em>Legend</em></a> and <a href="{{ root_url }}/source/_posts/2013-05-21-prodigy-marie-lu.html"><em>Prodigy</em></a>.)
+
+I finally finished Champion on the bus to work and felt all shaky and full of feels. After having been disappointed by the endings of other YA trilogies I've finished recently, I was nervous about this one; and though there were some strange parts, ultimately this whole story delivered exactly what I wanted, which was: the bittersweet, bright-future fulfillment of a "we are enemies from two different worlds" power couple romance.
+
+[ spoilers ahead ]
+
+There were a few strange parts. Thomas' spoken blow-by-blow, feeling-by-feeling recollection of the night he killed Metias felt kind of awkawrd to me; and there was also more "hand-holding" than I would have liked. As the story goes on Day begins to lose his memory, and when trying to recollect the name of his caretaker, thinks to himself "<em>That's weird</em>"...but as readers, we <em>know</em> that it's strange for Day to forget the name of his long-known caretaker. That the book takes time to point it out takes away part of the fun of realizing it for ourselves.
+
+The society of Antarctica, based entirely on a game-like system of points and ranking, is also thrown in as a curiosity and not engaged at all. Given that the Republic of America (with its "democratic dictatorship" feel) and the Colonies of the America (with its "capitalistic tyranny" feel) are both recognized by characters as having flaws, I thought that Antarctica might also have its own theme and criticisms; but Antarctica remains unquestioned and accepted as a powerful government whose allyship is desired. There's nothing terribly "wrong" with it, but I desired for something more — for this strange piece of world building to fit into some sort of overall theme, for it to contrast with what June and Day see as admirable about their own country and the way that it is run. Maybe something like, "Sure, in their country people do good so they can get points, but where we live people do good just because they can and want to!"
+
+Anyway, it was an enjoyable trilogy and I'm looking forward to more from Marie Lu in the future!

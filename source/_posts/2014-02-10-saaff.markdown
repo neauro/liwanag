@@ -7,6 +7,7 @@ categories:
  - movie recs
  - documentaries
  - movies
+ - events
 ---
 
 Thanks to the kindness of R, I was able to attend the final day of the <a href="http://seattleaaff.org/2014/">Seattle Asian-American Film Festival</a>, an event whose existence I was only barely aware of before R invited me.
