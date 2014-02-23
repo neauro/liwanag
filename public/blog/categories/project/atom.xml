@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Project | liwanag]]></title>
   <link href="http://blog.neauro.com/blog/categories/project/atom.xml" rel="self"/>
   <link href="http://blog.neauro.com/"/>
-  <updated>2014-02-23T09:28:03-08:00</updated>
+  <updated>2014-02-23T10:13:14-08:00</updated>
   <id>http://blog.neauro.com/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.neauro.com/blog/2014/01/15/fongbaatz/"/>
     <updated>2014-01-15T10:32:12-08:00</updated>
     <id>http://blog.neauro.com/blog/2014/01/15/fongbaatz</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/fongbaatz.png" alt="Screenshot of Fong Baatz portfolio"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/fongbaatz.png" alt="Screenshot of Fong Baatz portfolio"/></p>
 
 <p class="caption">screenshot of <A href="http://fongbaatz.com">fong baatz portfolio</a></p>
 
