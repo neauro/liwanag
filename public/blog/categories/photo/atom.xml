@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Photo | liwanag]]></title>
   <link href="http://blog.neauro.com/blog/categories/photo/atom.xml" rel="self"/>
   <link href="http://blog.neauro.com/"/>
-  <updated>2014-02-18T10:18:09-08:00</updated>
+  <updated>2014-02-23T09:22:13-08:00</updated>
   <id>http://blog.neauro.com/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -20,35 +20,35 @@
     <id>http://blog.neauro.com/blog/2014/01/16/vsco</id>
     <content type="html"><![CDATA[<p>After about seven years with the same litle phone, I finally decided to upgrade. If I&rsquo;m being honest, I did it because the iPhone 5S/5C camera seemed like such an improvement over the previous, and I really wanted to have access to a camera usable in ordinary situations. (My old Motorola was also starting to have problems — bad audio, bad button sensitivity.)</p>
 
-<p><img class="book-cover" src="/images/vsco0.jpg" alt="My old phone."/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/vsco0.jpg" alt="My old phone."/></p>
 
 <p class="caption">goodbye dear friend</p>
 
 
 <p>The pictures that my phone takes are great — better than the pictures my old work iPod had, and definitely better than no pictures taken at all. But, what makes my silly phone photos really fun and gorgeous is the <a href="http://vsco.co/vscocam">VSCO Cam app</a>.</p>
 
-<p><img class="book-cover" src="/images/vsco1.jpg" alt="the foggy ferry dock on thanksgiving"/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/vsco1.jpg" alt="the foggy ferry dock on thanksgiving"/></p>
 
 <p class="caption">the foggy ferry dock on thanksgiving</p>
 
 
 <p>You can take pictures from the app or import them, and then control expore, temperature, white balance, saturation&hellip;I have to admit, though, that it took me forever to realize that bottom bar that showed all these editing options is actually something you can scroll from left to right.</p>
 
-<p><img class="book-cover" src="/images/vscobar.png" alt="a photo of a girl"/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/vscobar.png" alt="a photo of a girl"/></p>
 
 <p class="caption">these colors were seriously bland and boring before i edited it.<br/>and,there's that bar. it doesn't look scrollable at all.</p>
 
 
 <p>There are also a variety of filters which, to me, are way more subtle and attractive than Instagram&rsquo;s filters. I admit that I use the F2 filter way more than the others.</p>
 
-<p><img class="book-cover" src="/images/vsco2.jpg" alt="foggy seattle"/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/vsco2.jpg" alt="foggy seattle"/></p>
 
 <p class="caption">foggy cityline</p>
 
 
 <p>Feel free to check out <a href="http://instagram.com/neauro">my Instagram</a> for more photos.</p>
 
-<p><img class="book-cover" src="/images/vsco3.jpg" alt="the cranes at seattle pier"/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/vsco3.jpg" alt="the cranes at seattle pier"/></p>
 
 <p class="caption">the dinosaur-like cranes at the pier</p>
 
@@ -64,7 +64,7 @@
     <id>http://blog.neauro.com/blog/2014/01/13/football</id>
     <content type="html"><![CDATA[<p>This past weekend I finally learned about football, something I&rsquo;ve never been terribly interested in. The most recent game I watched was Kind Of A Big Deal for the city I live in.</p>
 
-<p><img class="book-cover" src="/images/sea2.jpg" alt="Rain and cars and a distant Seattle Space Needle."/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/sea2.jpg" alt="Rain and cars and a distant Seattle Space Needle."/></p>
 
 <p class="caption">distant space needle.</a></p>
 
@@ -73,7 +73,7 @@
 
 <p>Watching the game this past weekend was the first time in my life that I really, finally <em>got</em> it. I didn&rsquo;t know there were separate offensive and defensive teams; I didn&rsquo;t know that there were people whose singular jobs were to run, or to kick, and that the had individual tutors. It&rsquo;s pretty inspiring.</p>
 
-<p><img class="book-cover" src="/images/sea1.jpg" alt="Seattle Space Needle with a flag that reads '12' on top "/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/sea1.jpg" alt="Seattle Space Needle with a flag that reads '12' on top "/></p>
 
 <p class="caption">#gohawks! and, fun fact: "the 12th man" is a copyrighted phrase. <a href="http://en.wikipedia.org/wiki/12th_man_(football)#Texas_A.26M_trademark_issues_and_Seattle_Seahawks_lawsuit">a phrase <em>not</em> copyrighted by us.</a></p>
 

@@ -1,14 +1,17 @@
 ---
 layout: post
 title: "ConveyUX 2014, by Blink"
-date: 2014-02-11 09:59:14 -0800
-published: false
+date: 2014-02-23 08:48:33 -0800
 comments: true
 categories: 
  - ux
  - conveyux
  - conference
+ - sketches
 ---
+
+<img class="book-cover" src="{{ root_url}}/images/convey1.jpg" alt="First pages of my notes from ConveyUX"/>
+<p class="caption">first page of my notes from ConveyUX. all pages in their full nearly-illegible glory at <a href="http://neauro.tumblr.com/post/77602386103/finally-got-around-to-summarizing-all-the-notes-i">at my tumblr</a></p>
 
 This past week I attended <a href="http://www.conveyux.com/">ConveyUX</a>, a now two-year-old UX conference presented by <a href="http://www.blinkux.com/">Blink</a>. I also attended last year, and was impressed by the growth that this conference has had since then. There were over twice the number of attendees, and everyone was incredibly friendly. Don Norman was the keynote speaker and I got him to sign my copy of *The Design of Everyday Things*!
 
@@ -17,11 +20,9 @@ This past week I attended <a href="http://www.conveyux.com/">ConveyUX</a>, a now
 
 I took a lot of notes — not so much to help me remember stuff later (though notes are helpful for that purpose), but because it helps keep my mind from wandering, and helps ideas stick more tightly.
 
-<img class="book-cover" src="{{ root_url}}/images/doet.jpg" alt="My scanned notes from ConveyUX"/>
-<p class="caption">such notes</p>
-
 The following are some of the interesting ideas I came away with from the talks I attended.
 
+<h2>Day 1 Talks</h2>
 <h3>Keynote, Don Norman</h3>
 <ul>
 <li>UX is not about websites, it's about life.</li>
@@ -43,7 +44,6 @@ The following are some of the interesting ideas I came away with from the talks 
 <li>Keep drilling down into user's experiences. Why why why do they enjoy something? What are the "kansei" words?</li>
 <li><a href="https://dscout.com/">Dscout</a>: see what people are doing on a daily basis</li>
 <li>Kaizen: continuous improvement — everyday — with everyone — everywhere.</li>
-<li></li>
 </ul>
 
 <h3>Right Experience, Right People, Phillip Hunter</h3>
@@ -85,7 +85,8 @@ The following are some of the interesting ideas I came away with from the talks 
 <li>To get people to build a habit around your product, tie it into someone people already do habitually, like checking e-mail in the morning.</li>
 </ul>
 
-<h3>Content &amp; control, Sara Wachter-Boettcher</h3>
+<h2>Day 2 Talks</h2>
+<h3>Content &amp; Control, Sara Wachter-Boettcher</h3>
 <ul>
 <li>Content reveals a company's values, beliefs, and baggage</li>
 <li>Don't divide people into "the website team" and "everyone else;" when you let people into the process and help design style guide rules (and such), they get invested, and will actually follow the rules they've made for themselves, rather than the "arbitrary" style and design guides you've imposed on them</li>
@@ -114,7 +115,7 @@ The following are some of the interesting ideas I came away with from the talks 
 <h3>Collaging: Getting Answers to the Questions You Didn't Know to Ask, Kyle Soucy</h3>
 <ul>
 <li>Collaging is a "need evaluation" technique.</li>
-<li>Honestly, collaging is great and <a href="http://uxdesign.smashingmagazine.com/2012/02/06/collaging-getting-answers-questions-you-dont-know-ask/">this article</a> describes it.</li>
+<li>Honestly, collaging is great and <a href="http://uxdesign.smashingmagazine.com/2012/02/06/collaging-getting-answers-questions-you-dont-know-ask/">this article</a> describes it better than I could here.</li>
 </ul>
 
 <h3>Agile UX: Embrace or Tolerate? Rob Keefer</h3>
@@ -125,7 +126,68 @@ The following are some of the interesting ideas I came away with from the talks 
 <li>Doing things together is better!</li>
 </ul>
 
-<h3>Keynote, Don Norman</h3>
+<h2>Day 3 Talks</h2>
+<h3>Writing Great Persona Stories, Whitney Quesenbery</h3>
 <ul>
-<li></li>
+<li>Stories are important because they help us remember people who are not in the room.</li>
+<li>Persona stories help communicate patterns of use</li>
+<li>If you don't include people with disabilities in the beginning, they're not going to be included later</li>
+<li>You might know your audience, but do you know how to use your knowledge of them?</li>
+<li>Make sure your stories are connecting people emotionally to your work. It's the individual story that gets you to donate and work for someone, not the numbers of people that need help.</li>
+<li>Don't tell stories of how your users are dumb, but of how they accomplish things</li>
+</ul>
+
+<h3>Tools for Mobile UX Design, Steven Hoober</h3>
+<ul>
+<li>To design for mobile:
+<ol>
+<li>DON'T draw (until you understand your solution). Otherwise, you're going to lock yourself into interactions and events that might not even answer the problem.</li>
+<li>Ecosystems first. Figure out your user flows and platforms.</li>
+<li>Experience mobile daily. If you're going to design for a Blackberry, get one.</li>
+<li>Work at scale. (ex. don't work on mockups that aren't at phone size)</li>
+<li>Annotate, describe, understand.</li>
+<li>Evaluate (early, as much as you can, before release).</li>
+</ol></li>
+<li>Define your design. What are the goals and objectives of your users and organization? What are users doing now to solve the problem you are trying to help them with?</li>
+<li>If you structure your processes correctly, they will be collaborative.</li>
+<li><a href="http://getlaunch.com">LAUNCH</a>: mobile prototyping</li>
+<li>Describing is more powerful than prototyping. Specying with words encourages people to design more lightweight-ly. ex. "use default icons" instead of finding logos to display at the right size and color for your prototype</li>
+<li>Evaluate: Does your information architecture make sense? Are there errors? Is there a "happy path"? ARE YOU LYING?</li>
+</ul>
+
+<h3>Anticipatory Services &amp; Ambient Personalisation, Oli Shaw</h3>
+<ul>
+<li>What's our relationship to the invisible services that power our work?</li>
+<li>"You don't know what's going on in that black box, but install it and we'll give you lower car insurance" — how can this be expanded?</li>
+<li>Uninvited personalisation is becoming more creepy</li>
+<li>London trash bins that are tracking wifi-connected smartphones: can tell who you're with, where you work, where you're at....technology is evolving faster than our laws can protect us</li>
+<li>It's the designer's responsibility to push back and protect users</li>
+<li>DON'T patronize, obscure, confuse, dictate</li>
+<li>DO use discretion, appropriate, be relevant, and empathize.</li>
+<li>Design a relationship, not just an experience.</li>
+</ul>
+
+<h3>The World is a Screen, Andrew Hinton</h3>
+<ul>
+<li>"All our cognition is embedded...brains evolved in the service of cognition"</li>
+<li>"information is elements in the environment that tells us what the environment affords"</li>
+<li>Perception only exists insofar as we perceive affordances..." You don't perceive anything unless you understand its structure and how to interact with it.</li>
+<li>Before being literate was a thing, buildings were the way we told stories — cathedrals, gargoyles...</li>
+<li>The way we talk and write about our shared environment makes that environment. ex. be careful about assuming things like "the TV is the second screen" — this isn't true for everyone.</li>
+<li>Avocado: an app for couples that lets them send hugs to each other.</li>
+<li>Check: are the rules behind the environment clearly expressed in its information?</li>
+</ul>
+
+<h3>How People Really Touch and Feel, Steve Hoober</h3>
+<ul>
+<li>Mobile traffic outnumbers web traffic</li>
+<li>"phablet" — a phone tablet. omg</li>
+<li>People will slow to tap the edges of their phone screen; they are more inaccurate there</li>
+<li>Make sure your simple interactions just work before moving on to delightful animation</li>
+<li>Be consistent — make hitboxes conventionally large.</li>
+<li>A rule of thumb: don't pr stuff about the target below the target, ex. with carousels, don't put labels beneath the pictures because people's thumbs will cover it.</li>
+<li>Minimum size of hitbox: 6mm. Preferred size: 8mm.</li>
+<li>Watch out for interference! Make a circle 8mm in diameter and center it on your hitbox. If the circle intersects with other items, those items will interfere.</li>
+<li>Anything in the edges of the screen or the top and bottom borders should be big.</li>
+<li>Design by zones. Put things you want people to use on the center.</li>
 </ul>

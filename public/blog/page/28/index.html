@@ -9,7 +9,7 @@
   <meta name="author" content="nadine a.">
 
   
-  <meta name="description" content="Intro to Distributed Systems Jan 4th, 2011 So, for now at least, I&#8217;m taking a class on distributed systems. Google has a good tutorial on what &hellip;">
+  <meta name="description" content="Operating Systems Notes [Chapter 1] Jan 6th, 2011 What is an operating system?An operating system is a program that manages computer hardware, as &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,144 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/06/operating-system-notes-chapter-1/">Operating Systems Notes [Chapter 1]</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-06T00:00:00-08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<span class="sig">What is an operating system?</span><br />An <strong>operating system</strong> is a program that manages computer hardware, as well as providing a basis for application programs.  There are a variety of types of operating systems, not all of them for making it easy for a user to use games or software on a computer &#8211; for instance, you might have a mainframe operating system, which is an OS designed to optimize utilization of hardware.<br /><br />Computers are broken up into 4 &#8220;layers:&#8221;<br /><ul><li><em>Hardware.</em> The central processing unit (CPU), the memory, the input/output devices (like a keyboard, mouse)</li><li><em>Application programs.</em>  The programs you use on your computer &#8211; word processor, PhotoShop, Firefox, etc.</li><li><em>User</em>.  You.</li><li><em>Operating system.</em> Provides an environment for the application programs to do their work, and controls hardware, and coordinates its use amongst the various application programs.</li></ul><br />So, <strong>an operating system makes it so a user can more easily use applications on a computer</strong>, and also <strong>allocates the resources in the hardware</strong> to different applications.  It&#8217;s like the middle layer.<br /><br />The operating system is the one program that&#8217;s running at all times when your computer is on, also called the <strong>kernel</strong>.  (<strong>Systems programs</strong> are associated with OS too, but not the kernel, and <strong>application programs</strong> include all programs that are not associated with the operation of the system.)<br /><br /><br /><span class="sig">CPU and storage</span><br /><strong>CPUs and device controllers</strong> have access to a shared memory, and execute concurrently, competing for memory cycles.  The memory controller makes sure that their access to memory is not messed up, i.e. probably that controllers aren&#8217;t trying to access each other while they&#8217;re being used.<br /><br /><strong>A bootstrap program</strong> is the first program that a computer runs when it is turned on, and is simple, and stored in read-only memory (ROM), which is known as <strong>firmware</strong> and is stored on the computer hardware.  This intializes the system, turning on the CPU and device controllers and memory contents.  The bootstrap program is the one that loads the OS and begins executing it by loading the OS kernel into memory and letting the OS execute its first process, &#8220;init.&#8221;<br /><br /><strong>Interrupts</strong> are sent out by routines and are important because they tell the CPU to stop what it&#8217;s doing and transfer execution to the starting address of the routine.  Interrupts have to be handled quickly, so internet routines are sometimes stored in a table so that they can be called indirectly, but immediately.  This table is usually stored in low memory, and is called an <strong>interrupt vector</strong>.  An interrupt will most likely interfere with another computation that the processor was doing, so the address of that computation must be saved in a system stack, so that the CPU can return and resume later.<br /><br /><strong>Interrupt-driven</strong> refers to how most modern OS sit around and don&#8217;t do anything unless an event happens, i.e. an interrupt.  Code in the OS determine what action to take in the case of each interrupt.  An interrupt service routine is provided that is responsible for dealing with the interrupt.<br /><br /><strong>Low memory</strong> refers to the first hundred or so locations in memory.<br /><br /><strong>Random-access memory (RAM) or main memory</strong> is what stores most of the programs that are run by the CPU.  The CPU can only load instructions from memory.  RAM is implemented in a semiconductor technology called <strong>dynamic random-access memory (DRAM)</strong>.  Though it&#8217;s used to store programs, it&#8217;s usually too small to store all the needed data and programs permanently, and it&#8217;s a volatile storage device in that its contents is lost when computer power is turned off.  This is why secondary storage of memory is usually required.<br /><br /><strong>Secondary storage for memory</strong> must be able to hold large amounts of data permanently.  Example: magnetic disc, cache memory, CD-ROM, etc.<br /><br /><strong>Storage device hierarchy</strong> refers to how the high-level storage devices are fast, but expensive and volatile (like RAM, which is erased when the computer shuts off).  Highest on the pyramid are registers, the cache, and RAM; lower are the hard disk, or offline storage like magnetic tape.<br /><br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/_SdPKamJbrgg/TSZjeXlfXQI/AAAAAAAAAD0/vGkuN6HSEKU/s1600/StorageHierarchy.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="188" src="http://1.bp.blogspot.com/_SdPKamJbrgg/TSZjeXlfXQI/AAAAAAAAAD0/vGkuN6HSEKU/s320/StorageHierarchy.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">(<a href="http://www.ts.avnet.com/uk/products_and_solutions/storage/hierarchy.html">source</a>)</td></tr></tbody></table><br /><br /><strong>Read-only memory (ROM)</strong> can also store programs, but since it can&#8217;t be changed, only static programs are stored here.  ROM is where firmware is stored, and also sometimes (in the past, I guess?) lookup tables for things that don&#8217;t change, like mathematical functions.  Also, used in game cartridges!<br /><br /><strong>Von Neumann architecture</strong> describes a computer design model.  A computer with von Neumann architecture uses a CPU and a single separate storage structure (the memory) to hold both instructions and data.  The computer must also be a stored-program computer, meaning that its data and program instructions are stored in RAM.  &#8220;von Neumann architecture&#8221; and &#8220;stored-program computer&#8221; are generally used interchangeably.<br /><br /><strong>Typical instruction-execution cycle in a system with von Neumann architecture:</strong> An instruction is fetched from memory, and stored in an <strong>instruction register</strong>.  The instruction is then decoded, stored in a register, and the results may be then stored back into memory.  The running program will generate a sequence of memory addresses, which is what the memory unit sees.<br /><br /><br /><span class="sig">I/O structure</span><br /><strong>Device controllers</strong> are part of a general-purpose computer system (the other part being the CPUs), and each one is in charge of a specific type of device.  Depending on the controller, more than one device may be attached; for instance, seven or more devices can be attached to the <strong>small computer-systems interface (SCSI) controller</strong>.  They maintain local buffer storage and a set of special registers.<br /><br /><strong>Device drivers</strong> are kept by the OS, one for each device controller.  The driver provides an interface to allow the OS to interact with the device.  So you might have a device controller for a keyboard, and the driver would allow the OS to obtain the specific key presses.<br /><br /><strong>Direct-access memory (DMA)</strong> is memory that allows bulk data movement, such as input/output to/from a disk.  This makes it so that a block of data can be transferred by the device controller from its own buffer storage into the destination memory, without any help from the CPU, and it emits only one interrupt, when the operation has completed, rather than one interrupt per transferred byte.<br /><br /><br /><span class="sig">Computer-System architecture</span><br /><strong>Single-processor systems</strong> have only one general-purpose CPU capable of executing the instruction set, including instructions from user processes.  In contrast, almost all systems have separate, special-purpose (micro?) processors that are device-specific, such as a processor for the graphics controllers.  Special-purpose microprocessors don&#8217;t run user processes, don&#8217;t usually communicate with the OS (so that it can worry about its own things and go faster), and the presence of special-purpose microprocessors doesn&#8217;t turn a single-processor system into a multiprocessor system.<br /><br /><strong>Multiprocessor systems</strong> are the most common, and also called <strong>parallel systems</strong>.  These systems have two or more processors in close communication, sharing the computer bus and sometimes the clock, memory, and peripheral devices.  They have increased throughput (more processors = more work done in less time), economy of scale (more processors share peripherals, mass storage, and power supplies), and increased reliability (if work is shared between two processors, the failure of one processor will not halt the system, only slow it down).<br /><br /><strong>Graceful degradation</strong> is when a computer system can continue to provide service proportional to the level of surviving hardware.<br /><br /><strong>Fault tolerance</strong> is cooler than graceful degradation, and means that a computer system can suffer a failure to any single component and still continue to operate.<br /><br /><strong>Asymetric multiprocessing</strong> is when each processor in a multiprocessor system is assigned a specific task.  A master processor controls the system, and the other processors look to the master for instruction or have pre-defined tasks.  This is a master-slave relationship.<br /><br /><strong>Symmetric multiprocessing (SMP)</strong> is when each processor performs all tasks within the operating system, and all processors are peers to each other.  Each processor has its own set of registers, and its own local cache, though all processors share physical memory.<br /><br /><strong>Cores</strong> are essentially multiprocessor chips, which are placed on a single chip.  They can be more efficient than multiple chips with single cores because on-chip communication is faster than between-chip communication, and one chip with multiple cores will use tons less power than multiple single-core chips.  Multicore systems are good for server systems, like database and Web servers.  An example dual-core design will have a chip with two cores, each core having its own set of registers and a cache.<br /><br /><strong>Clustered systems</strong> are the same as <a href="http://nuubu.blogspot.com/2011/01/intro-to-distributed-systems.html">distributed systems</a>, I think?!  Oh, no &#8211; I guess clustered systems are made of two or more computer systems (nodes) closely linked through something like LAN, whereas a distributed system is a collection of physically separate computer systems connected by a network to &#8220;provide users with access to the various resources that the system maintains.&#8221;  More about shared resources than parallelization, I guess?  According to this book?<br /><br /><br /><span class="sig">Operating-System Structure</span><br /><strong>Multiprogramming</strong> is when different jobs (code and data) on a computer are organized so that the CPU is always executing something.  A single program can&#8217;t usually keep either the CPU or I/O devices busy at all times.  So, several jobs are kept in memory simultaneously, and whenever one program starts to wait for something (i.e. keyboard input, which it would need to continue), the CPU turns its attention elsewhere and executes another job.<br /><br /><strong>Timesharing or multitasking</strong> is an extension of multiprogramming.  In a timesharing system, a CPU will execute multiple jobs by switching between them, but users interacting with each program won&#8217;t notice since the jobs are switched so quickly.  This allows it so that multiple users can share one computer.<br /><br /><strong>A process</strong> is a program that is loaded into memory and is executing.  Usually, a process will only actually execute for a short time before it finishes or needs to perform I/O, like showing display to a user, or taking input from a keyboard.  A process is allocated resources like memory, and when the process terminates the OS will reclaim the resources.<br /><br /><strong>Job scheduling</strong> is when there are too many jobs to be all held in main memory; then the OS must choose which ones to execute.<br /><br /><strong>CPU scheduling</strong> is when several jobs are ready to run at the same time, and the system needs to choose which one to execute.<br /><br /><strong>The timer</strong> keeps user programs from being stuck in an infinite loop, which would prevent them from ever returning control to the OS.  The timer can be set to interrupt the computer after a specified period.  The operating system counts off the time.<br /><br /><span class="sig">Dual-Mode Operation</span><br />Operating systems must execute their own code, as well as user-defined code.  So, there are two modes of operation for each: <strong>user mode</strong>, and <strong>kernel mode</strong> (also called supervisor mode, system mode, or privileged mode).  A <strong>mode bit</strong> is added to the hardware of the computer to indicate whether the mode is presently kernel (0) or user (1).<br /><br />The hardware starts in kernel mode, then switches to user mode so that applications can be run.  If the user program makes a system call, the computer changes its mode back to kernel mode, does the proper stuff, and then returns to user mode before executing user code again.  This protects the OS from errant users, and errant users from one another.<br /><br />Since a user could accidentally overwrite OS code, most operating systems use this dual-mode thing.<br /><br /><br /><span class="sig">How does an OS manage memory?</span><br />Main memory is just a large array of bytes, which is quickly accessible by the CPU and I/O devices.  It&#8217;s usually the only memory that the CPU can address and access directly.  For a program to be executed, it must be mapped to absolute addresses and loaded into main memory; as it executes, it access instructions and data from the memory that was allocated to it, and when it terminates, the space it inhabited is declared available again.<br /><br />The OS has to keep track of who is using memory and how much, deciding which programs get moved in and out of memory, and allocating and deallocating memory space.<br /><br />Most programs are stored on a disk until their loaded into memory, and then use the disk as the source and destination of their processing.<br /><br />Note: It confused me for the longest time how &#8220;disk&#8221; is different from &#8220;memory.&#8221; I guess it&#8217;s just a CS distinction, since I know when people purchase &#8220;more memory&#8221; they&#8217;ll get, like, an external harddrive.  Hard disk?  I have a feeling I&#8217;ve been using all of these things interchangeably for forever.<br /><br /><br /><span class="sig">Special-purpose systems</span><br />Embedded computers are the most prevalent form of computers &#8211; they&#8217;re in car engines, DVDs, microwave ovens, etc.  They almost always run a <strong>real-time operating system</strong>, which is used when processors have to operate or data has to flow in a very rigidly defined amount of time.  If the processing is not done in the strict time constraint, it will fail.<br /><br /><br /><span class="sig">How does an OS manage file storage?</span><br />Storage media like magnetic disks, optical dicks, and magnetic tape have properties include access speed, capacity, data-transfer rate, and access method (sequential or random).  OS have to create and delete files (and their directories), support primitives for manipulating files and directories, map files onto secondary storage, and back up non-volatile storage media.<br /><br /><br /><br />Source:<br /><em>Operating System Concepts (8th Edition)</em>, Silberschatz, Galvin and Gagne, ISBN 978-0-470-12872-5.  Chapter 1.<br /><a href="http://en.wikipedia.org/wiki/Read-only_memory">Wikipedia: Read-only memory</a><br /><a href="http://en.wikipedia.org/wiki/Von_Neumann_architecture">Wikipedia: Von Neumann architecture</a></div>
+</div>
+  
+  
+  <div class="category-bit">Categories: 
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/compsci/'>compsci</a>, <a class='category' href='/blog/categories/notes/'>notes</a>, <a class='category' href='/blog/categories/operating-systems/'>operating systems</a>
+  
+</span>
+
+</a>
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/06/avocado-tempura/">Avocado Tempura</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-06T00:00:00-08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://www.flickr.com/photos/auroraki/4065116387/" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="424" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TSa1P1Ne_TI/AAAAAAAAAEc/d8x3in3nEos/s640/avocado%2Btop.jpg" width="640" /></a></div><br />Vegetable tempura is my favorite, and I once tried making avocado tempura, which was pretty alright, though it had kind of a strange smell and after-taste and was in general a little unremarkable.  (Better use for avocados: as a substitute for cream cheese on bagels.)<br /><br />That being said, I&#8217;m pretty sure the recipe involved doing something like this:<br /><ol><li>Cut up some firm avocadoes</li><li>Whisk around an egg</li><li>Dip the avocado pieces in egg</li><li>Roll them around in a composite of flour, salt, and pepper</li><li>Deep-fry them until the coating is browned</li><li>Eat with soy sauce and sake!</li></ol><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://www.flickr.com/photos/auroraki/4065865690/" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="424" src="http://4.bp.blogspot.com/_SdPKamJbrgg/TSa0jsWlQEI/AAAAAAAAAEM/Rdo7V18jRj4/s640/avocado%2B2.jpg" width="640" /></a></div><br />I&#8217;m definitely going to try and find a better way to do this.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://www.flickr.com/photos/auroraki/4065119421/" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="424" src="http://1.bp.blogspot.com/_SdPKamJbrgg/TSa0uHf0YDI/AAAAAAAAAEU/ZZe16RIhgXE/s640/avocado%2Bmany.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">not giving up on you just yet, bro</td></tr></tbody></table></div>
+</div>
+  
+  
+  <div class="category-bit">Categories: 
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cooking/'>cooking</a>, <a class='category' href='/blog/categories/food/'>food</a>, <a class='category' href='/blog/categories/recipe/'>recipe</a>
+  
+</span>
+
+</a>
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/04/remote-procedure-calls-rpc/">Remote Procedure Calls (RPC)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-04T00:00:00-08:00" pubdate data-updated="true">Jan 4<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+<span class="sig">What is a remote procedure call (RPC)?</span><br />RPC is a paradigm for providing communication across a network between programs written in a high-level language.  &#8220;Procedure calls&#8221; in general are a well-known and well-understood way of transferring control and data within a program on a single computer &#8211; a program calls a procedure, giving it certain arguments, and receives some output from the procedure back.  So, a remote procedure call &#8211; when a program calls a procedure that is not necessarily on the same system that the program is on &#8211; should be workable as well.<br /><br />An RPC &#8220;cycle&#8221; goes like this:<br /><ol><li>A remote procedure is invoked by a caller, who passes the procedure parameters</li><li>The caller&#8217;s environment is suspended as it waits for a response</li><li>The parameters are passed across the network to the environment where the procedure will execute</li><li>The desired procedure is executed</li><li>When the procedure finishes executing, the results are passed back to the calling environment</li><li>The caller&#8217;s environment resumes with the new data (or else fails, I assume, because of a timeout&#8230;though the &#8220;Implemented remote procedure calls&#8221; didn&#8217;t use timeouts, since single-machine systems don&#8217;t)</li></ol><br /><br /><span class="sig">What are the advantages of RPC?</span><br /><ol><li><strong>Clean and simple semantics.</strong>  <a href="http://nuubu.blogspot.com/2011/01/intro-to-distributed-systems.html">Distributed systems</a> are complicated because communication throughout one is complicated, so simplicity is good.</li><li><strong>Simplicity.</strong>  Which means it&#8217;s probably fast.</li><li><strong>Generality.</strong>  Procedure calls work in single-machine systems, besides being usable in distributed systems.</li></ol><br /><br /><span class="sig">What are the disadvantages of RPC?</span><br />There are some design issues &#8211;<br /><ul><li>What semantics do you use when the machine fails, or when communication fails?</li><li>What are the semantics when a caller does something address-specific, and the caller and callee don&#8217;t have a shared address space?</li><li>How do you integrate RPC into existing/future programming systems?</li><li>How does a caller figure out the location and identity of the procedure it wants?</li><li>What&#8217;s a suitable protocol for the transfer of data?</li><li>How do you provide data integrity and security in an open communication network?</li></ul><br /><br /><span class="sig">Really general implementation</span><br />The structure of RPC is based on the concept of <em>stubs</em>; the parts of the program involved in an RPC (the user, the user-stub, the RPC communications package, the server-stub, and the server) are all executed on their respective places, and when a user wants to use an RPC, it really just calls its user-stub, which is what makes the RPC.  This way, specifying the target procedure and the arguments is sent in a &#8220;call packet&#8221; to the server-side stuff, which is handled similarly: the server-stub unpacks the packet, makes a local call to the procedure on the server, and packs it up again in a &#8220;result packet&#8221; to be sent to the caller.  This serves to encapsulate everything (I think?).<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_SdPKamJbrgg/TSPV2_29a7I/AAAAAAAAADs/WoPFIW0-3zM/s1600/rpc%2Bstubs.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="161" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TSPV2_29a7I/AAAAAAAAADs/WoPFIW0-3zM/s320/rpc%2Bstubs.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">from &#8220;Implementing Remote Procedure Calls&#8221;</td></tr></tbody></table><br />The RPCRuntime handles the actual handling-off between the user-stub and the server-stub.<br /><br />The semantics of RPCs can also be handled without needing a specialized packet-level protocol.  <br /><br /><br /><span class="sig">Other notes:</span><br /><ul><li>RPC is supposed to make distributed computation more easy; in the &#8220;Implementing Remote Procedure Calls&#8221; paper, the authors hoped to solve the difficulty of distributed systems communication and leave only the problems of timing, independent failure of components, and the coexistence of independent execution environments.</li></ul><br /><br />Source:<br /><a href="http://portal.acm.org/citation.cfm?id=357392">Andrew Birrell and Bruce Nelson. Implementing Remote Procedure Calls. ACM TOCS 1984.</a></div>
+</div>
+  
+  
+  <div class="category-bit">Categories: 
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/compsci/'>compsci</a>, <a class='category' href='/blog/categories/distributed-systems/'>distributed systems</a>, <a class='category' href='/blog/categories/notes/'>notes</a>
+  
+</span>
+
+</a>
+
+
+    </article>
   
   
     <article>
@@ -393,172 +531,6 @@ So the reason why I was doing <a href="http://neaurobi.blogspot.com/2010/12/note
 <span class="categories">
   
     <a class='category' href='/blog/categories/food/'>food</a>, <a class='category' href='/blog/categories/photo/'>photo</a>, <a class='category' href='/blog/categories/restaurant/'>restaurant</a>
-  
-</span>
-
-</a>
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/12/28/notes-from-me-trying-to-learn-flex/">Notes From Me Trying to Learn Flex/Flash Builder</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-12-28T00:00:00-08:00" pubdate data-updated="true">Dec 28<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/_SdPKamJbrgg/TRmnXZ3Yu1I/AAAAAAAAABs/exbK6RHqHx8/s1600/Flexicon.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="200" src="http://1.bp.blogspot.com/_SdPKamJbrgg/TRmnXZ3Yu1I/AAAAAAAAABs/exbK6RHqHx8/s200/Flexicon.png" width="200" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Though both Kelly and Nandrew made faces when I said I was trying to learn this</td></tr></tbody></table><br /><strong>In General:</strong><br />Flex applications are comprised of MXML and ActionScript.  MXML/Flex is used for the application interface, and ActionScript is used for the programming logic.  Compiling a project yields a SWF file, which is referenced in an HTML page. When someone looks at the page, the SWF file is downloaded and rendered by Flash Player.<br /><br />When you create a Flex Project in Flash Builder, you&#8217;ll automatically get an MXML file with the same name as the new project.<br /><br />This is the initial code you get in that MXML file:<br /><br /><pre class="brush: xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;<br /><s:application minheight="600" minwidth="955" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:s="library://ns.adobe.com/flex/spark"><br /> <fx:declarations><br />      (non-visual elements like services, value objects are placed here)<br /> </fx:declarations><br /></s:application><br /></pre><br /><code>&lt;s:Application&gt;</code> defines the container for the application; it&#8217;s the root tag in the XML document.<br /><br /><br /><strong>MXML and UI</strong><br />MXML defines what components are in the UI &#8211; Buttons, CheckBoxes, DataGrids (which show lists), etc.  When you look at the MXML file in Flash Builder, two tabs will appear, which will allow you to alter the layout of the application.  You can use the Design tab (when you look at your .mxml file) to add buttons, etc. from the Components bar in the bottom-left, or you can write it buttons manually into the Source with tags that look like <code>&lt;s:Button&gt;</code>, <code>&lt;mx:DataGrid&gt;</code>, etc&#8230;<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_SdPKamJbrgg/TRmdzLInguI/AAAAAAAAABo/aYhA373OJ-g/s1600/flexui.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="172" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TRmdzLInguI/AAAAAAAAABo/aYhA373OJ-g/s320/flexui.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">buttons and stuff, yeeeeh</td></tr></tbody></table><br />Buttons and whatever you make in the Design tab get converted into MXML.  So, looking at the Source tab, this code was generated from my lolsy layout above:<br /><br /><pre class="brush: xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;<br /><s:application minheight="600" minwidth="955" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:s="library://ns.adobe.com/flex/spark"><br /> <fx:declarations><br /><br /> </fx:declarations><br /> <mx:colorpicker x="176" y="119"><br /> <s:button label="button!!" x="284" y="107"><br /> <mx:datagrid x="176" y="160"><br />  <mx:columns><br />   <mx:datagridcolumn datafield="col1" headertext="GET"><br />   <mx:datagridcolumn datafield="col4" headertext="AT"><br />   <mx:datagridcolumn datafield="col2" headertext="MY"><br />   <mx:datagridcolumn datafield="col3" headertext="DATA"><br />  </mx:datagridcolumn></mx:datagridcolumn></mx:datagridcolumn></mx:datagridcolumn></mx:columns><br /> </mx:datagrid><br /> <s:hslider x="170" y="67"><br /> <s:panel height="200" width="250" x="493" y="57"><br /> </s:panel><br /></s:hslider></s:button></mx:colorpicker></s:application><br /></pre><br />It doesn&#8217;t matter what order the components are in within the MXML file because their positions are determined by the <code>x</code> and <code>y</code> attributes.  Other styles can be set this way, like colors &#8211; you can view all of them by clicking inside a tag and pressing CTRL+space.  Alternatively, all the styles can be done by CSS.<br /><br />You can get even more information about the components by clicking Help &gt; Dynamic Help and clicking on whatever component you want.<br /><br />Now you can click on the green arrow and run stuff!  Actually, the first time I tried to run I pressed the small arrow to the right and selected <em>HelloFlex</em>, the name of my test project, and the browser was blank, though you could right-click and it would say <em>About Adobe Flash Player 10</em>, etc&#8230;but it turned out that I just hadn&#8217;t built the workspace, so&#8230;<br /><br />.____.<br /><br />So anyway now everything is in the browser and it&#8217;s clickable!  And also movable and stuff.<br /><br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/_SdPKamJbrgg/TRrX3VeaAcI/AAAAAAAAAB0/NE2-8Z9r1a0/s1600/fb4_web.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="225" src="http://1.bp.blogspot.com/_SdPKamJbrgg/TRrX3VeaAcI/AAAAAAAAAB0/NE2-8Z9r1a0/s320/fb4_web.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">LET&#8217;S GO CRAAAAZY</td></tr></tbody></table><br />But nothing happens yet.<br /><br /><br /><strong>MX and Spark Components</strong><br />If you take a closer look at the tags for the components added, you&#8217;ll notice that their namespaces are different &#8211; for instance, the Datagrid tag <code>&lt;mx:DataGrid&gt;</code> has a namespace of <code>mx</code>, whereas the button tag <code>&lt;s:Button&gt;</code> has a namespace of <code>s</code>.<br /><br />This is due to the fact that Flex 4 introduced a new set of components called Spark components, and uses them along with the older components, called MX Components.  Some advantages of the Spark components are that they&#8217;re easy to custom skin.  In general, Flex 4 lets you choose which components you want to use, and you can mix and match, though use Spark components when you can.<br /><br />I found more about Spark components and general Flex 4 stuff <a href="http://insideria.com/2009/06/overview-of-flex-4-gumbo.html">here</a>.<br /><br /><br /><strong>Making the Button Do Something</strong><br />To make the button do something, you&#8217;ll need to take advantage of the fact that buttons emit &#8220;click events&#8221; whenever someone presses them.  Change the <code>&lt;s:Button</code> tag to include a property <code>click="button1_clickHandler(event)"</code>.  Flash Builder should fill in that function name as a default, and also add brand new code right beneath the <code>&lt;s:Application&gt;</code> root node, which looks like this:<br /><br /><pre class="brush: xml"><fx:script><br /> &lt;![CDATA[<br />  protected function button1_clickHandler(event:MouseEvent):void<br />  {<br />   // TODO Auto-generated method stub<br />  }<br /> ]]&gt; <br /></fx:script><br /></pre><br />You can make a pop-up show when someone clicks the button by replacing the commented-out code with <code>Alert.show("LLAMAS")</code>.  Flash Builder should automatically import <code>mx.controls.Alert</code> before the function definition, so that the code should now look something like <br /><br /><pre class="brush: xml"><fx:script><br /> &lt;![CDATA[<br />  import mx.controls.Alert;<br />  protected function button1_clickHandler(event:MouseEvent):void<br />  {<br />   Alert.show("LLAMAS");<br />  }<br /> ]]&gt;<br /></fx:script><br /><br /></pre><br />Then you can (build and) run and click the button to your heart&#8217;s content.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/_SdPKamJbrgg/TRrYEOUmO2I/AAAAAAAAAB4/KdU4LJunEG8/s1600/fb4_buttonalert.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="198" src="http://3.bp.blogspot.com/_SdPKamJbrgg/TRrYEOUmO2I/AAAAAAAAAB4/KdU4LJunEG8/s320/fb4_buttonalert.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">WE TOTALLY GOT THIS BRO</td></tr></tbody></table><br /><br /><strong>Creating Application States</strong><br />In a website, you make different files for the different pages that you visit, but an application instead has states.  You can create them by going back to that <strong>Design</strong> tab, then looking for the new <strong>States</strong> window and right-clicking to create a State.<br /><br />For the second state, I put in two new components &#8211; an Image and a Label &#8211; and altered them accordingly with the Properties bar on the right-hand side.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_SdPKamJbrgg/TRrYOr7ITFI/AAAAAAAAAB8/-WFUft_YIVM/s1600/fb4_imgcomp.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="136" src="http://1.bp.blogspot.com/_SdPKamJbrgg/TRrYOr7ITFI/AAAAAAAAAB8/-WFUft_YIVM/s320/fb4_imgcomp.jpg" width="320" /></a></div><br />Fiddling around in Design added new stuff to the source.  This is the entire thing now:<br /><br /><pre class="brush:xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;<br /><s:application minheight="600" minwidth="955" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:s="library://ns.adobe.com/flex/spark"><br /> <s:states><br />  <s:state name="State1"><br />  <s:state name="State2"><br /> </s:state></s:state><br /> </s:states><br /> <fx:declarations><br />  <br /> </fx:declarations><br /> <mx:colorpicker includein="State1" x="176" y="119"><br /> <s:button includein="State1" label="button!!" x="284" y="107"><br /> <mx:datagrid includein="State1" x="176" y="160"><br />  <mx:columns><br />   <mx:datagridcolumn datafield="col1" headertext="GET"><br />   <mx:datagridcolumn datafield="col4" headertext="AT"><br />   <mx:datagridcolumn datafield="col2" headertext="MY"><br />   <mx:datagridcolumn datafield="col3" headertext="DATA"><br />  </mx:datagridcolumn></mx:datagridcolumn></mx:datagridcolumn></mx:datagridcolumn></mx:columns><br /> </mx:datagrid><br /> <s:hslider includein="State1" x="170" y="67"><br /> <s:panel height="200" includein="State1" width="250" x="493" y="57"><br /> </s:panel><br /> <mx:image height="214" includein="State2" source="file:/C:/Users/nadine/Desktop/llamas.jpg" width="318" x="181" y="61"><br /> <s:label includein="State2" text="Our healing sweets animal" x="291" y="283"><br /></s:label></mx:image></s:hslider></s:button></mx:colorpicker></s:application><br /></pre><br />There are two main changes.  The first is this, right after the <code>&lt;s:Application&gt;</code> root tag:<br /><br /><pre class="brush: xml"><s:states><br /> <s:state name="State1"><br /> <s:state name="State2"><br /></s:state></s:state></s:states><br /></pre><br /><code>states</code> is basically an array of all the <code>State</code> objects that you have in the application.<br /><br />How does the application know which components belong to which state?  The <code>includeIn</code> property is attached to some of the components now, which show the only state for which it should be displayed.  Here are the MXML tags for the new Image and Label components that I added.<br /><br /><pre class="brush: xml"><mx:image height="214" includein="State2" source="file:/C:/Users/nadine/Desktop/llamas.jpg" width="318" x="181" y="61"><br /><s:label includein="State2" text="Our healing sweets animal" x="291" y="283"><br /></s:label></mx:image></pre><br /><br /><strong>Switching Between Application States</strong><br />You can switch between application states by setting <code>currentState</code> to something, like <code>currentState = state2</code>.  Placing this in the code for the click event of the button like this:<br /><br /><pre class="brush:js">protected function button1_clickHandler(event:MouseEvent):void<br /> {<br />  Alert.show("LLAMAS");<br />  currentState = "State2";<br /> }<br /></pre><br />Will make it so that clicking the button labeled &#8220;button!!&#8221; will bring you to the page with the llama Image.  Though there&#8217;s no way to get back to the first state, for now&#8230;<br /><br />In conclusion, here is all the code for this:<br /><br /><pre class="brush:xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;<br /><s:application minheight="600" minwidth="955" xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:s="library://ns.adobe.com/flex/spark"><br /><br /> <fx:script><br />  &lt;![CDATA[<br />   import mx.controls.Alert;<br />   protected function button1_clickHandler(event:MouseEvent):void<br />   {<br />    Alert.show("LLAMAS");<br />    currentState = "State2";<br />   }<br />  ]]&gt;<br /> </fx:script><br /><br /> <s:states><br />  <s:state name="State1"><br />  <s:state name="State2"><br /> </s:state></s:state></s:states><br /> <fx:declarations><br />  <br /> </fx:declarations><br /> <mx:colorpicker includein="State1" x="176" y="119"><br /> <s:button click="button1_clickHandler(event)" includein="State1" label="button!!" x="284" y="107"><br /> <mx:datagrid includein="State1" x="176" y="160"><br />  <mx:columns><br />   <mx:datagridcolumn datafield="col1" headertext="GET"><br />   <mx:datagridcolumn datafield="col4" headertext="AT"><br />   <mx:datagridcolumn datafield="col2" headertext="MY"><br />   <mx:datagridcolumn datafield="col3" headertext="DATA"><br />  </mx:datagridcolumn></mx:datagridcolumn></mx:datagridcolumn></mx:datagridcolumn></mx:columns><br /> </mx:datagrid><br /> <s:hslider includein="State1" x="170" y="67"><br /> <s:panel height="200" includein="State1" width="250" x="493" y="57"><br /> </s:panel><br /> <mx:image height="214" includein="State2" source="file:/C:/Users/nadine/Desktop/llamas.jpg" width="318" x="181" y="61"><br /> <s:label includein="State2" text="Our healing sweets animal" x="291" y="283"><br /></s:label></mx:image></s:hslider></s:button></mx:colorpicker></s:application><br /></pre>Things got a little strange after I messed around with the columns of the DataGrid in runtime&#8230;but everything&#8217;s essentially there.<br /><br /><br />Sources:<br /><a href="http://www.adobe.com/devnet/flex/testdrive/articles/1_build_a_flex_app.html">Adobe: Flex Test Drive Page 1</a><br /><a href="http://www.adobe.com/devnet/flex/testdrive/articles/1_build_a_flex_app3.html">Adobe: Flex Test Drive Page 3</a><br /><a href="http://www.youtube.com/watch?v=uhrUWbSSLT4">Using button controls in Flash Builder 4 and Flex 4 Essential Training (video)</a><br /><a href="http://livedocs.adobe.com/flex/3/html/using_states_4.html">Adobe Docs: Using View States</a></div>
-</div>
-  
-  
-  <div class="category-bit">Categories: 
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/flash/'>flash</a>, <a class='category' href='/blog/categories/flex/'>flex</a>, <a class='category' href='/blog/categories/programming/'>programming</a>
-  
-</span>
-
-</a>
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/12/27/rosetta-stone-installation-error-9123/">Rosetta Stone Installation Error 9123, 9114</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-12-27T00:00:00-08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_SdPKamJbrgg/TRkkWic-ovI/AAAAAAAAABc/f7s3KdsFM64/s1600/rs_error.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="166" src="http://4.bp.blogspot.com/_SdPKamJbrgg/TRkkWic-ovI/AAAAAAAAABc/f7s3KdsFM64/s320/rs_error.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">omg no stop it die die die</td></tr></tbody></table><br />I received Rosetta Stone (version 4) a couple of days ago and was pretty excited about it until I actually tried installing it and kept running into inexplicable errors that apparently no one else On The Internet had/could explain.  Basically I was able to install the Application CD alright, but immediately met upon this ambiguous 9123 error when trying to install a language. &nbsp;(This is on Windows Vista, by the way.)<br /><br />I resigned myself to customer support chat for a couple of hours, and after following instructions, and then fiddling around with their instructions, I finally arrived at a working solution.<br /><br /><ol><li>Install the Application CD. </li><li>Put in the language level CD that you want to install. </li><li>Copy all the files in the language level CD to an empty flash drive.</li><li>Remove the language level CD from the CD drive, but leave the flash drive in.</li><li>At this point I think you could proceed to install a language by clicking <b>Add a Language</b>&nbsp;in Rosetta Stone TOTALe. &nbsp;TOTALe should be able to automatically find the language files in your flash drive.</li><li>For me, just starting to install like this didn&#8217;t work, so I had to go to <strong>Start</strong> and type in <strong>msconfig</strong> which will bring up <strong>System Configuration</strong>.</li><li>Click <b>Selective startup.</b></li><li>In the <b>Services </b>tab, check <b>Hide all Microsoft services.</b></li><li>Click the button which says <b>Disable all</b>. &nbsp;All the services should now be unchecked.</li><li>Go back through the list of services and find the one called <b>RosettaStoneDaemon</b>&nbsp;and make sure that it <i>is&nbsp;</i>checked. &nbsp;If it isn&#8217;t, you&#8217;ll get fatal errors when trying to start up TOTALe again.</li><li>Click <b>Apply </b>and restart your computer. </li><li>Once your computer has loaded in again, start up TOTALe and try<b>&nbsp;Add a Language </b>with the language files on your connected flash drive.</li><li>Rinse and repeat with any other levels that you have.</li></ol><div><br /></div><div>And it works! &nbsp;Actually, I haven&#8217;t yet finished activating it so I&#8217;m not sure if it works completely, but for now at least, it&#8217;s installed.</div></div>
-<h2>Comments</h2>
-<div class='comments'>
-<div class='comment'>
-<div class='author'>Виктор Деревянко</div>
-<div class='content'>
-I can&#39;t Find RosettaStoneDaemon procces&#8230;Can you help me??!</div>
-</div>
-<div class='comment'>
-<div class='author'>elixirtheory</div>
-<div class='content'>
-Thanks so much bud this works great! I already had the RosettaStoneDaemon checked so basically all I had to do was transfer all the language files over to a USB and install them that way. Thanks a bunch!</div>
-</div>
-<div class='comment'>
-<div class='author'>trafficom</div>
-<div class='content'>
-For the language files for the Polish version it is only around the 500mb mark</div>
-</div>
-<div class='comment'>
-<div class='author'>nadine a.</div>
-<div class='content'>
-Hey Emily,<br /><br />Sorry for kind of a late response.  What I did and listed above worked for me.  I had a 4GB flashdrive, but I don&#39;t remember how much space the program actually took up on it.  I&#39;m not a professional and it&#39;s been a while since I did this, but if you have any other questions, let me know. :)</div>
-</div>
-<div class='comment'>
-<div class='author'>Emily</div>
-<div class='content'>
-did this work?  i am having the same problem and i am going nuts with tech support.  how large a flash drive i do not have one currently</div>
-</div>
-</div>
-</div>
-  
-  
-  <div class="category-bit">Categories: 
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/troubleshooting/'>troubleshooting</a>
-  
-</span>
-
-</a>
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/12/26/9-hours-9-persons-9-doors/">9 Hours, 9 Persons, 9 Doors</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-12-26T00:00:00-08:00" pubdate data-updated="true">Dec 26<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_SdPKamJbrgg/TRglhlGN08I/AAAAAAAAABA/PNpzNMGiJPM/s1600/615TUJ3mI1L._SL500_.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="287" src="http://2.bp.blogspot.com/_SdPKamJbrgg/TRglhlGN08I/AAAAAAAAABA/PNpzNMGiJPM/s320/615TUJ3mI1L._SL500_.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">(<a href="http://pul.se/Gamertell-Review-999-9-Hours-9-Persons-9-Doors-for-DS_Gaming-Reviews-Exclusives-Originals-Handhelds-PSP-and-PSPgo-Game-Companies-Developers-Publishers-Genres-2D-Adventure-Game-Genres-Other-2nJObgsL997,uqCjaOHySfE">source</a>)</td></tr></tbody></table><br />Purchased this at the last leg of autumn quarter, right before finals, at which point Amazon decided to hold a sale that made me feel better about buying this at full price since I&#8217;d be getting Rune Factory 3 for $15 alongside it.  Since all the rave reviews on it made it so that it was sold out immediately at normal prices and is now being sold for $75 new, <em>best impulse buy ever</em>.  Plus, it&#8217;s the first new (which for me means it came out in the past year) game that I&#8217;ve bought since Persona 3.<br /><br /><span class="shh"><em>jock jock jock jock jock</em></span><br /><br />(spoilers, etc.)<br /><br />Even though I heard <a href="http://30ninjas.com/blog/999-9-hours-9-persons-9-doors-review-a-triumph-of-narrative">the story was pretty good</a>, I was completely unprepared for HOW COMPLETELY AMAZING IT WAS.  All of the characters, despite being pretty average for an anime cast (one loli-ish girl, one intensely well-endowed woman, one trustworthy-looking old guy, one slim main character with long brown hair and bangs, etc.), turned out to be super interesting, even the girl characters, though I found the three of them in general to be rotating between three states:<br /><ol><li>being coddled (as with Clover being sulky about Snake, or June being head-patted or cooed at)</li><li>being grumbled at/teased for being bitchy (as with Lotus, everywhere&#8230;<span class="shh">though I did really like how she turned out to be a programmer, wooo</span>)</li><li>being held hostage (all three of them)</li></ol>Also, at the end, everyone was pretty much disambiguated except for Lotus; the only thing that&#8217;s explained about her background is that she&#8217;s a mother, and other than her daughters being a part of the original experiment, her connection with the game nine years ago doesn&#8217;t seem to be as strong.  Seven was the detective who saved all the children, Ace was the object of revenge, Junpei was there for the ~*time-bending craziness*~ &#8211; but why Lotus?  Her children weren&#8217;t even prominent characters in the game nine years ago; they&#8217;re only mentioned, and their actions have no weight on the story at all.<br /><br />Plus, if Lotus is a mother who is a programmer and also well-read enough to know about prosopagnosia and the various morphic resonance experiments, why the hell is she dressed like a dancer?<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_SdPKamJbrgg/TRgvOsmT63I/AAAAAAAAABI/lvzJDGdQGrs/s1600/999-9-hours-9-persons-9-doors-20101216021437355.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="287" src="http://4.bp.blogspot.com/_SdPKamJbrgg/TRgvOsmT63I/AAAAAAAAABI/lvzJDGdQGrs/s320/999-9-hours-9-persons-9-doors-20101216021437355.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">(<a href="http://ds.ign.com/articles/114/1140602p2.html">source</a>)</td></tr></tbody></table><br />I mean, I&#8217;m not saying that being scantily clad, being a programmer, being well-read, being the bitch of the story, and being a mother are mutually exclusive &#8211; just that they&#8217;re all character traits that aren&#8217;t supported or explained at all, which makes Lotus completely flat.  In one otherwise great and well-thought-out narrative you have one character, a female, who is essentially just there so you can break up your visual novel and intense puzzle-ing with boobs.  But &#8211; but it&#8217;s fine, right?  She hits the men characters and knows about proso-whatever, so it&#8217;s not like she&#8217;s just there to be seen as sexual, right?<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/_SdPKamJbrgg/TRgx4c-zoDI/AAAAAAAAABQ/r3HJmZldBeE/s1600/lotus2.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="192" src="http://3.bp.blogspot.com/_SdPKamJbrgg/TRgx4c-zoDI/AAAAAAAAABQ/r3HJmZldBeE/s320/lotus2.jpg" width="256" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">DUNNO, BRO. (<a href="http://voiceactingalliance.com/board/showthread.php?t=60911">source</a>)</td></tr></tbody></table><br />That was pretty much the only problem I had with a story that otherwise had me playing for nearly a week straight and throughout the night/morning by the time I reached the True Ending, though that was less a fault of compelling gameplay and more because I suddenly became terrified of everything and couldn&#8217;t sleep until around 3am.<br /><br />Other notes:<br /><ul><li>The puzzles were really great, though if you click things enough times the characters will start to explain things/give them away.  I suppose this is good for the people who would just give up in exasperation if a game is too hard (the casual players everyone tries to cater to nowadays?) but it did mean that the game is considerably easier than Nancy Drew PC games, lululu</li><li>Super great localization&#8230;everything sounds really natural and there are even video game references, <em>waaaat</em></li><li>MINDBLOWING/INTERTWINING STORYLINES FTW &lt;3</li></ul></div>
-</div>
-  
-  
-  <div class="category-bit">Categories: 
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/fangirling/'>fangirling</a>, <a class='category' href='/blog/categories/game-recs/'>game recs</a>, <a class='category' href='/blog/categories/games/'>games</a>, <a class='category' href='/blog/categories/story/'>story</a>, <a class='category' href='/blog/categories/video-games/'>video games</a>
   
 </span>
 

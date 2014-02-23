@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Events | liwanag]]></title>
   <link href="http://blog.neauro.com/blog/categories/events/atom.xml" rel="self"/>
   <link href="http://blog.neauro.com/"/>
-  <updated>2014-02-18T10:18:09-08:00</updated>
+  <updated>2014-02-23T09:22:13-08:00</updated>
   <id>http://blog.neauro.com/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -25,7 +25,7 @@
 <h2><em>One Generation’s Time: The Legacy Of Silme Domingo &amp; Gene Viernes</em> | <em>To Manong Carlos</em></h2>
 
 
-<p><img class="book-cover" src="/images/onegenerationstime.jpg" alt="Photographs of Silme Domingo and Gene Viernes, two Filipino-American activists"/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/onegenerationstime.jpg" alt="Photographs of Silme Domingo and Gene Viernes, two Filipino-American activists"/></p>
 
 <p class="caption">(<A href="http://seattleaaff.org/2014/shorts-programs/one-generations-time-the-legacy-of-silme-domingo-gene-viernes-to-manong-carlos/">via</a>)</p>
 
@@ -49,7 +49,7 @@
 <h2><em>Seeking Asian Female</em></h2>
 
 
-<p><img class="book-cover" src="/images/seeking_asian_female.jpg" alt="Poster for Seeking Asian Female, depicting a white man and a Chinese woman in wedding attire, and the director of the documentary, a Chinese woman."/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/seeking_asian_female.jpg" alt="Poster for Seeking Asian Female, depicting a white man and a Chinese woman in wedding attire, and the director of the documentary, a Chinese woman."/></p>
 
 <p class="caption">(<A href="http://www.mrqe.com/movie_reviews/seeking-asian-female-m100102931">via</a>)</p>
 
