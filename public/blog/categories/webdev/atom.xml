@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Webdev | liwanag]]></title>
   <link href="http://blog.neauro.com/blog/categories/webdev/atom.xml" rel="self"/>
   <link href="http://blog.neauro.com/"/>
-  <updated>2014-02-23T09:23:13-08:00</updated>
+  <updated>2014-02-23T09:28:03-08:00</updated>
   <id>http://blog.neauro.com/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -41,7 +41,7 @@ JavaScript running on the Mini server will only run for a couple of seconds befo
     <id>http://blog.neauro.com/blog/2014/01/08/virtualbox</id>
     <content type="html"><![CDATA[<p>I&rsquo;ve been putting off getting a virtual machine running on the Mac computer I use for work, mostly because I wanted to forget the existence of &lt;IE9 browsers entirely. Unfortunately, the visual bugs accumulating across my projects were starting to get a little ridiculous.</p>
 
-<p><img class="book-cover" src="{{ root_url}}/images/proleft.png" alt="Screenshot of IE8 errors"/></p>
+<p><img class="book-cover" src="/images/proleft.png" alt="Screenshot of IE8 errors"/></p>
 
 <p class="caption">omg why</p>
 
@@ -56,7 +56,7 @@ JavaScript running on the Mini server will only run for a couple of seconds befo
 
 <p>That&rsquo;s it! Once that&rsquo;s finished, you can open VirtualBox and you&rsquo;ll see your boxes all ready to go.</p>
 
-<p><img class="book-cover" src="{{ root_url}}/images/virtualbox.png" alt="Screenshot of IE8 in VirtualBox"/></p>
+<p><img class="book-cover" src="/images/virtualbox.png" alt="Screenshot of IE8 in VirtualBox"/></p>
 
 <p class="caption">only IE8 is pictured above</p>
 

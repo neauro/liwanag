@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Game-ing | liwanag]]></title>
   <link href="http://blog.neauro.com/blog/categories/game-ing/atom.xml" rel="self"/>
   <link href="http://blog.neauro.com/"/>
-  <updated>2014-02-23T09:23:13-08:00</updated>
+  <updated>2014-02-23T09:28:03-08:00</updated>
   <id>http://blog.neauro.com/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.neauro.com/blog/2014/01/15/kickstarter/"/>
     <updated>2014-01-15T09:03:10-08:00</updated>
     <id>http://blog.neauro.com/blog/2014/01/15/kickstarter</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/kickstarter1.png" alt="A screenshot of my Kickstarter profile"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/kickstarter1.png" alt="A screenshot of my Kickstarter profile"/></p>
 
 <p class="caption">a screenshot of <A href="http://www.kickstarter.com/profile/endian">my kickstarter profile</a></p>
 
@@ -31,7 +31,7 @@
 
 <p>Kickstarter also offers some encouragement when you click the empty slice of your pie chart.</p>
 
-<p><img class="book-cover" src="{{ root_url}}/images/kickstarter2.png" alt="A screenshot of my Kickstarter profile, after clicking on the 'design' slice"/></p>
+<p><img class="book-cover" src="/images/kickstarter2.png" alt="A screenshot of my Kickstarter profile, after clicking on the 'design' slice"/></p>
 
 <p class="caption">"Let's change that!"</a></p>
 
