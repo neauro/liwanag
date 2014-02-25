@@ -19,12 +19,13 @@ I saw The Wind Rises last weekend, dubbed. It was one of the few times in recent
 Reasons why you should see it:
 <ul>
 <li>The animation is gorgeous.</li>
-<li>Like, <em>really gorgeous.</em></li>
+<li><em>Really gorgeous.</em></li>
 <li>The dreamy, vague nature of time and places keeps you on your toes. I found it fun to put the fluid pieces of the movie together.</li>
 <li>I loved watching the way different characters interacted with each other. For example, Jiro and Honjo never say to each other, "You are my best friend," but they take pains to eat together, help each other, and get assigned to the same projects. Honjo never says "I need to take care of your air-headed sorry ass all the time;" but he rolls his eyes at Jiro only ever eating spongecake, and when Jiro is assigned separately from him to travel the world, he says, "<em>Alone</em>?" with a certain anxiety that I appreciate for its show-don't-tell-ness.</li>
 </ul>
 
 [ less mild spoilers ahead ]
+
 Unfortunately:
 <ul>
 <li>Some of the dubbed lines have jarringly awkward wording.</li>

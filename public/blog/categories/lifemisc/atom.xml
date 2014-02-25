@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Lifemisc | liwanag]]></title>
   <link href="http://blog.neauro.com/blog/categories/lifemisc/atom.xml" rel="self"/>
   <link href="http://blog.neauro.com/"/>
-  <updated>2014-02-25T11:22:24-08:00</updated>
+  <updated>2014-02-25T11:32:04-08:00</updated>
   <id>http://blog.neauro.com/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -20,7 +20,7 @@
     <id>http://blog.neauro.com/blog/2014/01/13/football</id>
     <content type="html"><![CDATA[<p>This past weekend I finally learned about football, something I&rsquo;ve never been terribly interested in. The most recent game I watched was Kind Of A Big Deal for the city I live in.</p>
 
-<p><img class="book-cover" src="/images/sea2.jpg" alt="Rain and cars and a distant Seattle Space Needle."/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/sea2.jpg" alt="Rain and cars and a distant Seattle Space Needle."/></p>
 
 <p class="caption">distant space needle.</a></p>
 
@@ -29,7 +29,7 @@
 
 <p>Watching the game this past weekend was the first time in my life that I really, finally <em>got</em> it. I didn&rsquo;t know there were separate offensive and defensive teams; I didn&rsquo;t know that there were people whose singular jobs were to run, or to kick, and that the had individual tutors. It&rsquo;s pretty inspiring.</p>
 
-<p><img class="book-cover" src="/images/sea1.jpg" alt="Seattle Space Needle with a flag that reads '12' on top "/></p>
+<p><img class="book-cover" src="{{ root_url}}/images/sea1.jpg" alt="Seattle Space Needle with a flag that reads '12' on top "/></p>
 
 <p class="caption">#gohawks! and, fun fact: "the 12th man" is a copyrighted phrase. <a href="http://en.wikipedia.org/wiki/12th_man_(football)#Texas_A.26M_trademark_issues_and_Seattle_Seahawks_lawsuit">a phrase <em>not</em> copyrighted by us.</a></p>
 
