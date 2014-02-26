@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Conference | liwanag]]></title>
   <link href="http://blog.neauro.com/blog/categories/conference/atom.xml" rel="self"/>
   <link href="http://blog.neauro.com/"/>
-  <updated>2014-02-25T11:32:04-08:00</updated>
+  <updated>2014-02-26T09:11:38-08:00</updated>
   <id>http://blog.neauro.com/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -18,14 +18,14 @@
     <link href="http://blog.neauro.com/blog/2014/02/23/convey-ux-notes/"/>
     <updated>2014-02-23T08:48:33-08:00</updated>
     <id>http://blog.neauro.com/blog/2014/02/23/convey-ux-notes</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/convey1.jpg" alt="First pages of my notes from ConveyUX"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/convey1.jpg" alt="First pages of my notes from ConveyUX"/></p>
 
 <p class="caption">first page of my notes from ConveyUX. all pages in their full nearly-illegible glory at <a href="http://neauro.tumblr.com/post/77602386103/finally-got-around-to-summarizing-all-the-notes-i">at my tumblr</a></p>
 
 
 <p>This past week I attended <a href="http://www.conveyux.com/">ConveyUX</a>, a now two-year-old UX conference presented by <a href="http://www.blinkux.com/">Blink</a>. I also attended last year, and was impressed by the growth that this conference has had since then. There were over twice the number of attendees, and everyone was incredibly friendly. Don Norman was the keynote speaker and I got him to sign my copy of <em>The Design of Everyday Things</em>!</p>
 
-<p><img class="book-cover" src="{{ root_url}}/images/doet.jpg" alt="The inside cover of Design of Everyday Things, and signature of its author, Don Norman"/></p>
+<p><img class="book-cover" src="/images/doet.jpg" alt="The inside cover of Design of Everyday Things, and signature of its author, Don Norman"/></p>
 
 <p class="caption">yess!</p>
 

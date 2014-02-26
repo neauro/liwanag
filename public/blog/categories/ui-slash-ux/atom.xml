@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ui/ux | liwanag]]></title>
   <link href="http://blog.neauro.com/blog/categories/ui-slash-ux/atom.xml" rel="self"/>
   <link href="http://blog.neauro.com/"/>
-  <updated>2014-02-25T11:32:04-08:00</updated>
+  <updated>2014-02-26T09:11:38-08:00</updated>
   <id>http://blog.neauro.com/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.neauro.com/blog/2014/01/07/delightful-ux/"/>
     <updated>2014-01-07T14:39:07-08:00</updated>
     <id>http://blog.neauro.com/blog/2014/01/07/delightful-ux</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/delightful-ux.png" alt="Screenshot of delightful-ux.tumblr.com"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/delightful-ux.png" alt="Screenshot of delightful-ux.tumblr.com"/></p>
 
 <p class="caption">(<A href="http://delightful-ux.tumblr.com">via</a>)</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web Design | liwanag]]></title>
   <link href="http://blog.neauro.com/blog/categories/web-design/atom.xml" rel="self"/>
   <link href="http://blog.neauro.com/"/>
-  <updated>2014-02-25T11:32:04-08:00</updated>
+  <updated>2014-02-26T09:11:38-08:00</updated>
   <id>http://blog.neauro.com/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.neauro.com/blog/2014/01/15/fongbaatz/"/>
     <updated>2014-01-15T10:32:12-08:00</updated>
     <id>http://blog.neauro.com/blog/2014/01/15/fongbaatz</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/fongbaatz.png" alt="Screenshot of Fong Baatz portfolio"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/fongbaatz.png" alt="Screenshot of Fong Baatz portfolio"/></p>
 
 <p class="caption">screenshot of <A href="http://fongbaatz.com">fong baatz portfolio</a></p>
 
@@ -34,7 +34,7 @@
     <link href="http://blog.neauro.com/blog/2014/01/15/kickstarter/"/>
     <updated>2014-01-15T09:03:10-08:00</updated>
     <id>http://blog.neauro.com/blog/2014/01/15/kickstarter</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/kickstarter1.png" alt="A screenshot of my Kickstarter profile"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/kickstarter1.png" alt="A screenshot of my Kickstarter profile"/></p>
 
 <p class="caption">a screenshot of <A href="http://www.kickstarter.com/profile/endian">my kickstarter profile</a></p>
 
@@ -47,7 +47,7 @@
 
 <p>Kickstarter also offers some encouragement when you click the empty slice of your pie chart.</p>
 
-<p><img class="book-cover" src="{{ root_url}}/images/kickstarter2.png" alt="A screenshot of my Kickstarter profile, after clicking on the 'design' slice"/></p>
+<p><img class="book-cover" src="/images/kickstarter2.png" alt="A screenshot of my Kickstarter profile, after clicking on the 'design' slice"/></p>
 
 <p class="caption">"Let's change that!"</a></p>
 
@@ -74,7 +74,7 @@
 <h2>Surveys</h2>
 
 
-<p><img class="book-cover" src="{{ root_url}}/images/unicycle/surveys.png" alt="Screenshot of some survey responses."/></p>
+<p><img class="book-cover" src="/images/unicycle/surveys.png" alt="Screenshot of some survey responses."/></p>
 
 <p class="caption">screenshot of some survey responses</p>
 
@@ -91,7 +91,7 @@
 <h2>Design Mapping</h2>
 
 
-<p><img class="book-cover" src="{{ root_url}}/images/unicycle/designmapping.png" alt="Team UniCycle design mapping, and a close-up photo of the design mapping."/></p>
+<p><img class="book-cover" src="/images/unicycle/designmapping.png" alt="Team UniCycle design mapping, and a close-up photo of the design mapping."/></p>
 
 <p class="caption">design mapping</p>
 
@@ -105,7 +105,7 @@
 
 <p>We did a ton of sketches. Just, tons of them.</p>
 
-<p><img class="book-cover" src="{{ root_url}}/images/unicycle/sketches2.png" alt="Sketching UniCycle UI on a whiteboard."/></p>
+<p><img class="book-cover" src="/images/unicycle/sketches2.png" alt="Sketching UniCycle UI on a whiteboard."/></p>
 
 <p class="caption">here are just a few of them</p>
 
@@ -117,7 +117,7 @@
 <h2>Paper Prototyping</h2>
 
 
-<p><img class="book-cover" src="{{ root_url}}/images/unicycle/paperprototype.png" alt="Photos of the UniCycle paper prototype."/></p>
+<p><img class="book-cover" src="/images/unicycle/paperprototype.png" alt="Photos of the UniCycle paper prototype."/></p>
 
 <p class="caption">photos of the paper prototype</p>
 
@@ -127,7 +127,7 @@
 <h2>Interactive Prototype</h2>
 
 
-<p><img class="book-cover" src="{{ root_url}}/images/unicycle/unicycle_prototype.png" alt="Screenshot of UniCycle Interactive Prototype."/></p>
+<p><img class="book-cover" src="/images/unicycle/unicycle_prototype.png" alt="Screenshot of UniCycle Interactive Prototype."/></p>
 
 <p class="caption">screenshot of UniCycle's interactive prototype</p>
 
@@ -147,7 +147,7 @@
 
 <p>I don&rsquo;t know that I&rsquo;ll return to UniCycle given the plethora of other projects I have, but it would be great to see it go places, especially given the need for it at UW. Too much goes wasted, and I&rsquo;d love to see people get into the habit of asking their community for needed items, as well as help others when it&rsquo;s needed.</p>
 
-<p>I&rsquo;ve also made a <a href="{{ root_url}}/files/hcde518_portfolio_deck.pdf">portfolio deck</a> that goes over other details for this project.</p>
+<p>I&rsquo;ve also made a <a href="/files/hcde518_portfolio_deck.pdf">portfolio deck</a> that goes over other details for this project.</p>
 ]]></content>
   </entry>
   
