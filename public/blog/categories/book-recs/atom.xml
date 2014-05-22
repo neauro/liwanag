@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Book Recs | liwanag]]></title>
   <link href="http://blog.neauro.com/blog/categories/book-recs/atom.xml" rel="self"/>
   <link href="http://blog.neauro.com/"/>
-  <updated>2014-02-27T09:05:28-08:00</updated>
+  <updated>2014-05-22T11:16:14-07:00</updated>
   <id>http://blog.neauro.com/</id>
   <author>
     <name><![CDATA[nadine a.]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.neauro.com/blog/2014/02/17/champion/"/>
     <updated>2014-02-17T16:06:33-08:00</updated>
     <id>http://blog.neauro.com/blog/2014/02/17/champion</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/champion.jpg" alt="Cover of Champion, which features a black and red rose"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/champion.jpg" alt="Cover of Champion, which features a black and red rose"/></p>
 
 <p class="caption">(<A href="https://www.goodreads.com/book/show/14290364-champion">via</a>)</p>
 
@@ -28,7 +28,7 @@ But neither could have predicted the circumstances that will reunite them: just 
 With heart-pounding action and suspense, Marie Lu’s bestselling trilogy draws to a stunning conclusion. (<a href="https://www.goodreads.com/book/show/14290364-champion">Goodreads</a>)</blockquote>
 
 
-<p>(I&rsquo;ve also written about the previous books in the <em>Legend</em> trilogy, <a href="/blog/2012/10/06/legend-marie-lu/"><em>Legend</em></a> and <a href="/blog/2013/05/21/prodigy-marie-lu/"><em>Prodigy</em></a>.)</p>
+<p>(I&rsquo;ve also written about the previous books in the <em>Legend</em> trilogy, <a href="{{ root_url}}/blog/2012/10/06/legend-marie-lu/"><em>Legend</em></a> and <a href="{{ root_url }}/blog/2013/05/21/prodigy-marie-lu/"><em>Prodigy</em></a>.)</p>
 
 <p>I finally finished Champion on the bus to work and felt all shaky and full of feels. After having been disappointed by the endings of other YA trilogies I&rsquo;ve finished recently, I was nervous about this one; and though there were some strange parts, ultimately this whole story delivered exactly what I wanted, which was: the bittersweet, bright-future fulfillment of a &ldquo;we are enemies from two different worlds&rdquo; power couple romance.</p>
 
@@ -47,7 +47,7 @@ With heart-pounding action and suspense, Marie Lu’s bestselling trilogy draws 
     <link href="http://blog.neauro.com/blog/2014/01/15/his-fair-series/"/>
     <updated>2014-01-15T09:57:36-08:00</updated>
     <id>http://blog.neauro.com/blog/2014/01/15/his-fair-series</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/dark_triumph_cover.jpg" alt="Cover of Dark Triumph"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/dark_triumph_cover.jpg" alt="Cover of Dark Triumph"/></p>
 
 <p class="caption">(<A href="https://www.goodreads.com/book/show/9943270-dark-triumph">via</a>)</p>
 
@@ -92,7 +92,7 @@ But her assassin's skills are little comfort when the convent returns her to the
     <link href="http://blog.neauro.com/blog/2013/12/16/fire/"/>
     <updated>2013-12-16T12:36:17-08:00</updated>
     <id>http://blog.neauro.com/blog/2013/12/16/fire</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/cover_fire.jpg" alt="Fire cover"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/cover_fire.jpg" alt="Fire cover"/></p>
 
 <p class="caption">(<A href="https://www.goodreads.com/book/show/6137154-fire?from_search=true">via</a>)</p>
 
@@ -110,7 +110,7 @@ But her assassin's skills are little comfort when the convent returns her to the
 
 <p>[spoilers below]</p>
 
-<p><em>Fire</em> was alright. I liked the strangeness of monsters and their many colors; I liked all the politics, the twist that Fire had killed her own father and the general confusion of royal bloodlines. As in <em><a href="/blog/2013/12/16/graceling/"/>Graceling</a></em>, the non-drama of sexual relationships is a relief. While reading, I hated Archer for being a posessive male character that we are meant to sympathize with; but thinking back, I don&rsquo;t think that his possessive behavior was ever excused by the story&hellip;except, I guess, for Fire&rsquo;s musing about how her innate monster beauty may have compelled Archer to become as horribly possessive as he was. This is uncomfortable because of its similarity to modern &ldquo;victim-blaming&rdquo; narratives, even if <em>Fire</em> explores Fire&rsquo;s strange ability to compel all humans when they look at her, not just men. It&rsquo;s also nice to see a romance not totally typical of YA: a non-virgin woman who falls in love with a man who already has a child.</p>
+<p><em>Fire</em> was alright. I liked the strangeness of monsters and their many colors; I liked all the politics, the twist that Fire had killed her own father and the general confusion of royal bloodlines. As in <em><a href="{{ root_url}}/blog/2013/12/16/graceling/"/>Graceling</a></em>, the non-drama of sexual relationships is a relief. While reading, I hated Archer for being a posessive male character that we are meant to sympathize with; but thinking back, I don&rsquo;t think that his possessive behavior was ever excused by the story&hellip;except, I guess, for Fire&rsquo;s musing about how her innate monster beauty may have compelled Archer to become as horribly possessive as he was. This is uncomfortable because of its similarity to modern &ldquo;victim-blaming&rdquo; narratives, even if <em>Fire</em> explores Fire&rsquo;s strange ability to compel all humans when they look at her, not just men. It&rsquo;s also nice to see a romance not totally typical of YA: a non-virgin woman who falls in love with a man who already has a child.</p>
 
 <p>One downside is that the voice of Fire herself doesn&rsquo;t differ too much from Katsa&rsquo;s in <em>Graceling</em>. Fire feels like a parallel universe Katsa, whose story ultimately isn&rsquo;t as interesting. One of the main reasons I was so attracted to the <em>Graceling</em> was — well — the Graces — and since the Dell doesn&rsquo;t have them, and since Katsa&rsquo;s world doesn&rsquo;t have monsters, this book feels like it&rsquo;s set in an entirely different universe. There&rsquo;s none of the excitement of familiarity, the fun of adding to the breadth and meaning of <em>Graceling</em>&rsquo;s world. The one connection between <em>Graceling</em> and <em>Fire</em> is Leck, but we barely know him from the first book, and I&rsquo;m not interested in any mysteries about how he came to be, since by the end of <em>Graceling</em> he&rsquo;s already dead. Leck&rsquo;s descent into sadism in <em>Fire</em> isn&rsquo;t particularly complex, either; he is shown to be a sociopath from the very beginning, and all interactions that he has with Fire feel tacked on and separate from Fire&rsquo;s own character growth. Had there been more of a commonality with <em>Graceling</em>, <em>Fire</em> would have been more of a hit with me.</p>
 ]]></content>
@@ -121,7 +121,7 @@ But her assassin's skills are little comfort when the convent returns her to the
     <link href="http://blog.neauro.com/blog/2013/12/16/graceling/"/>
     <updated>2013-12-16T11:26:00-08:00</updated>
     <id>http://blog.neauro.com/blog/2013/12/16/graceling</id>
-    <content type="html"><![CDATA[<p><img class="book-cover" src="/images/cover_graceling.jpg" alt="Graceling cover"/></p>
+    <content type="html"><![CDATA[<p><img class="book-cover" src="{{ root_url}}/images/cover_graceling.jpg" alt="Graceling cover"/></p>
 
 <p class="caption">(<A href="https://www.goodreads.com/book/show/3236307-graceling">via</a>)</p>
 
