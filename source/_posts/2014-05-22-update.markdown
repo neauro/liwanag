@@ -6,4 +6,32 @@ comments: true
 categories: 
 - uwhcde
 - projects
+- video games
+- transistor
+
 ---
+
+I always said before that I was busy with school but it doesn't compare at all to the amount of work I have now, just a couple weeks until graduation. AAAAHHH
+
+Lots has been happening. Even so, I've been posting pretty frequently on <a href="http://neauro.tumblr.com">Tumblr</a> (as it requires less effort and being able to arrange photos nicely is fun).
+
+In particular I've been working on my Capstone project, Bubble, an app to faciliate easier sharing of photos and messages between iPhone users using mesh networking (the same kind that <a href="http://www.technologyreview.com/news/525921/the-latest-chat-app-for-iphone-needs-no-internet-connection/">Firechat</a> has been making use of). I've been writing about my team's progress in our own <a href="http://hcdeevee.tumblr.com/">process blog</a>, and I've also posted <a href="http://neauro.tumblr.com/tagged/code-eevee">in-progress stuff</a> about my own sketches and experiments with Sketch 3 and Flinto. Sketch 3 is fantastic, and I find myself opening it even when I just need to do a couple quick photo edits. Flinto is also great, though I'm disappointed that I'll probably never "really" use it after my trial runs out, because $20 a month is a little much for someone who just wants to play with flows that I won't get paid for. I wish there was a way to pay up front and only have one active project or something. As it is, I'm keeping an eye on <a href="http://proto.io/">Proto.io</a> and <a href="https://marvelapp.com/">Marvel App</a> for future playing. (Though I still loove <a href="https://popapp.in/">Pop App</a> right now for interactive paper prototyping.)
+
+Other than capstone work, I've also been working on a lot of fun design projects for my Interaction Design class this quarter, which I'll post about separately later.
+
+I've also been writing a ton! A month ago the "Plague" theme edition of <a href="http://strayingfromreality.wordpress.com/">AU</a> was released, which had my story *Iron &amp; Honey*. It's available currently at Bulldog News.
+
+<img class="book-cover" src="{{ root_url}}/images/ironandhoney.jpg" alt="The first page of 'Iron and Honey'"/>
+<p class="caption">The first page of <em>Iron &amp; Honey</em></p>
+
+I've also been working on my Big Story with greater headway than I have before by using the "writing scene-by-scene" technique which I read about in <a href="https://www.google.com/search?q=story+robert+mckee+&oq=story+robert+mckee+&aqs=chrome..69i57j69i59l4j0.2336j0j1&sourceid=chrome&es_sm=91&ie=UTF-8"><em>Story</em> by Robert McKee</a>. The way that I’m executing is by writing out each scene with a “beginning state” of certain characters, their “ending” state, and the exposition or other “feeling” work that needs to also happen.
+
+My problem with Big Story is that I love my world and my characters and I know what I want to say, but I have no idea how to say it, and no idea how to get from my known point A to point B. Hopefully working out each step like this will help me actually get somewhere. I’ve had problems dragging mindlessly from A to B with all my previous iterations, but with this kind of technique I can already feel myself becoming more conscious of how to make making meaningful things happen the whole way through. 
+
+<img class="book-cover" src="{{ root_url}}/images/writing-progress.png" alt="Screenshot of a Google Doc"/>
+<p class="caption">yay! things happening!</p>
+
+The final major happening in my life is the release of <a href="http://supergiantgames.com/index.php/transistor/">Transistor</a>! (≧▽≦ I spent the Monday prior its release this week listening to <a href="https://www.youtube.com/watch?v=KudXO0DO04U&feature=youtu.be&t=5m42s">We All Become</a> on repeat, more of a fangirl about this than any other game than I can think of. I'm about 4 hours in and have already had a heart-swelling experience that reduced me into a puddle of sap. I'm not done yet but I love it I love it and it's incredibly inspiring. I can only hope the good feels stay until the end.
+
+<img class="book-cover" src="{{ root_url}}/images/transistor.jpg" alt="Photo of a computer desk with the first Transistor screen on the monitor"/>
+<p class="caption">YAAAAAY</p>
